@@ -19,6 +19,12 @@ import RSS from './components/Service/RSS';
 import Tierschutzhelfer from './components/SpendenUhelfen/Tierschutzhelfer';
 import Suchmeldungen from './components/SpendenUhelfen/Suchmeldungen';
 import Werbung from './components/Service/werbung';
+import Impressum from './components/Service/Impressum';
+import Kontakt from './components/Service/Kontakt';
+import Cookies from './components/Service/Cookies';
+import Bücher from './components/Ratgeber/Bücher';
+import Hundesteuer from './components/Ratgeber/Hundesteuer';
+import Rechtsanwälte from './components/Ratgeber/Rechtsanwälte';
 
 function App(props) {
   const [animal, setAnimal] = useState();
@@ -48,9 +54,12 @@ function App(props) {
           <Route path="/datenschutz" element={<Datenschutz animal={animal} />} />
           <Route path="/content" element={<Content animal={animal} />} />
            <Route path="/werbung" element={<Werbung animal={animal} />} />
-
-
-
+ <Route path="/impressum" element={<Impressum animal={animal} />} />
+<Route path="/kontakt" element={<Kontakt animal={animal} />} />
+<Route path="/cookies" element={<Cookies animal={animal} />} />
+<Route path="/buecher" element={<Bücher animal={animal} />} />
+<Route path="/hundesteuer" element={<Hundesteuer animal={animal} />} />
+<Route path="/rechtsanwaelte" element={<Rechtsanwälte animal={animal} />} />
 
           <Route path="/ups" element={<Ups />} />
          

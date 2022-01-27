@@ -38,9 +38,9 @@ const Navigation = () => {
           <Link className="dropdown-item" to={"datenschutz"}>Datenschutz</Link>
           <Link className="dropdown-item" to={"content"}>Content</Link>
           <Link className="dropdown-item" to={"werbung"}>Werbung</Link>
-          <Link className="dropdown-item" to={"ups"}>Impressum</Link>
-          <Link className="dropdown-item" to={"ups"}>Kontakt</Link>
-          <Link className="dropdown-item" to={"ups"}>Cookies</Link>
+          <Link className="dropdown-item" to={"impressum"}>Impressum</Link>
+          <Link className="dropdown-item" to={"kontakt"}>Kontakt</Link>
+          <Link className="dropdown-item" to={"cookies"}>Cookies</Link>
         </div>
       </nav>
       <nav className="nav-item dropdown">
@@ -48,9 +48,9 @@ const Navigation = () => {
           Ratgeber
         </div>
         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-          <Link className="dropdown-item" to={"ups"}>Bücher</Link>
-          <Link className="dropdown-item" to={"ups"}>Hundesteuer</Link>
-          <Link className="dropdown-item" to={"ups"}>Rechtsanwälte</Link>
+          <Link className="dropdown-item" to={"buecher"}>Bücher</Link>
+          <Link className="dropdown-item" to={"hundesteuer"}>Hundesteuer</Link>
+          <Link className="dropdown-item" to={"rechtsanwaelte"}>Rechtsanwälte</Link>
         </div>
       </nav>
       </div>
