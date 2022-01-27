@@ -5,51 +5,51 @@ const Navigation = () => {
   return <div>
        <div className='Flex'>
  <nav className="nav-item dropdown">
-        <a className="nav-link dropdown-toggle, btn btn-secondary" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a className="nav-link dropdown-toggle, btn btn-secondary" to={"ups"} id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Tiervermittlung
         </a>
         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
           <Link className="dropdown-item" to={"hunde"}>Hunde</Link>
           <Link className="dropdown-item" to={"katzen"}>Katzen</Link>
-          <Link className="dropdown-item" to={"Nagetiere"}>Nagetiere</Link>
-          <a className="dropdown-item" href="#">Notfellchen</a>
-          <a className="dropdown-item" href="#">Glückskinder</a>
+          <Link className="dropdown-item" to={"nagetiere"}>Nagetiere</Link>
+          <Link className="dropdown-item" to={"ups"}>Notfellchen</Link>
+          <Link className="dropdown-item" to={"ups"}>Glückskinder</Link>
         </div>
       </nav>
       <nav className="nav-item dropdown">
-        <a className="nav-link dropdown-toggle, btn btn-secondary" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a className="nav-link dropdown-toggle, btn btn-secondary" to={"ups"} id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Spenden & Helfen
         </a>
         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a className="dropdown-item" href="#">Pflegestellen</a>
-          <a className="dropdown-item" href="#">Flugpaten</a>
-          <a className="dropdown-item" href="#">Tiersitter</a>
-          <a className="dropdown-item" href="#">Tierschutzhelfer</a>
-          <a className="dropdown-item" href="#">Suchmeldung</a>
+          <Link className="dropdown-item" to={"ups"}>Pflegestellen</Link>
+          <Link className="dropdown-item" to={"ups"}>Flugpaten</Link>
+          <Link className="dropdown-item" to={"ups"}>Tiersitter</Link>
+          <Link className="dropdown-item" to={"ups"}>Tierschutzhelfer</Link>
+          <Link className="dropdown-item" to={"ups"}>Suchmeldung</Link>
         </div>
       </nav>
       <nav className="nav-item dropdown">
-        <a className="nav-link dropdown-toggle, btn btn-secondary" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a className="nav-link dropdown-toggle, btn btn-secondary" to={"ups"} id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Service
         </a>
         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a className="dropdown-item" href="#">RSS-Feed</a>
-          <a className="dropdown-item" href="#">Datenschutz</a>
-          <a className="dropdown-item" href="#">Content</a>
-          <a className="dropdown-item" href="#">Werbung</a>
-          <a className="dropdown-item" href="#">Impressum</a>
-          <a className="dropdown-item" href="#">Kontakt</a>
-          <a className="dropdown-item" href="#">Cookies</a>
+          <Link className="dropdown-item" to={"ups"}>RSS-Feed</Link>
+          <Link className="dropdown-item" to={"ups"}>Datenschutz</Link>
+          <Link className="dropdown-item" to={"ups"}>Content</Link>
+          <Link className="dropdown-item" to={"ups"}>Werbung</Link>
+          <Link className="dropdown-item" to={"ups"}>Impressum</Link>
+          <Link className="dropdown-item" to={"ups"}>Kontakt</Link>
+          <Link className="dropdown-item" to={"ups"}>Cookies</Link>
         </div>
       </nav>
       <nav className="nav-item dropdown">
-        <a className="nav-link dropdown-toggle, btn btn-secondary" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a className="nav-link dropdown-toggle, btn btn-secondary" to={"ups"} id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Ratgeber
         </a>
         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a className="dropdown-item" href="#">Bücher</a>
-          <a className="dropdown-item" href="#">Hundesteuer</a>
-          <a className="dropdown-item" href="#">Rechtsanwälte</a>
+          <Link className="dropdown-item" to={"ups"}>Bücher</Link>
+          <Link className="dropdown-item" to={"ups"}>Hundesteuer</Link>
+          <Link className="dropdown-item" to={"ups"}>Rechtsanwälte</Link>
         </div>
       </nav>
       </div>
