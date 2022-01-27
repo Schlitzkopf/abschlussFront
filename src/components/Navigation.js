@@ -13,7 +13,8 @@ const Navigation = () => {
           <Link className="dropdown-item" to={"katzen"}>Katzen</Link>
           <Link className="dropdown-item" to={"nagetiere"}>Nagetiere</Link>
           <Link className="dropdown-item" to={"notfellchen"}>Notfellchen</Link>
-          <Link className="dropdown-item" to={"ups"}>Glückskinder</Link>
+          <Link className="dropdown-item" to={"glueckskinder"}>Glückskinder</Link>
+          
         </div>
       </nav>
       <nav className="nav-item dropdown">
@@ -21,11 +22,11 @@ const Navigation = () => {
           Spenden & Helfen
         </div>
         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-          <Link className="dropdown-item" to={"ups"}>Pflegestellen</Link>
-          <Link className="dropdown-item" to={"ups"}>Flugpaten</Link>
-          <Link className="dropdown-item" to={"ups"}>Tiersitter</Link>
-          <Link className="dropdown-item" to={"ups"}>Tierschutzhelfer</Link>
-          <Link className="dropdown-item" to={"ups"}>Suchmeldung</Link>
+          <Link className="dropdown-item" to={"pflegestellen"}>Pflegestellen</Link>
+          <Link className="dropdown-item" to={"flugpaten"}>Flugpaten</Link>
+          <Link className="dropdown-item" to={"tiersitter"}>Tiersitter</Link>
+          <Link className="dropdown-item" to={"tierschutzhelfer"}>Tierschutzhelfer</Link>
+          <Link className="dropdown-item" to={"suchmeldungen"}>Suchmeldungen</Link>
         </div>
       </nav>
       <nav className="nav-item dropdown">
@@ -33,10 +34,10 @@ const Navigation = () => {
           Service
         </div>
         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-          <Link className="dropdown-item" to={"ups"}>RSS-Feed</Link>
-          <Link className="dropdown-item" to={"ups"}>Datenschutz</Link>
-          <Link className="dropdown-item" to={"ups"}>Content</Link>
-          <Link className="dropdown-item" to={"ups"}>Werbung</Link>
+          <Link className="dropdown-item" to={"RSS"}>RSS-Feed</Link>
+          <Link className="dropdown-item" to={"datenschutz"}>Datenschutz</Link>
+          <Link className="dropdown-item" to={"content"}>Content</Link>
+          <Link className="dropdown-item" to={"werbung"}>Werbung</Link>
           <Link className="dropdown-item" to={"ups"}>Impressum</Link>
           <Link className="dropdown-item" to={"ups"}>Kontakt</Link>
           <Link className="dropdown-item" to={"ups"}>Cookies</Link>
