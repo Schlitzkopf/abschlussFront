@@ -1,9 +1,7 @@
 import React from 'react';
 
-const Glückskinder = () => {
-  return <div>
-      <p>Hier kommen Glücksiknder rein</p>
-  </div>;
+const Glückskinder = (animal) => {
+  return <div> <p>Hier kommen die Glückskinder rein</p></div>;
 };
 
 export default Glückskinder;
