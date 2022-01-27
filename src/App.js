@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+import React from 'react';
+import {useState, useEffect} from "react";
+import axios from 'axios';
 import './App.css';
+// import Footer from './components/footer';
+// import Home from './components/home.js';
 
-function App() {
+function App(props) {
+  const [animal, setAnimal] = useState();
+
+  useEffect(() => {
+    axios.get ("https://saveitnow.herokuapp.com/Animal")
+      .then((res) => setAnimal(res.data))
+      .catch((err) => console.log(err));
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+     <>
+    <div>Also fangen wir an!</div>
+   </>
   );
 }
 
