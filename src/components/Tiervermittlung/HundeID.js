@@ -16,7 +16,8 @@ const HundeID = ({animal}) => {
     
     <div className='HundeID'>
         <h2>{dog.name}</h2>
-        <p>ID: {animal._id} </p>
+        <p>Geboren: {dog.birth} </p>
+        <p></p>
         
  
     </div>):

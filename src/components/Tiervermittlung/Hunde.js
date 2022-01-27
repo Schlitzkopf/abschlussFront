@@ -5,21 +5,24 @@ const Hunde = ({animal}) => {
   return <div>
       <div>
       {animal.animal.map((animal, index) => (        
-          <div key={index}>    
-          {console.log(animal)}
-<div className="card">
-  <img className="card-img-top" src={animal.bildUrl} alt="Leider ist kein Bild vorhanden" />
-<div className="card-body">
-    <h5 className="card-title">{animal.name}</h5>
-    <ul>
+          <div key={index}>  
+          <div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src={animal.bildUrl} alt="Leider ist kein Bild vorhanden" />
+    <div class="card-body">
+      <h5 class="card-title">{animal.name}</h5>
+      <ul class="card-text">
     <li className="card-text">Geboren: {animal.birth}</li>
     <li>Rasse: {animal.rasse}</li>
     <li>Wohnt momenten in {animal.ort}</li>
     </ul>
+    </div>
+    <div class="card-footer">
     <Link to={`/Hunde/${animal._id}`} className="btn btn-primary">Mehr Info</Link>
+    </div>
   </div>
-</div>
-                
+</div>  
+          {console.log(animal)}            
             </div>       
         ))} 
         </div>
