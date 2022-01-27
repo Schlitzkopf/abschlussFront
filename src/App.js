@@ -8,6 +8,7 @@ import Ups from './components/Ups';
 import Hunde from './components/Tiervermittlung/Hunde.js';
 import Katzen from './components/Tiervermittlung/Katzen';
 import Nagetiere from './components/Tiervermittlung/Nagetiere';
+import Notfellchen from './components/Tiervermittlung/Notfellchen';
 
 function App(props) {
   const [animal, setAnimal] = useState();
@@ -26,6 +27,7 @@ function App(props) {
           <Route path="/hunde" element={<Hunde animal={animal} />} />
           <Route path="/katzen" element={<Katzen animal={animal} />} />
           <Route path="/nagetiere" element={<Nagetiere animal={animal} />} />
+          <Route path="/notfellchen" element={<Notfellchen animal={animal} />} />
           <Route path="/ups" element={<Ups />} />
       </Routes>
    </div>) : ("Loading...")}
