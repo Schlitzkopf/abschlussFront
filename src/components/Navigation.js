@@ -5,9 +5,9 @@ const Navigation = () => {
   return <div>
        <div className='Flex'>
  <nav className="nav-item dropdown">
-        <a className="nav-link dropdown-toggle, btn btn-secondary" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div className="nav-link dropdown-toggle, btn btn-secondary" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Tiervermittlung
-        </a>
+        </div>
         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
           <Link className="dropdown-item" to={"hunde"}>Hunde</Link>
           <Link className="dropdown-item" to={"katzen"}>Katzen</Link>
@@ -17,9 +17,9 @@ const Navigation = () => {
         </div>
       </nav>
       <nav className="nav-item dropdown">
-        <a className="nav-link dropdown-toggle, btn btn-secondary" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div className="nav-link dropdown-toggle, btn btn-secondary" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Spenden & Helfen
-        </a>
+        </div>
         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
           <Link className="dropdown-item" to={"ups"}>Pflegestellen</Link>
           <Link className="dropdown-item" to={"ups"}>Flugpaten</Link>
@@ -29,9 +29,9 @@ const Navigation = () => {
         </div>
       </nav>
       <nav className="nav-item dropdown">
-        <a className="nav-link dropdown-toggle, btn btn-secondary" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div className="nav-link dropdown-toggle, btn btn-secondary" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Service
-        </a>
+        </div>
         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
           <Link className="dropdown-item" to={"ups"}>RSS-Feed</Link>
           <Link className="dropdown-item" to={"ups"}>Datenschutz</Link>
@@ -43,9 +43,9 @@ const Navigation = () => {
         </div>
       </nav>
       <nav className="nav-item dropdown">
-        <a className="nav-link dropdown-toggle, btn btn-secondary" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div className="nav-link dropdown-toggle, btn btn-secondary" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Ratgeber
-        </a>
+        </div>
         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
           <Link className="dropdown-item" to={"ups"}>Bücher</Link>
           <Link className="dropdown-item" to={"ups"}>Hundesteuer</Link>
