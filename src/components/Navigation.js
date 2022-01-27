@@ -13,7 +13,7 @@ const Navigation = () => {
           <Link className="dropdown-item" to={"katzen"}>Katzen</Link>
           <Link className="dropdown-item" to={"nagetiere"}>Nagetiere</Link>
           <Link className="dropdown-item" to={"notfellchen"}>Notfellchen</Link>
-          <Link className="dropdown-item" to={"ups"}>Glückskinder</Link>
+          <Link className="dropdown-item" to={"glueckskinder"}>Glückskinder</Link>
         </div>
       </nav>
       <nav className="nav-item dropdown">
