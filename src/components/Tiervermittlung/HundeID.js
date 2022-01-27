@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
-const HundeID = ({animal}) => {
+const TiereID = ({animal}) => {
     const { id } = useParams();
     const [dog, setDog] = useState();
     console.log(animal.animal)
@@ -29,4 +29,4 @@ const HundeID = ({animal}) => {
 )
 };
 
-export default HundeID;
+export default TiereID;

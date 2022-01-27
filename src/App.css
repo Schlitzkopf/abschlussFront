@@ -44,3 +44,9 @@
 .card {
   width: 18rem;
 }
+
+.contain {
+  display: inline-flex;
+  width: auto;
+  margin: 4em;
+}
