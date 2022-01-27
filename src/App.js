@@ -1,12 +1,12 @@
 import React from 'react';
 import {useState, useEffect} from "react";
-import {Routes, Route} from "react-router-dom";
+import {Routes, Route, useParams} from "react-router-dom";
 import axios from 'axios';
 import './App.css';
 import Home from './components/Home.js';
 import Ups from './components/Ups';
 import Hunde from './components/Tiervermittlung/Hunde.js';
-import TiereID from './components/Tiervermittlung/HundeID';
+import SpeciesID from './components/Tiervermittlung/SpeciesID';
 import Katzen from './components/Tiervermittlung/Katzen';
 import Nagetiere from './components/Tiervermittlung/Nagetiere';
 import Notfellchen from './components/Tiervermittlung/Notfellchen';
@@ -36,13 +36,14 @@ function App(props) {
       .catch((err) => console.log(err));
   }, []);
 
+
   return (
      <>
      {animal ? (<div className="App">
     <Routes>
           <Route path="/" element={<Home />} /> 
           <Route path="/hunde" element={<Hunde animal={animal} />} />
-          <Route path="/tiere/:id" element={<TiereID animal={animal} />} />
+          <Route path="/tiere/:id" element={<SpeciesID animal={animal} />} />
           <Route path="/katzen" element={<Katzen animal={animal} />} />
           <Route path="/nagetiere" element={<Nagetiere animal={animal} />} />
           <Route path="/notfellchen" element={<Notfellchen animal={animal} />} />
@@ -68,7 +69,7 @@ function App(props) {
       </Routes>
    </div>) :     <div>
         <h2>Daten werden verarbeitet...</h2>
-        <img src='https://media3.giphy.com/media/Oc8lIQHZsXqDu/200w.gif' />
+        <img src='https://media3.giphy.com/media/Oc8lIQHZsXqDu/200w.gif' alt=""/>
     </div>}
    </>
   );
