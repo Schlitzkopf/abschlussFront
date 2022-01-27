@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../Footer';
 
 const Nagetiere = (animal) => {
     console.log(animal.animal.animal)

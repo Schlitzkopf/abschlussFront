@@ -1,17 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Navigation from '../Navigation';
+import Footer from '../Footer';
 
 
 const Hunde = ({animal}) => {
+  function ImgError(source){
+    source.onError = "https://hundzugast.de/wp-content/themes/petsitter/images/job-placeholder.gif";
+  }
   return <div>
-    <Navigation />
     <div>
       {animal.animal.map((animal, index) => (        
     <div className='contain' key={index}> 
-    <video className='fullscreen' src='puppy.mp4'></video> 
       <div className="card" >
-        <img className="card-img-top" src={animal.bildUrl} alt="Leider ist noch kein Foto da" />
+        <img className="card-img-top" src={animal.bildUrl} onError={ImgError} />
       <div className="card-body">
         <h5 className="card-title">{animal.name}</h5>
         <p className="card-text">Geboren: {animal.birth}</p>
@@ -23,6 +24,7 @@ const Hunde = ({animal}) => {
 </div>       
         ))} 
     </div>
+    <Footer />
   </div>;
 };
 
