@@ -1,11 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Navigation from '../Navigation';
+
 
 const Hunde = ({animal}) => {
   return <div>
-      <div>
+    <Navigation />
+    <div>
       {animal.animal.map((animal, index) => (        
-    <div className='contain' key={index}>  
+    <div className='contain' key={index}> 
+    <video className='fullscreen' src='puppy.mp4'></video> 
       <div className="card" >
         <img className="card-img-top" src={animal.bildUrl} alt="Leider ist noch kein Foto da" />
       <div className="card-body">
