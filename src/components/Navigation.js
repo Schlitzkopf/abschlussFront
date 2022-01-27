@@ -5,7 +5,7 @@ const Navigation = () => {
   return <div>
        <div className='Flex'>
  <nav className="nav-item dropdown">
-        <a className="nav-link dropdown-toggle, btn btn-secondary" to={"ups"} id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a className="nav-link dropdown-toggle, btn btn-secondary" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Tiervermittlung
         </a>
         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -17,7 +17,7 @@ const Navigation = () => {
         </div>
       </nav>
       <nav className="nav-item dropdown">
-        <a className="nav-link dropdown-toggle, btn btn-secondary" to={"ups"} id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a className="nav-link dropdown-toggle, btn btn-secondary" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Spenden & Helfen
         </a>
         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -29,7 +29,7 @@ const Navigation = () => {
         </div>
       </nav>
       <nav className="nav-item dropdown">
-        <a className="nav-link dropdown-toggle, btn btn-secondary" to={"ups"} id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a className="nav-link dropdown-toggle, btn btn-secondary" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Service
         </a>
         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -43,7 +43,7 @@ const Navigation = () => {
         </div>
       </nav>
       <nav className="nav-item dropdown">
-        <a className="nav-link dropdown-toggle, btn btn-secondary" to={"ups"} id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a className="nav-link dropdown-toggle, btn btn-secondary" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Ratgeber
         </a>
         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
