@@ -3,7 +3,7 @@ import {useState, useEffect} from "react";
 import axios from 'axios';
 import './App.css';
 // import Footer from './components/footer';
-// import Home from './components/home.js';
+ import Home from './components/Home.js';
 
 function App(props) {
   const [animal, setAnimal] = useState();
@@ -17,6 +17,7 @@ function App(props) {
   return (
      <>
     <div>Also fangen wir an!</div>
+    <Home />
    </>
   );
 }
