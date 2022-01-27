@@ -1,9 +1,12 @@
 import React from 'react';
 import {useState, useEffect} from "react";
+import {Routes, Route} from "react-router-dom";
 import axios from 'axios';
 import './App.css';
-// import Footer from './components/footer';
- import Home from './components/Home.js';
+import Home from './components/Home.js';
+import Hunde from './components/Tiervermittlung/Hunde.js';
+import Katzen from './components/Tiervermittlung/Katzen';
+import Nagetiere from './components/Tiervermittlung/Nagetiere';
 
 function App(props) {
   const [animal, setAnimal] = useState();
@@ -16,8 +19,14 @@ function App(props) {
 
   return (
      <>
-    <div>Also fangen wir an!</div>
-    <Home />
+     {animal ? (<div className="App">
+    <Routes>
+          <Route path="/" element={<Home />} /> 
+          <Route path="/hunde" element={<Hunde animal={animal} />} />
+          <Route path="/katzen" element={<Katzen animal={animal} />} />
+          <Route path="/nagetiere" element={<Nagetiere animal={animal} />} />
+      </Routes>
+   </div>) : ("Loading...")}
    </>
   );
 }
