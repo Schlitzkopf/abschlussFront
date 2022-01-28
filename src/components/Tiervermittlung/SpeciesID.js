@@ -5,18 +5,15 @@ import axios from 'axios';
 const TiereID = () => {
     const { id } = useParams();
     const [species, setSpecies] = useState();
- 
-    const [animal, setAnimal] = useState();
 
-    useEffect (() => {
-       axios.get ("https://saveitnow.herokuapp.com/Animal")
-        .then((res) => setAnimal(res.data))
+    useEffect (async() => {
+       await axios.get (`https://saveitnow.herokuapp.com/Animal/${id}`)
+        .then((res) => setSpecies(res.data))
         .catch((err) => console.log(err));
     }, []);
-    useEffect(() => {
-      setSpecies (animal.animal.find(species => species._id == id))
-      }
-    ,[]);
+
+
+
     function ImgError(source){
       source.onError = "https://hundzugast.de/wp-content/themes/petsitter/images/job-placeholder.gif";
     }

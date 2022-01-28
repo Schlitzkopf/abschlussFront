@@ -11,16 +11,14 @@ const Notfellchen = () => {
       .then((res) => setEmergency(res.data))
       .catch((err) => console.log(err));
   }, []);
-  function ImgError(source){
-    source.onError = "https://hundzugast.de/wp-content/themes/petsitter/images/job-placeholder.gif";
-  }
+
   return <div>
   <Link to={'/'} className="btn btn-primary">Back</Link>
 {emergency ? (<div>
       {emergency.animal.map((animal, index) => (        
         <div className='contain' key={index}> 
       <div className="card" >
-        <img className="card-img-top" src={animal.bildUrl} onError={ImgError} alt=''/>
+        <img className="card-img-top" src={animal.bildUrl} onError={(img)=>img.src="https://hundzugast.de/wp-content/themes/petsitter/images/job-placeholder.gif"} alt=''/>
       <div className="card-body">
         <h5 className="card-title">{animal.name}</h5>
         <p className="card-text">Geboren: {animal.birth}</p>

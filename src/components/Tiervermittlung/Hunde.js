@@ -12,17 +12,15 @@ const Hunde = () => {
       .then((res) => setDogs(res.data))
       .catch((err) => console.log(err));
   }, []);
-  ///animal/hunde
-  function ImgError(source){
-    source.onError = "https://hundzugast.de/wp-content/themes/petsitter/images/job-placeholder.gif";
-  }
+
+ 
   return <div>
       <Link to={'/'} className="btn btn-primary">Back</Link>
      {dogs ? (<div>
       {dogs.animal.map((animal, index) => (        
     <div className='contain' key={index}> 
       <div className="card" >
-        <img className="card-img-top" src={animal.bildUrl} onError={ImgError} alt='' />
+        <img className="card-img-top" src={animal.bildUrl} onError={(event)=>event.target.src="https://hundzugast.de/wp-content/themes/petsitter/images/job-placeholder.gif"} alt='' />
       <div className="card-body">
         <h5 className="card-title">{animal.name}</h5>
         <p className="card-text">Geboren: {animal.birth}</p>
