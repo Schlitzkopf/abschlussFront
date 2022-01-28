@@ -1,10 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import axios from 'axios';
 
-const TiereID = ({animal}) => {
+const TiereID = () => {
     const { id } = useParams();
     const [species, setSpecies] = useState();
-    console.log(animal.animal)
+ 
+    const [animal, setAnimal] = useState();
+
+    useEffect (() => {
+       axios.get ("https://saveitnow.herokuapp.com/Animal")
+        .then((res) => setAnimal(res.data))
+        .catch((err) => console.log(err));
+    }, []);
     useEffect(() => {
       setSpecies (animal.animal.find(species => species._id == id))
       }
@@ -15,7 +23,6 @@ const TiereID = ({animal}) => {
   return(
     <>
     {species ? ( 
-    
     <div className='TierID'>
         <h2>{species.name}</h2>
         <img src={species.bildUrl} onError={ImgError} alt=""/>
