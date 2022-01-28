@@ -32,8 +32,10 @@ const Hunde = () => {
 </div>       
         ))} 
     </div>) :     <div>
+      <div className="noData">
     <h2>Daten werden verarbeitet...</h2>
     <img src='https://media3.giphy.com/media/Oc8lIQHZsXqDu/200w.gif' alt=""/>
+    </div>
 </div>}
     <Footer />
   </div>;

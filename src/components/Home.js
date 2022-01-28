@@ -17,10 +17,10 @@ const Home = () => {
      <Link to={"hunde"}><img className="d-block w-100 " src="https://cdn.wamiz.fr/article/images/WAMIZ%20DE/Hunde%20im%20Park%20breit.jpg" alt="First slide" /> </Link>
     </div>
     <div className="carousel-item">
-      <Link to={"katzen"}><img className="d-block w-100" src="https://www.stuttgarter-zeitung.de/media.media.06244e09-de99-491f-8126-f24f372742a0.original1024.jpg" alt="Second slide" /> </Link>
+      <Link to={"katzen"}><img className="d-block w-100" src="https://vetmed.tamu.edu/news/wp-content/uploads/sites/9/2019/10/CatGrassPetTalk.png" alt="Second slide" /> </Link>
     </div>
     <div className="carousel-item">
-      <Link to={"nagetiere"}><img className="d-block w-100" src="https://media.os.fressnapf.com/cms/2020/07/Ratgeber_Kleintier_goldhamster_1200x527.jpg?t=cmsimg_920" alt="Third slide" /> </Link>
+      <Link to={"nagetiere"}><img className="d-block w-100" src="https://images.koelle-zoo.de/media/image/79/00/ba/Sind_Hamster_Einzelg-anger_Teaser.jpg" alt="Third slide" /> </Link>
     </div>
   </div>
   <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

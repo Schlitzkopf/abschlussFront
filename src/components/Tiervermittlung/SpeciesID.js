@@ -34,7 +34,7 @@ const TiereID = () => {
         
  
     </div>):
-    <div>
+    <div className='noData'>
         <h2>Daten werden verarbeitet...</h2>
         <img src='https://media3.giphy.com/media/Oc8lIQHZsXqDu/200w.gif' />
     </div>}

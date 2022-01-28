@@ -30,7 +30,7 @@
 
    width: 100%;
     max-height: 50rem;
-    background-size: cover;
+    background-size: auto;
   
 }
 
@@ -40,5 +40,11 @@ margin-top: 11rem;
 }
 
 nav {
-  margin-top: 2em;
+  Padding-top: 2rem;
+  padding-left: 3rem;
+}
+
+.noData {
+  margin: auto;
+  width: 1rem;
 }

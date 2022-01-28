@@ -57,8 +57,8 @@ const Navigation = () => {
         </div>
       </nav>
       <div>
-      <nav>
-        <Link className="btn btn-secondary" to={"admin"} role="button" aria-haspopup="true" aria-expanded="false">Admin</Link>
+      <nav className="nav-item dropdown">
+        <Link className="btn btn-outline-primary, nav-link" id="navbarDropdown" to={"admin"} role="button" aria-haspopup="true" aria-expanded="false">Admin</Link>
       </nav>
       </div>
       </div>
