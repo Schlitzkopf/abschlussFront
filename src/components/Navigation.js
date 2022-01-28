@@ -4,8 +4,10 @@ import {Link} from "react-router-dom";
 const Navigation = () => {
   return <div>
        <div className='Flex'>
+       
  <nav className="nav-item dropdown">
-        <div className="nav-link dropdown-toggle, btn btn-secondary" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+        <div className="nav-link dropdown-toggle, btn btn-outline-primary " id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Tiervermittlung
         </div>
         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -19,7 +21,7 @@ const Navigation = () => {
         </div>
       </nav>
       <nav className="nav-item dropdown">
-        <div className="nav-link dropdown-toggle, btn btn-secondary" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div className="nav-link dropdown-toggle, btn btn-outline-primary" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Spenden & Helfen
         </div>
         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -31,7 +33,7 @@ const Navigation = () => {
         </div>
       </nav>
       <nav className="nav-item dropdown">
-        <div className="nav-link dropdown-toggle, btn btn-secondary" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div className="nav-link dropdown-toggle, btn btn-outline-primary" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Service
         </div>
         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -45,7 +47,7 @@ const Navigation = () => {
         </div>
       </nav>
       <nav className="nav-item dropdown">
-        <div className="nav-link dropdown-toggle, btn btn-secondary" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div className="nav-link dropdown-toggle,  btn btn-outline-primary " id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Ratgeber
         </div>
         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
