@@ -24,6 +24,7 @@ import Cookies from './components/Service/Cookies';
 import Bücher from './components/Ratgeber/Bücher';
 import Hundesteuer from './components/Ratgeber/Hundesteuer';
 import Rechtsanwälte from './components/Ratgeber/Rechtsanwälte';
+import Admin from './Admin';
 
 function App(props) {
 
@@ -52,6 +53,7 @@ function App(props) {
           <Route path="/buecher" element={<Bücher />} />
           <Route path="/hundesteuer" element={<Hundesteuer />} />
           <Route path="/rechtsanwaelte" element={<Rechtsanwälte />} />
+          <Route path="/admin" element={<Admin />} />
 
           <Route path="/ups" element={<Ups />} />
          

@@ -14,6 +14,7 @@ const Navigation = () => {
           <Link className="dropdown-item" to={"nagetiere"}>Nagetiere</Link>
           <Link className="dropdown-item" to={"notfellchen"}>Notfellchen</Link>
           <Link className="dropdown-item" to={"glueckskinder"}>Glückskinder</Link>
+          <Link className="dropdown-item" to={"glueckskinder"}>Glückskinder</Link>
           
         </div>
       </nav>
@@ -53,6 +54,11 @@ const Navigation = () => {
           <Link className="dropdown-item" to={"rechtsanwaelte"}>Rechtsanwälte</Link>
         </div>
       </nav>
+      <div>
+      <nav>
+        <Link className="btn btn-secondary" to={"admin"} role="button" aria-haspopup="true" aria-expanded="false">Admin</Link>
+      </nav>
+      </div>
       </div>
   </div>;
 };
