@@ -14,7 +14,7 @@ const Home = () => {
   </ol>
   <div className="carousel-inner">
     <div className="carousel-item active">
-     <Link to={"hunde"}><img className="d-block w-100" src="https://cdn.wamiz.fr/article/images/WAMIZ%20DE/Hunde%20im%20Park%20breit.jpg" alt="First slide" /> </Link>
+     <Link to={"hunde"}><img className="d-block w-100 " src="https://cdn.wamiz.fr/article/images/WAMIZ%20DE/Hunde%20im%20Park%20breit.jpg" alt="First slide" /> </Link>
     </div>
     <div className="carousel-item">
       <Link to={"katzen"}><img className="d-block w-100" src="https://www.stuttgarter-zeitung.de/media.media.06244e09-de99-491f-8126-f24f372742a0.original1024.jpg" alt="Second slide" /> </Link>
