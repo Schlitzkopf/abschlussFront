@@ -8,12 +8,11 @@ const Footer = () => {
         <div id="footer" className="text-center text-dark p-3">
           © 2020 Copyrigh
           <a className="text-dark" href="https://github.com/Schlitzkopf">
-            {" "}
             Schlitzkopf/GitHub.com
           </a>
           <br></br>
-          <a href="url">Datenschutz</a> <a href="url">Impressum</a>{" "}
-          <a href="url">Newsletter</a>
+          <Link to={"/ups"}>Datenschutz</Link> <Link to={"/ups"}>Impressum</Link>{" "}
+          <Link to={"/ups"}>Newsletter</Link>
         </div>
       </footer>
     </>

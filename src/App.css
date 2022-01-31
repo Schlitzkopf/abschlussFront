@@ -2,22 +2,8 @@
   text-align: center;
 }
 
-.Flex {
-  display: flex;
-}
-
 .card {
   width: 18rem;
-}
-
-.contain {
-  display: inline-flex;
-  width: auto;
-  margin: 4em;
-}
-
-.TierID {
-  background-color: lightgrey;
 }
 
 .carousel-inner {
@@ -26,13 +12,4 @@
   background-size: auto;
 }
 
-#footer {
-  max-width: 100%;
-  margin-top: 11rem;
-}
-
-.noData {
-  margin: auto;
-  width: 1rem;
-}
 
