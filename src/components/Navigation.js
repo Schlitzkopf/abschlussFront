@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Navigation = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <a className="navbar-brand" href="">
             Logo
@@ -28,7 +28,7 @@ const Navigation = () => {
                   className="nav-link dropdown-toggle"
                   id="navbarDropdown"
                   role="button"
-                  data-toggle="dropdown"
+                  data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Tiervermittlung
@@ -55,7 +55,6 @@ const Navigation = () => {
                     </Link>
                   </li>
                   <li>
-                    {" "}
                     <Link className="dropdown-item" to={"glueckskinder"}>
                       Glückskinder
                     </Link>
@@ -67,7 +66,7 @@ const Navigation = () => {
                   className="nav-link dropdown-toggle"
                   id="navbarDropdown"
                   role="button"
-                  data-toggle="dropdown"
+                  data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Spenden & Helfen
@@ -79,7 +78,6 @@ const Navigation = () => {
                     </Link>
                   </li>
                   <li>
-                    {" "}
                     <Link className="dropdown-item" to={"flugpaten"}>
                       Flugpaten
                     </Link>
@@ -106,7 +104,7 @@ const Navigation = () => {
                   className="nav-link dropdown-toggle"
                   id="navbarDropdown"
                   role="button"
-                  data-toggle="dropdown"
+                  data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Service
@@ -154,7 +152,7 @@ const Navigation = () => {
                   className="nav-link dropdown-toggle"
                   id="navbarDropdown"
                   role="button"
-                  data-toggle="dropdown"
+                  data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Ratgeber
