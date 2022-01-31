@@ -4,7 +4,7 @@ import Navigation from './Navigation';
 import Footer from './Footer';
 
 const Home = () => {
-  return <div>
+  return <>
      <Navigation />
 <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
   <ol className="carousel-indicators">
@@ -33,7 +33,7 @@ const Home = () => {
   </a>
 </div>
 <Footer />
-</div>;
+</>;
 };
 
 export default Home;
