@@ -47,9 +47,11 @@ const TiereID = () => {
               <p className="card-text">Ich wohne momentan in {species.ort}</p>
               <p className="card-text">Gechipt: {species.gechipt}</p>
               <p className="card-text">Geimpft: {species.geimpft}</p>
-              <p className="card-text">Ich bin  {species.geschlecht}</p>
+              <p className="card-text">Ich bin {species.geschlecht}</p>
+              <p className="card-text">Ich wiege {species.gewicht} Kg</p>
               <p className="card-text">
-                Kann ich mit anderen Tieren gehalten werden ={'>'} {species.vertraeglichkeit}
+                Kann ich mit anderen Tieren gehalten werden ={">"}{" "}
+                {species.vertraeglichkeit}
               </p>
               <p>{console.log(species)}</p>
             </div>
