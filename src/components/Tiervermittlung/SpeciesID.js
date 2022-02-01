@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const TiereID = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
   const [species, setSpecies] = useState();
 
   useEffect(async () => {
@@ -13,24 +14,37 @@ const TiereID = () => {
       .catch((err) => console.log(err));
   }, []);
 
-  function ImgError(source) {
-    source.onError =
-      "https://hundzugast.de/wp-content/themes/petsitter/images/job-placeholder.gif";
-  }
+  const handleClick = () => {
+    navigate(-1);
+  };
+
   return (
     <>
+      <div>
+        <button onClick={handleClick} className="btn btn-secondary">
+          Zurück
+        </button>
+      </div>
       {species ? (
-        <div className="TierID">
-          <h2>{species.name}</h2>
-          <img src={species.bildUrl} onError={ImgError} alt="" />
-          <p>{species.beschreibung}</p>
-          <p>Geboren: {species.birth} </p>
-          <p>Rasse: {species.rasse}</p>
-          <p>Ich wohne in {species.ort}</p>
-          <p>Kinderfreundlich: {species.kinderfreundlich}</p>
-          <p>Mein verhalten ist {species.verhalten}</p>
-          <p>Geimpft: {species.geimpft}</p>
-          <p>Gechipt: {species.gechipt}</p>
+        <div className="container">
+          <div className="card text-center">
+            <img
+              className="card-img-top"
+              src={species.bildUrl}
+              onError={(event) =>
+                (event.target.src =
+                  "https://hundzugast.de/wp-content/themes/petsitter/images/job-placeholder.gif")
+              }
+              alt=""
+            />
+            <div className="card-body">
+              <h5 className="card-title">{species.name}</h5>
+              <p className="card-text">Geboren: {species.birth}</p>
+              <p className="card-text">Rasse: {species.rasse}</p>
+              <p className="card-text">Ich wohne in {species.ort}</p>
+              <p>{console.log(species)}</p>
+            </div>
+          </div>
         </div>
       ) : (
         <div>

@@ -22,7 +22,7 @@ const Notfellchen = () => {
         <div>
           {emergency.animal.map((animal, index) => (
             <div className="contain" key={index}>
-              <div className="card">
+              <div className="card text-center">
                 <img
                   className="card-img-top"
                   src={animal.bildUrl}

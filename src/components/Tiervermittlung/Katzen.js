@@ -19,32 +19,40 @@ const Katzen = () => {
   }
   return (
     <div>
-      <Link to={"/"} className="btn btn-primary">
-        Back
+      <Link to={"/"} className="btn btn-secondary">
+        Zurück
       </Link>
       {cats ? (
-        <div>
-          {cats.animal.map((animal, index) => (
-            <div className="contain" key={index}>
-              <div className="card">
-                <img
-                  className="card-img-top"
-                  src={animal.bildUrl}
-                  onError={ImgError}
-                  alt=""
-                />
-                <div className="card-body">
-                  <h5 className="card-title">{animal.name}</h5>
-                  <p className="card-text">Geboren: {animal.birth}</p>
-                  <p className="card-text">Rasse: {animal.rasse}</p>
-                  <p className="card-text">Ich wohne in {animal.ort}</p>
-                  <Link to={`/tiere/${animal._id}`} className="btn btn-primary">
-                    Mehr Info
-                  </Link>
+        <div className="container">
+          <div className="row">
+            {cats.animal.map((animal, index) => (
+              <div key={index} className="col-sm-4 mb-2">
+                <div className="card text-center h-100">
+                  <img
+                    className="card-img-top"
+                    src={animal.bildUrl}
+                    onError={(event) =>
+                      (event.target.src =
+                        "https://hundzugast.de/wp-content/themes/petsitter/images/job-placeholder.gif")
+                    }
+                    alt=""
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">{animal.name}</h5>
+                    <p className="card-text">Geboren: {animal.birth}</p>
+                    <p className="card-text">Rasse: {animal.rasse}</p>
+                    <p className="card-text">Ich wohne in {animal.ort}</p>
+                    <Link
+                      to={`/tiere/${animal._id}`}
+                      className="btn btn-primary"
+                    >
+                      Mehr Info
+                    </Link>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       ) : (
         <div>

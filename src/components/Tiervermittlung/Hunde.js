@@ -15,15 +15,15 @@ const Hunde = () => {
 
   return (
     <div>
-      <Link to={"/"} className="btn btn-primary">
-        Back
+      <Link to={"/"} className="btn btn-secondary">
+        Zurück
       </Link>
       {dogs ? (
-        <div>
-          {dogs.animal.map((animal, index) => (
-            <div className="row row-cols-1 row-cols-md-3 g-4" key={index}>
-              <div className="col">
-                <div className="card h-100">
+        <div className="container">
+          <div className="row">
+            {dogs.animal.map((animal, index) => (
+              <div key={index} className="col-sm-4 mb-2">
+                <div className="card text-center h-100">
                   <img
                     className="card-img-top"
                     src={animal.bildUrl}
@@ -47,8 +47,8 @@ const Hunde = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       ) : (
         <div>
