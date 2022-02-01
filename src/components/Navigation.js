@@ -7,9 +7,10 @@ const Navigation = () => {
     <>
       <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="">
-            Logo
-          </a>
+          <img
+            className="img-responsive"
+            src={require("./Logo/logo_text_small.png")}
+          />
           <button
             className="navbar-toggler"
             type="button"
@@ -63,7 +64,7 @@ const Navigation = () => {
               </li>
               <li className="nav-item dropdown">
                 <a
-                  className="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle "
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
