@@ -20,7 +20,7 @@ const TiereID = () => {
 
   return (
     <>
-      <div>
+      <div className="container">
         <button onClick={handleClick} className="btn btn-secondary">
           Zurück
         </button>
@@ -39,9 +39,18 @@ const TiereID = () => {
             />
             <div className="card-body">
               <h5 className="card-title">{species.name}</h5>
-              <p className="card-text">Geboren: {species.birth}</p>
-              <p className="card-text">Rasse: {species.rasse}</p>
-              <p className="card-text">Ich wohne in {species.ort}</p>
+              <p className="card-text">
+                Hallo ich bin {species.name}. {species.beschreibung} Ich bin{" "}
+                {species.birth} geboren.
+              </p>
+              <p className="card-text">Meine Rasse: {species.rasse}</p>
+              <p className="card-text">Ich wohne momentan in {species.ort}</p>
+              <p className="card-text">Gechipt: {species.gechipt}</p>
+              <p className="card-text">Geimpft: {species.geimpft}</p>
+              <p className="card-text">Ich bin  {species.geschlecht}</p>
+              <p className="card-text">
+                Kann ich mit anderen Tieren gehalten werden ={'>'} {species.vertraeglichkeit}
+              </p>
               <p>{console.log(species)}</p>
             </div>
           </div>

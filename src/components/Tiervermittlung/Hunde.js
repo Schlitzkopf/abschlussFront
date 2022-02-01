@@ -35,6 +35,7 @@ const Hunde = () => {
                   />
                   <div className="card-body">
                     <h5 className="card-title">{animal.name}</h5>
+                    <h1>Gewicht mit angeben</h1>
                     <p className="card-text">Geboren: {animal.birth}</p>
                     <p className="card-text">Rasse: {animal.rasse}</p>
                     <p className="card-text">Ich wohne in {animal.ort}</p>
