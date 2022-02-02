@@ -189,6 +189,72 @@ const Admin = () => {
                 </div>
               </div>
             </fieldset>
+            {/* Kinderfreundlich */}
+            <fieldset class="row mb-3">
+              <legend class="col-form-label col-sm-2 pt-0">
+                Ist das Tier Kinderfreundlich?
+              </legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="Kinderfreundlich"
+                    id="gridRadios11"
+                    value="Ja"
+                    checked
+                  />
+                  <label class="form-check-label" for="gridRadios1">
+                    Ja
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="Kinderfreundlich"
+                    id="gridRadios12"
+                    value="Nein"
+                  />
+                  <label class="form-check-label" for="gridRadios2">
+                    Nein
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            {/* Verträglich mit andern Tieren */}
+            <fieldset class="row mb-3">
+              <legend class="col-form-label col-sm-2 pt-0">
+                Verträglich mit Anderen Tieren?
+              </legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="Verträglich"
+                    id="gridRadios9"
+                    value="Ja"
+                    checked
+                  />
+                  <label class="form-check-label" for="gridRadios1">
+                    Ja
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="Verträglich"
+                    id="gridRadios10"
+                    value="Nein"
+                  />
+                  <label class="form-check-label" for="gridRadios2">
+                    Nein
+                  </label>
+                </div>
+              </div>
+            </fieldset>
             {/* Geburtstag */}
             <div class="row mb-3 col-md-6">
               <label for="inputGeburtstag" class="col-sm-2 col-form-label">
@@ -217,9 +283,6 @@ const Admin = () => {
                 />
               </div>
             </div>
-            {/* Kinderfreundlich */}
-          
-            {/* Verträglich mit andern Tieren */}
 
             {/* BildUrl */}
             <div class="row mb-3 col-md-6">
@@ -241,7 +304,9 @@ const Admin = () => {
                 Tierart:
               </label>
               <select id="inputTierart" class="form-select">
-                <option value="hund" selected>Hund</option>
+                <option value="hund" selected>
+                  Hund
+                </option>
                 <option value="katze">Katze</option>
                 <option value="nagetier">Nagetier</option>
                 <option value="notfall">Notfall</option>
@@ -264,18 +329,6 @@ const Admin = () => {
               Senden
             </button>
           </form>
-          <div className="form-row">
-            <select className="custom-select">
-              <option selected>Kinderfreundlich?</option>
-              <option value="Ja">Ja</option>
-              <option value="Nein">Nein</option>
-            </select>
-            <select className="custom-select">
-              <option selected>Verträgt sich das Tier mit anderen?</option>
-              <option value="Ja">Ja</option>
-              <option value="Nein">Nein</option>
-            </select>
-          </div>
         </form>
       ) : (
         <form onSubmit={handleLogIn}>
