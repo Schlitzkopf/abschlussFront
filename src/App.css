@@ -28,8 +28,8 @@
 
 /* Admin.js */
 
-.adminBack {
-  background: linear-gradient(to bottom right, grey, white);
+.adminText {
+  color: azure;
 }
 .adminPadding {
   padding-top: 2vh;

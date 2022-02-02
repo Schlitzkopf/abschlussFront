@@ -101,11 +101,11 @@ const Admin = () => {
     <>
       {status ? (
         <>
-          <p className="text-center">Wurde erfolgreich hochgeladen.</p>
+          <p className="text-center navbar-dark bg-dark">Wurde erfolgreich hochgeladen.</p>
 
         </>
       ) : (
-        <div className="adminBack">
+        <div className="adminText navbar-dark bg-dark">
           <div className="container adminPadding">
             {loggedIn ? (
               <form onSubmit={newAnimal} className="needs-validation">
