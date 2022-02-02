@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 const Navigation = () => {
   return (
     <>
+    <div className="navBack">
       <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <div className="container">
           <img
@@ -35,29 +36,29 @@ const Navigation = () => {
                 >
                   Tiervermittlung
                 </a>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul className="dropdown-menu navBack" aria-labelledby="navbarDropdown">
                   <li>
-                    <Link className="dropdown-item" to={"hunde"}>
+                    <Link className="dropdown-item navText" to={"hunde"}>
                       Hunde
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={"katzen"}>
+                    <Link className="dropdown-item navText" to={"katzen"}>
                       Katzen
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={"nagetiere"}>
+                    <Link className="dropdown-item navText" to={"nagetiere"}>
                       Nagetiere
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={"notfellchen"}>
+                    <Link className="dropdown-item navText" to={"notfellchen"}>
                       Notfellchen
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={"glueckskinder"}>
+                    <Link className="dropdown-item navText" to={"glueckskinder"}>
                       Glückskinder
                     </Link>
                   </li>
@@ -74,29 +75,29 @@ const Navigation = () => {
                 >
                   Spenden & Helfen
                 </a>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul className="dropdown-menu navBack" aria-labelledby="navbarDropdown">
                   <li>
-                    <Link className="dropdown-item" to={"pflegestellen"}>
+                    <Link className="dropdown-item navText" to={"pflegestellen"}>
                       Pflegestellen
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={"flugpaten"}>
+                    <Link className="dropdown-item navText" to={"flugpaten"}>
                       Flugpaten
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={"tiersitter"}>
+                    <Link className="dropdown-item navText" to={"tiersitter"}>
                       Tiersitter
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={"tierschutzhelfer"}>
+                    <Link className="dropdown-item navText" to={"tierschutzhelfer"}>
                       Tierschutzhelfer
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={"suchmeldungen"}>
+                    <Link className="dropdown-item navText" to={"suchmeldungen"}>
                       Suchmeldungen
                     </Link>
                   </li>
@@ -113,39 +114,39 @@ const Navigation = () => {
                 >
                   Service
                 </a>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul className="dropdown-menu navBack" aria-labelledby="navbarDropdown">
                   <li>
-                    <Link className="dropdown-item" to={"RSS"}>
+                    <Link className="dropdown-item navText" to={"RSS"}>
                       RSS-Feed
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={"datenschutz"}>
+                    <Link className="dropdown-item navText" to={"datenschutz"}>
                       Datenschutz
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={"content"}>
+                    <Link className="dropdown-item navText" to={"content"}>
                       Content
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={"werbung"}>
+                    <Link className="dropdown-item navText" to={"werbung"}>
                       Werbung
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={"impressum"}>
+                    <Link className="dropdown-item navText" to={"impressum"}>
                       Impressum
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={"kontakt"}>
+                    <Link className="dropdown-item navText" to={"kontakt"}>
                       Kontakt
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={"cookies"}>
+                    <Link className="dropdown-item navText" to={"cookies"}>
                       Cookies
                     </Link>
                   </li>
@@ -162,19 +163,19 @@ const Navigation = () => {
                 >
                   Ratgeber
                 </a>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul className="dropdown-menu navBack" aria-labelledby="navbarDropdown">
                   <li>
-                    <Link className="dropdown-item" to={"buecher"}>
+                    <Link className="dropdown-item navText" to={"buecher"}>
                       Bücher
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={"hundesteuer"}>
+                    <Link className="dropdown-item navText" to={"hundesteuer"}>
                       Hundesteuer
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={"rechtsanwaelte"}>
+                    <Link className="dropdown-item navText" to={"rechtsanwaelte"}>
                       Rechtsanwälte
                     </Link>
                   </li>
@@ -192,7 +193,8 @@ const Navigation = () => {
             </ul>
           </div>
         </div>
-      </nav>
+        </nav>
+        </div>
     </>
   );
 };

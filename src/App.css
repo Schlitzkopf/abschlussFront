@@ -35,6 +35,23 @@
   padding-top: 2vh;
 }
 
+/*Navbar*/
+
+.dropdown-menu {
+  border-radius: 10vh, 10vh, 10vh, 10vh;
+}
+
+.navBack {
+  background: rgba(115, 147, 252, 0.616);
+}
+
+.navText {
+  color: azure;
+}
+
+.navText:hover {
+  color:rgba(93, 130, 250, 0.692)
+}
 
 /* CSS HEX */
 /* --spanish-blue: #1c77c3ff;
