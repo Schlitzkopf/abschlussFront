@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// import { Link } from "react-router-dom";
 
 const Admin = () => {
   const [loggedIn, setLoggedIn] = useState();
@@ -23,21 +24,21 @@ const Admin = () => {
           inputName: { value: inputName },
           inputRasse: { value: inputRasse },
           inputGewicht: { value: inputGewicht },
-          inputGeschlecht: { value: inputGeschlecht},
-          inputGechipt: { value: inputGechipt},
-          inputGeimpft: { value: inputGeimpft},
-          inputKastriert: { value: inputKastriert},
-          inputKinderfreundlich: { value: inputKinderfreundlich},
-          inputVerträglich: { value: inputVerträglich},
+          inputGeschlecht: { value: inputGeschlecht },
+          inputGechipt: { value: inputGechipt },
+          inputGeimpft: { value: inputGeimpft },
+          inputKastriert: { value: inputKastriert },
+          inputKinderfreundlich: { value: inputKinderfreundlich },
+          inputVerträglich: { value: inputVerträglich },
           inputGeburtstag: { value: inputGeburtstag },
           inputOrt: { value: inputOrt },
           inputBildUrl: { value: inputBildUrl },
-          inputTierart: { value: inputTierart },
+          inputTier: { value: inputTier },
           inputBeschreibung: { value: inputBeschreibung },
         },
       },
     } = e;
-    await fetch("https://saveitnow.herokuapp.com/Animal", {
+    await fetch("http://localhost:5000/Animal", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -55,7 +56,7 @@ const Admin = () => {
         inputGeburtstag,
         inputOrt,
         inputBildUrl,
-        inputTierart,
+        inputTier,
         inputBeschreibung,
       }),
     })
@@ -76,12 +77,13 @@ const Admin = () => {
     e.target[11].value = "";
     e.target[12].value = "";
     e.target[13].value = "";
+    console.log(posts);
   };
 
   return (
     <div className="container">
       {loggedIn ? (
-        <from onSubmit={newAnimal} className="needs-validation">
+        <form onSubmit={newAnimal} className="needs-validation">
           {/* Name */}
           <div className="row mb-3 col-md-6">
             <label htmlFor="inputName" className="col-sm-2 col-form-label">
@@ -346,10 +348,10 @@ const Admin = () => {
           </div>
           {/* Tierart */}
           <div className="row mb-3 col-md-6">
-            <label htmlFor="inputTierart" className="col-sm-2 col-form-label">
+            <label htmlFor="inputTier" className="col-sm-2 col-form-label">
               Tierart:
             </label>
-            <select name="inputTierart" className="form-select">
+            <select name="inputTier" className="form-select">
               <option value="hund" value>
                 Hund
               </option>
@@ -374,23 +376,7 @@ const Admin = () => {
           <button type="submit" className="btn btn-primary">
             Senden
           </button>
-        </from>
-        // {posts.map((post) => (
-        //   <div key={post.id}>
-        //     <h3>{post.inputName}</h3>
-        //     <img>{post.inputBildUrl}</img>
-        //     <p>{post.inputRasse}</p>
-        //     <p>{post.inputGewicht}</p>
-        //     <p>{post.inputGeburtstag}</p>
-        //     <p>{post.inputOrt}</p>
-        //     <p>{post.inputBeschreibung}</p>
-        //   </div>
- 
-        // ))}
-        // {error && (
-        //   <h3>Oh no! Something went wrong! This is the error: {error}</h3>
-        // )}
-        
+        </form>
       ) : (
         <form onSubmit={handleLogIn}>
           <input type="password" placeholder="Bitte Passwort eingeben."></input>

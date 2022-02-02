@@ -12,7 +12,7 @@ const Hunde = () => {
       .then((res) => setDogs(res.data))
       .catch((err) => console.log(err));
   }, []);
-
+console.log(dogs)
   return (
     <div>
       <Link to={"/"} className="btn btn-secondary">
@@ -26,18 +26,18 @@ const Hunde = () => {
                 <div className="card text-center h-100">
                   <img
                     className="card-img-top"
-                    src={animal.bildUrl}
-                    onError={(event) =>
-                      (event.target.src =
+                    src={animal.inputBildUrl}
+                    onError={(img) =>
+                      (img.src =
                         "https://hundzugast.de/wp-content/themes/petsitter/images/job-placeholder.gif")
                     }
                     alt=""
                   />
                   <div className="card-body">
-                    <h5 className="card-title">{animal.name}</h5>
-                    <p className="card-text">Geboren: {animal.birth}</p>
-                    <p className="card-text">Rasse: {animal.rasse}</p>
-                    <p className="card-text">Ich wohne in {animal.ort}</p>
+                    <h5 className="card-title">{animal.inputName}</h5>
+                    <p className="card-text">Geboren: {animal.inputGeburtstag}</p>
+                    <p className="card-text">Rasse: {animal.inputRasse}</p>
+                    <p className="card-text">Ich wohne in {animal.inputOrt}</p>
                     <Link
                       to={`/tiere/${animal._id}`}
                       className="btn btn-primary"

@@ -28,15 +28,15 @@ const Glückskinder = (animal) => {
               <div className="card text-center">
                 <img
                   className="card-img-top"
-                  src={animal.bildUrl}
+                  src={animal.inputBildUrl}
                   onError={ImgError}
                   alt=""
                 />
                 <div className="card-body">
-                  <h5 className="card-title">{animal.name}</h5>
-                  <p className="card-text">Geboren: {animal.birth}</p>
-                  <p className="card-text">Rasse: {animal.rasse}</p>
-                  <p className="card-text">Ich wohne in {animal.ort}</p>
+                  <h5 className="card-title">{animal.inputName}</h5>
+                  <p className="card-text">Geboren: {animal.inputGeburtstag}</p>
+                  <p className="card-text">Rasse: {animal.inputRasse}</p>
+                  <p className="card-text">Ich wohne in {animal.inputOrt}</p>
                   <Link to={`/tiere/${animal._id}`} className="btn btn-primary">
                     Mehr Info
                   </Link>

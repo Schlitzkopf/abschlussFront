@@ -30,7 +30,7 @@ const TiereID = () => {
           <div className="card text-center">
             <img
               className="card-img-top"
-              src={species.bildUrl}
+              src={species.inputBildUrl}
               onError={(event) =>
                 (event.target.src =
                   "https://hundzugast.de/wp-content/themes/petsitter/images/job-placeholder.gif")
@@ -38,20 +38,20 @@ const TiereID = () => {
               alt=""
             />
             <div className="card-body">
-              <h5 className="card-title">{species.name}</h5>
+              <h5 className="card-title">{species.inputName}</h5>
               <p className="card-text">
-                Hallo ich bin {species.name}. {species.beschreibung} Ich bin{" "}
-                {species.birth} geboren.
+                Hallo ich bin {species.inputName}. {species.inputBeschreibung} Ich bin{" "}
+                {species.inputGeburtstag} geboren.
               </p>
-              <p className="card-text">Meine Rasse: {species.rasse}</p>
-              <p className="card-text">Ich wohne momentan in {species.ort}</p>
-              <p className="card-text">Gechipt: {species.gechipt}</p>
-              <p className="card-text">Geimpft: {species.geimpft}</p>
-              <p className="card-text">Ich bin {species.geschlecht}</p>
-              <p className="card-text">Ich wiege {species.gewicht} Kg</p>
+              <p className="card-text">Meine Rasse: {species.inputRasse}</p>
+              <p className="card-text">Ich wohne momentan in {species.inputOrt}</p>
+              <p className="card-text">Gechipt: {species.inputGechipt}</p>
+              <p className="card-text">Geimpft: {species.inputGeimpft}</p>
+              <p className="card-text">Ich bin {species.inputGeschlecht}</p>
+              <p className="card-text">Ich wiege {species.inputGewicht} Kg</p>
               <p className="card-text">
                 Kann ich mit anderen Tieren gehalten werden ={">"}{" "}
-                {species.vertraeglichkeit}
+                {species.inputVertraeglichkeit}
               </p>
               <p>{console.log(species)}</p>
             </div>
