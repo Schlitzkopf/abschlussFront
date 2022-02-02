@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 const Navigation = () => {
   return (
     <>
-    <div className="navBack">
-      <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-        <div className="container">
+    
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div className="container sticky-top">
           <img
             alt="Logo"
             className="img-responsive"
@@ -194,8 +194,7 @@ const Navigation = () => {
           </div>
         </div>
         </nav>
-        </div>
-    </>
+      </>
   );
 };
 

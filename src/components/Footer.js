@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <footer className="text-center text-white">
+      <footer className="text-center text-white footBack">
         <div id="footer" className="text-center text-dark p-3">
           © 2020 Copyrigh
           <a className="text-dark" href="https://github.com/Schlitzkopf">

@@ -53,6 +53,11 @@
   color:rgba(93, 130, 250, 0.692)
 }
 
+/* Footer */
+
+.footBack {
+  background-color: rgba(19, 22, 31, 0.616);
+}
 /* CSS HEX */
 /* --spanish-blue: #1c77c3ff;
 --cerulean-crayola: #39a9dbff;
