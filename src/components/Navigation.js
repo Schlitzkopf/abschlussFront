@@ -6,7 +6,7 @@ const Navigation = () => {
   return (
     <>
       <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-        <div className="container-fluid">
+        <div className="container">
           <img
             className="img-responsive"
             src={require("./Logo/logo_text_small.png")}
