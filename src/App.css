@@ -2,6 +2,16 @@
   text-align: center;
 }
 
+/* Home.js */
+
+.carousel-inner {
+  width: 100%;
+  max-height: 50rem;
+  background-size: auto;
+}
+
+/* Tiervermittlung */
+
 .card {
   width: 18rem;
   margin: 0 auto; /* Added */
@@ -15,8 +25,11 @@
   object-fit: cover;
 }
 
-.carousel-inner {
-  width: 100%;
-  max-height: 50rem;
-  background-size: auto;
+/* Admin.js */
+
+.adminBack {
+  background: linear-gradient(to bottom right, grey, white);
+}
+.adminPadding {
+  padding-top: 2vh;
 }
