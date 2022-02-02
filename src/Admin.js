@@ -24,260 +24,260 @@ const Admin = () => {
         <form onSubmit={newAnimal} className="needs-validation" novalidate>
           <form>
             {/* Name */}
-            <div class="row mb-3 col-md-6">
-              <label for="inputName" class="col-sm-2 col-form-label">
+            <div className="row mb-3 col-md-6">
+              <label for="inputName" className="col-sm-2 col-form-label">
                 Name:
               </label>
-              <div class="col-sm-10">
+              <div className="col-sm-10">
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   placeholder="Bitte den Name eingeben"
                   id="inputName3"
                 />
               </div>
             </div>
             {/* Rasse */}
-            <div class="row mb-3 col-md-6">
-              <label for="inputRasse" class="col-sm-2 col-form-label">
+            <div className="row mb-3 col-md-6">
+              <label for="inputRasse" className="col-sm-2 col-form-label">
                 Rasse:
               </label>
-              <div class="col-sm-10">
+              <div className="col-sm-10">
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   placeholder="Bitte Rasse angeben."
                   id="inputRasse3"
                 />
               </div>
             </div>
             {/* Gewicht */}
-            <div class="row mb-3 col-md-6">
-              <label for="inputGewicht" class="col-sm-2 col-form-label">
+            <div className="row mb-3 col-md-6">
+              <label for="inputGewicht" className="col-sm-2 col-form-label">
                 Gewicht:
               </label>
-              <div class="col-sm-10">
+              <div className="col-sm-10">
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   placeholder="Bitte Gewicht angeben."
                   id="inputGewicht3"
                 />
               </div>
             </div>
             {/* Geschlecht */}
-            <fieldset class="row mb-3 col-md-6">
-              <legend class="col-form-label col-sm-2 pt-0">Geschlecht?</legend>
-              <div class="col-sm-10">
-                <div class="form-check">
+            <fieldset className="row mb-3 col-md-6">
+              <legend className="col-form-label col-sm-2 pt-0">Geschlecht?</legend>
+              <div className="col-sm-10">
+                <div className="form-check">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     name="Geschlecht"
                     id="gridRadio1"
                     value="Männlich"
                     checked
                   />
-                  <label class="form-check-label" for="gridRadios1">
+                  <label className="form-check-label" for="gridRadios1">
                     Männlich
                   </label>
                 </div>
-                <div class="form-check">
+                <div className="form-check">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     name="Geschlecht"
                     id="gridRadios2"
                     value="Weiblich"
                   />
-                  <label class="form-check-label" for="gridRadios2">
+                  <label className="form-check-label" for="gridRadios2">
                     Weiblich
                   </label>
                 </div>
               </div>
             </fieldset>
             {/* Gechipt */}
-            <fieldset class="row mb-3 col-md-6">
-              <legend class="col-form-label col-sm-2 pt-0">Gechipt?</legend>
-              <div class="col-sm-10">
-                <div class="form-check">
+            <fieldset className="row mb-3 col-md-6">
+              <legend className="col-form-label col-sm-2 pt-0">Gechipt?</legend>
+              <div className="col-sm-10">
+                <div className="form-check">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     name="Gechipt"
                     id="gridRadios3"
                     value="Ja"
                     checked
                   />
-                  <label class="form-check-label" for="gridRadios1">
+                  <label className="form-check-label" for="gridRadios1">
                     Ja
                   </label>
                 </div>
-                <div class="form-check">
+                <div className="form-check">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     name="Gechipt"
                     id="gridRadios4"
                     value="Nein"
                   />
-                  <label class="form-check-label" for="gridRadios2">
+                  <label className="form-check-label" for="gridRadios2">
                     Nein
                   </label>
                 </div>
               </div>
             </fieldset>
             {/* Geimpft */}
-            <fieldset class="row mb-3 col-md-6">
-              <legend class="col-form-label col-sm-2 pt-0">Geimpft?</legend>
-              <div class="col-sm-10">
-                <div class="form-check">
+            <fieldset className="row mb-3 col-md-6">
+              <legend className="col-form-label col-sm-2 pt-0">Geimpft?</legend>
+              <div className="col-sm-10">
+                <div className="form-check">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     name="Geimpft"
                     id="gridRadios5"
                     value="Ja"
                     checked
                   />
-                  <label class="form-check-label" for="gridRadios1">
+                  <label className="form-check-label" for="gridRadios1">
                     Ja
                   </label>
                 </div>
-                <div class="form-check">
+                <div className="form-check">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     name="Geimpft"
                     id="gridRadios6"
                     value="Nein"
                   />
-                  <label class="form-check-label" for="gridRadios2">
+                  <label className="form-check-label" for="gridRadios2">
                     Nein
                   </label>
                 </div>
               </div>
             </fieldset>
             {/* Kastriert */}
-            <fieldset class="row mb-3 col-md-6">
-              <legend class="col-form-label col-sm-2 pt-0">Kastriert?</legend>
-              <div class="col-sm-10">
-                <div class="form-check">
+            <fieldset className="row mb-3 col-md-6">
+              <legend className="col-form-label col-sm-2 pt-0">Kastriert?</legend>
+              <div className="col-sm-10">
+                <div className="form-check">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     name="Kastriert"
                     id="gridRadios7"
                     value="Ja"
                     checked
                   />
-                  <label class="form-check-label" for="gridRadios1">
+                  <label className="form-check-label" for="gridRadios1">
                     Ja
                   </label>
                 </div>
-                <div class="form-check">
+                <div className="form-check">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     name="Kastriert"
                     id="gridRadios8"
                     value="Nein"
                   />
-                  <label class="form-check-label" for="gridRadios2">
+                  <label className="form-check-label" for="gridRadios2">
                     Nein
                   </label>
                 </div>
               </div>
             </fieldset>
             {/* Kinderfreundlich */}
-            <fieldset class="row mb-3">
-              <legend class="col-form-label col-sm-2 pt-0">
+            <fieldset className="row mb-3">
+              <legend className="col-form-label col-sm-2 pt-0">
                 Ist das Tier Kinderfreundlich?
               </legend>
-              <div class="col-sm-10">
-                <div class="form-check">
+              <div className="col-sm-10">
+                <div className="form-check">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     name="Kinderfreundlich"
                     id="gridRadios11"
                     value="Ja"
                     checked
                   />
-                  <label class="form-check-label" for="gridRadios1">
+                  <label className="form-check-label" for="gridRadios1">
                     Ja
                   </label>
                 </div>
-                <div class="form-check">
+                <div className="form-check">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     name="Kinderfreundlich"
                     id="gridRadios12"
                     value="Nein"
                   />
-                  <label class="form-check-label" for="gridRadios2">
+                  <label className="form-check-label" for="gridRadios2">
                     Nein
                   </label>
                 </div>
               </div>
             </fieldset>
             {/* Verträglich mit andern Tieren */}
-            <fieldset class="row mb-3">
-              <legend class="col-form-label col-sm-2 pt-0">
+            <fieldset className="row mb-3">
+              <legend className="col-form-label col-sm-2 pt-0">
                 Verträglich mit Anderen Tieren?
               </legend>
-              <div class="col-sm-10">
-                <div class="form-check">
+              <div className="col-sm-10">
+                <div className="form-check">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     name="Verträglich"
                     id="gridRadios9"
                     value="Ja"
                     checked
                   />
-                  <label class="form-check-label" for="gridRadios1">
+                  <label className="form-check-label" for="gridRadios1">
                     Ja
                   </label>
                 </div>
-                <div class="form-check">
+                <div className="form-check">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     name="Verträglich"
                     id="gridRadios10"
                     value="Nein"
                   />
-                  <label class="form-check-label" for="gridRadios2">
+                  <label className="form-check-label" for="gridRadios2">
                     Nein
                   </label>
                 </div>
               </div>
             </fieldset>
             {/* Geburtstag */}
-            <div class="row mb-3 col-md-6">
-              <label for="inputGeburtstag" class="col-sm-2 col-form-label">
+            <div className="row mb-3 col-md-6">
+              <label for="inputGeburtstag" className="col-sm-2 col-form-label">
                 Geburtstag:
               </label>
-              <div class="col-sm-10">
+              <div className="col-sm-10">
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   placeholder="Bitte Geburtstag angeben."
                   id="inputGeburtstag3"
                 />
               </div>
             </div>
             {/* Wohnort */}
-            <div class="row mb-3 col-md-6">
-              <label for="inputOrt" class="col-sm-2 col-form-label">
+            <div className="row mb-3 col-md-6">
+              <label for="inputOrt" className="col-sm-2 col-form-label">
                 Wohnort:
               </label>
-              <div class="col-sm-10">
+              <div className="col-sm-10">
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   placeholder="Bitte einen Wohnort angeben."
                   id="inputOrt3"
                 />
@@ -285,25 +285,25 @@ const Admin = () => {
             </div>
 
             {/* BildUrl */}
-            <div class="row mb-3 col-md-6">
-              <label for="inputBildUrl" class="col-sm-2 col-form-label">
+            <div className="row mb-3 col-md-6">
+              <label for="inputBildUrl" className="col-sm-2 col-form-label">
                 Bild:
               </label>
-              <div class="col-sm-10">
+              <div className="col-sm-10">
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   placeholder="Bitte nur eine Url eingeben."
                   id="inputBildUrl3"
                 />
               </div>
             </div>
             {/* Tierart */}
-            <div class="row mb-3 col-md-6">
-              <label for="inputTierart" class="col-sm-2 col-form-label">
+            <div className="row mb-3 col-md-6">
+              <label for="inputTierart" className="col-sm-2 col-form-label">
                 Tierart:
               </label>
-              <select id="inputTierart" class="form-select">
+              <select id="inputTierart" className="form-select">
                 <option value="hund" selected>
                   Hund
                 </option>
@@ -314,18 +314,18 @@ const Admin = () => {
               </select>
             </div>
             {/* Beschreibung */}
-            <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label">
+            <div className="mb-3">
+              <label for="exampleFormControlTextarea1" className="form-label">
                 Beschreibung hinzufürgen
               </label>
               <textarea
-                class="form-control"
+                className="form-control"
                 id="exampleFormControlTextarea1"
                 rows="3"
               ></textarea>
             </div>
             {/* Sende Button */}
-            <button type="submit" class="btn btn-primary">
+            <button type="submit" className="btn btn-primary">
               Senden
             </button>
           </form>
