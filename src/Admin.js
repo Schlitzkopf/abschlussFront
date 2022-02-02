@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 const Admin = () => {
   const [loggedIn, setLoggedIn] = useState();
-  const [posts, setPosts] = useState([]);
+  const [status, setStatus] = useState();
   const [error, setError] = useState();
 
   const handleLogIn = (e) => {
@@ -38,7 +38,7 @@ const Admin = () => {
         },
       },
     } = e;
-    await fetch("http://localhost:5000/Animal", {
+    await fetch("https://saveitnow.herokuapp.com/Animal", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -61,7 +61,7 @@ const Admin = () => {
       }),
     })
       .then((res) => res.json())
-      .then((data) => setPosts((prevPosts) => [...prevPosts, data]))
+      .then((data) => setStatus(data))
       .catch((err) => setError(err.message));
     e.target[0].value = "";
     e.target[1].value = "";
@@ -77,320 +77,347 @@ const Admin = () => {
     e.target[11].value = "";
     e.target[12].value = "";
     e.target[13].value = "";
-    console.log(posts);
   };
 
   return (
-    <div className="adminBack">
-      <div className="container adminPadding">
-        {loggedIn ? (
-          <form onSubmit={newAnimal} className="needs-validation">
-            {/* Name */}
-            <div className="row mb-3 col-md-6">
-              <label htmlFor="inputName" className="col-sm-2 col-form-label">
-                Name:
-              </label>
-              <div className="col-sm-10">
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Bitte den Name eingeben"
-                  name="inputName"
-                />
-              </div>
-            </div>
-            {/* Rasse */}
-            <div className="row mb-3 col-md-6">
-              <label htmlFor="inputRasse" className="col-sm-2 col-form-label">
-                Rasse:
-              </label>
-              <div className="col-sm-10">
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Bitte Rasse angeben."
-                  name="inputRasse"
-                />
-              </div>
-            </div>
-            {/* Gewicht */}
-            <div className="row mb-3 col-md-6">
-              <label htmlFor="inputGewicht" className="col-sm-2 col-form-label">
-                Gewicht:
-              </label>
-              <div className="col-sm-10">
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Bitte Gewicht angeben."
-                  name="inputGewicht"
-                />
-              </div>
-            </div>
-            {/* Geschlecht */}
-            <fieldset className="row mb-3 col-md-6">
-              <legend className="col-form-label col-sm-2 pt-0">
-                Geschlecht?
-              </legend>
-              <div className="col-sm-10">
-                <div className="form-check">
-                  <input
-                    className="form-check-input"
-                    type="radio"
-                    name="inputGeschlecht"
-                    value="Männlich"
-                  />
-                  <label className="form-check-label" htmlFor="gridRadios1">
-                    Männlich
-                  </label>
-                </div>
-                <div className="form-check">
-                  <input
-                    className="form-check-input"
-                    type="radio"
-                    name="inputGeschlecht"
-                    value="Weiblich"
-                  />
-                  <label className="form-check-label" htmlFor="gridRadios2">
-                    Weiblich
-                  </label>
-                </div>
-              </div>
-            </fieldset>
-            {/* Gechipt */}
-            <fieldset className="row mb-3 col-md-6">
-              <legend className="col-form-label col-sm-2 pt-0">Gechipt?</legend>
-              <div className="col-sm-10">
-                <div className="form-check">
-                  <input
-                    className="form-check-input"
-                    type="radio"
-                    name="inputGechipt"
-                    value="Ja"
-                  />
-                  <label className="form-check-label" htmlFor="gridRadios1">
-                    Ja
-                  </label>
-                </div>
-                <div className="form-check">
-                  <input
-                    className="form-check-input"
-                    type="radio"
-                    name="inputGechipt"
-                    value="Nein"
-                  />
-                  <label className="form-check-label" htmlFor="gridRadios2">
-                    Nein
-                  </label>
-                </div>
-              </div>
-            </fieldset>
-            {/* Geimpft */}
-            <fieldset className="row mb-3 col-md-6">
-              <legend className="col-form-label col-sm-2 pt-0">Geimpft?</legend>
-              <div className="col-sm-10">
-                <div className="form-check">
-                  <input
-                    className="form-check-input"
-                    type="radio"
-                    name="inputGeimpft"
-                    value="Ja"
-                  />
-                  <label className="form-check-label" htmlFor="gridRadios1">
-                    Ja
-                  </label>
-                </div>
-                <div className="form-check">
-                  <input
-                    className="form-check-input"
-                    type="radio"
-                    name="inputGeimpft"
-                    value="Nein"
-                  />
-                  <label className="form-check-label" htmlFor="gridRadios2">
-                    Nein
-                  </label>
-                </div>
-              </div>
-            </fieldset>
-            {/* Kastriert */}
-            <fieldset className="row mb-3 col-md-6">
-              <legend className="col-form-label col-sm-2 pt-0">
-                Kastriert?
-              </legend>
-              <div className="col-sm-10">
-                <div className="form-check">
-                  <input
-                    className="form-check-input"
-                    type="radio"
-                    name="inputKastriert"
-                    value="Ja"
-                  />
-                  <label className="form-check-label" htmlFor="gridRadios1">
-                    Ja
-                  </label>
-                </div>
-                <div className="form-check">
-                  <input
-                    className="form-check-input"
-                    type="radio"
-                    name="inputKastriert"
-                    value="Nein"
-                  />
-                  <label className="form-check-label" htmlFor="gridRadios2">
-                    Nein
-                  </label>
-                </div>
-              </div>
-            </fieldset>
-            {/* Kinderfreundlich */}
-            <fieldset className="row mb-3">
-              <legend className="col-form-label col-sm-2 pt-0">
-                Ist das Tier Kinderfreundlich?
-              </legend>
-              <div className="col-sm-10">
-                <div className="form-check">
-                  <input
-                    className="form-check-input"
-                    type="radio"
-                    name="inputKinderfreundlich"
-                    value="Ja"
-                  />
-                  <label className="form-check-label" htmlFor="gridRadios1">
-                    Ja
-                  </label>
-                </div>
-                <div className="form-check">
-                  <input
-                    className="form-check-input"
-                    type="radio"
-                    name="inputKinderfreundlich"
-                    value="Nein"
-                  />
-                  <label className="form-check-label" htmlFor="gridRadios2">
-                    Nein
-                  </label>
-                </div>
-              </div>
-            </fieldset>
-            {/* Verträglich mit andern Tieren */}
-            <fieldset className="row mb-3">
-              <legend className="col-form-label col-sm-2 pt-0">
-                Verträglich mit Anderen Tieren?
-              </legend>
-              <div className="col-sm-10">
-                <div className="form-check">
-                  <input
-                    className="form-check-input"
-                    type="radio"
-                    name="inputVerträglich"
-                    value="Ja"
-                  />
-                  <label className="form-check-label" htmlFor="gridRadios1">
-                    Ja
-                  </label>
-                </div>
-                <div className="form-check">
-                  <input
-                    className="form-check-input"
-                    type="radio"
-                    name="inputVerträglich"
-                    value="Nein"
-                  />
-                  <label className="form-check-label" htmlFor="gridRadios2">
-                    Nein
-                  </label>
-                </div>
-              </div>
-            </fieldset>
-            {/* Geburtstag */}
-            <div className="row mb-3 col-md-6">
-              <label
-                htmlFor="inputGeburtstag"
-                className="col-sm-2 col-form-label"
-              >
-                Geburtstag:
-              </label>
-              <div className="col-sm-10">
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Bitte Geburtstag angeben."
-                  name="inputGeburtstag"
-                />
-              </div>
-            </div>
-            {/* Wohnort */}
-            <div className="row mb-3 col-md-6">
-              <label htmlFor="inputOrt" className="col-sm-2 col-form-label">
-                Wohnort:
-              </label>
-              <div className="col-sm-10">
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Bitte einen Wohnort angeben."
-                  name="inputOrt"
-                />
-              </div>
-            </div>
+    <>
+      {status ? (
+        <>
+          <p className="text-center">Wurde erfolgreich hochgeladen.</p>
 
-            {/* BildUrl */}
-            <div className="row mb-3 col-md-6">
-              <label htmlFor="inputBildUrl" className="col-sm-2 col-form-label">
-                Bild:
-              </label>
-              <div className="col-sm-10">
+        </>
+      ) : (
+        <div className="adminBack">
+          <div className="container adminPadding">
+            {loggedIn ? (
+              <form onSubmit={newAnimal} className="needs-validation">
+                {/* Name */}
+                <div className="row mb-3 col-md-6">
+                  <label
+                    htmlFor="inputName"
+                    className="col-sm-2 col-form-label"
+                  >
+                    Name:
+                  </label>
+                  <div className="col-sm-10">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Bitte den Name eingeben"
+                      name="inputName"
+                    />
+                  </div>
+                </div>
+                {/* Rasse */}
+                <div className="row mb-3 col-md-6">
+                  <label
+                    htmlFor="inputRasse"
+                    className="col-sm-2 col-form-label"
+                  >
+                    Rasse:
+                  </label>
+                  <div className="col-sm-10">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Bitte Rasse angeben."
+                      name="inputRasse"
+                    />
+                  </div>
+                </div>
+                {/* Gewicht */}
+                <div className="row mb-3 col-md-6">
+                  <label
+                    htmlFor="inputGewicht"
+                    className="col-sm-2 col-form-label"
+                  >
+                    Gewicht:
+                  </label>
+                  <div className="col-sm-10">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Bitte Gewicht angeben."
+                      name="inputGewicht"
+                    />
+                  </div>
+                </div>
+                {/* Geschlecht */}
+                <fieldset className="row mb-3 col-md-6">
+                  <legend className="col-form-label col-sm-2 pt-0">
+                    Geschlecht?
+                  </legend>
+                  <div className="col-sm-10">
+                    <div className="form-check">
+                      <input
+                        className="form-check-input"
+                        type="radio"
+                        name="inputGeschlecht"
+                        value="Männlich"
+                      />
+                      <label className="form-check-label" htmlFor="gridRadios1">
+                        Männlich
+                      </label>
+                    </div>
+                    <div className="form-check">
+                      <input
+                        className="form-check-input"
+                        type="radio"
+                        name="inputGeschlecht"
+                        value="Weiblich"
+                      />
+                      <label className="form-check-label" htmlFor="gridRadios2">
+                        Weiblich
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+                {/* Gechipt */}
+                <fieldset className="row mb-3 col-md-6">
+                  <legend className="col-form-label col-sm-2 pt-0">
+                    Gechipt?
+                  </legend>
+                  <div className="col-sm-10">
+                    <div className="form-check">
+                      <input
+                        className="form-check-input"
+                        type="radio"
+                        name="inputGechipt"
+                        value="Ja"
+                      />
+                      <label className="form-check-label" htmlFor="gridRadios1">
+                        Ja
+                      </label>
+                    </div>
+                    <div className="form-check">
+                      <input
+                        className="form-check-input"
+                        type="radio"
+                        name="inputGechipt"
+                        value="Nein"
+                      />
+                      <label className="form-check-label" htmlFor="gridRadios2">
+                        Nein
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+                {/* Geimpft */}
+                <fieldset className="row mb-3 col-md-6">
+                  <legend className="col-form-label col-sm-2 pt-0">
+                    Geimpft?
+                  </legend>
+                  <div className="col-sm-10">
+                    <div className="form-check">
+                      <input
+                        className="form-check-input"
+                        type="radio"
+                        name="inputGeimpft"
+                        value="Ja"
+                      />
+                      <label className="form-check-label" htmlFor="gridRadios1">
+                        Ja
+                      </label>
+                    </div>
+                    <div className="form-check">
+                      <input
+                        className="form-check-input"
+                        type="radio"
+                        name="inputGeimpft"
+                        value="Nein"
+                      />
+                      <label className="form-check-label" htmlFor="gridRadios2">
+                        Nein
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+                {/* Kastriert */}
+                <fieldset className="row mb-3 col-md-6">
+                  <legend className="col-form-label col-sm-2 pt-0">
+                    Kastriert?
+                  </legend>
+                  <div className="col-sm-10">
+                    <div className="form-check">
+                      <input
+                        className="form-check-input"
+                        type="radio"
+                        name="inputKastriert"
+                        value="Ja"
+                      />
+                      <label className="form-check-label" htmlFor="gridRadios1">
+                        Ja
+                      </label>
+                    </div>
+                    <div className="form-check">
+                      <input
+                        className="form-check-input"
+                        type="radio"
+                        name="inputKastriert"
+                        value="Nein"
+                      />
+                      <label className="form-check-label" htmlFor="gridRadios2">
+                        Nein
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+                {/* Kinderfreundlich */}
+                <fieldset className="row mb-3">
+                  <legend className="col-form-label col-sm-2 pt-0">
+                    Ist das Tier Kinderfreundlich?
+                  </legend>
+                  <div className="col-sm-10">
+                    <div className="form-check">
+                      <input
+                        className="form-check-input"
+                        type="radio"
+                        name="inputKinderfreundlich"
+                        value="Ja"
+                      />
+                      <label className="form-check-label" htmlFor="gridRadios1">
+                        Ja
+                      </label>
+                    </div>
+                    <div className="form-check">
+                      <input
+                        className="form-check-input"
+                        type="radio"
+                        name="inputKinderfreundlich"
+                        value="Nein"
+                      />
+                      <label className="form-check-label" htmlFor="gridRadios2">
+                        Nein
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+                {/* Verträglich mit andern Tieren */}
+                <fieldset className="row mb-3">
+                  <legend className="col-form-label col-sm-2 pt-0">
+                    Verträglich mit Anderen Tieren?
+                  </legend>
+                  <div className="col-sm-10">
+                    <div className="form-check">
+                      <input
+                        className="form-check-input"
+                        type="radio"
+                        name="inputVerträglich"
+                        value="Ja"
+                      />
+                      <label className="form-check-label" htmlFor="gridRadios1">
+                        Ja
+                      </label>
+                    </div>
+                    <div className="form-check">
+                      <input
+                        className="form-check-input"
+                        type="radio"
+                        name="inputVerträglich"
+                        value="Nein"
+                      />
+                      <label className="form-check-label" htmlFor="gridRadios2">
+                        Nein
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+                {/* Geburtstag */}
+                <div className="row mb-3 col-md-6">
+                  <label
+                    htmlFor="inputGeburtstag"
+                    className="col-sm-2 col-form-label"
+                  >
+                    Geburtstag:
+                  </label>
+                  <div className="col-sm-10">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Bitte Geburtstag angeben."
+                      name="inputGeburtstag"
+                    />
+                  </div>
+                </div>
+                {/* Wohnort */}
+                <div className="row mb-3 col-md-6">
+                  <label htmlFor="inputOrt" className="col-sm-2 col-form-label">
+                    Wohnort:
+                  </label>
+                  <div className="col-sm-10">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Bitte einen Wohnort angeben."
+                      name="inputOrt"
+                    />
+                  </div>
+                </div>
+
+                {/* BildUrl */}
+                <div className="row mb-3 col-md-6">
+                  <label
+                    htmlFor="inputBildUrl"
+                    className="col-sm-2 col-form-label"
+                  >
+                    Bild:
+                  </label>
+                  <div className="col-sm-10">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Bitte nur eine Url eingeben."
+                      name="inputBildUrl"
+                    />
+                  </div>
+                </div>
+                {/* Tierart */}
+                <div className="row mb-3 col-md-6">
+                  <label
+                    htmlFor="inputTier"
+                    className="col-sm-2 col-form-label"
+                  >
+                    Tierart:
+                  </label>
+                  <select name="inputTier" className="form-select">
+                    <option value="hund" value>
+                      Hund
+                    </option>
+                    <option value="katze">Katze</option>
+                    <option value="nagetier">Nagetier</option>
+                    <option value="notfall">Notfall</option>
+                    <option value="glücklich">Vergeben</option>
+                  </select>
+                </div>
+                {/* Beschreibung */}
+                <div className="mb-3">
+                  <label htmlFor="inputBeschreibung" className="form-label">
+                    Beschreibung hinzufürgen
+                  </label>
+                  <textarea
+                    className="form-control"
+                    name="inputBeschreibung"
+                    rows="3"
+                  ></textarea>
+                </div>
+                {/* Sende Button */}
+                <button type="submit" className="btn btn-primary">
+                  Senden
+                </button>
+              </form>
+            ) : (
+              <form onSubmit={handleLogIn}>
                 <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Bitte nur eine Url eingeben."
-                  name="inputBildUrl"
-                />
-              </div>
-            </div>
-            {/* Tierart */}
-            <div className="row mb-3 col-md-6">
-              <label htmlFor="inputTier" className="col-sm-2 col-form-label">
-                Tierart:
-              </label>
-              <select name="inputTier" className="form-select">
-                <option value="hund" value>
-                  Hund
-                </option>
-                <option value="katze">Katze</option>
-                <option value="nagetier">Nagetier</option>
-                <option value="notfall">Notfall</option>
-                <option value="glücklich">Vergeben</option>
-              </select>
-            </div>
-            {/* Beschreibung */}
-            <div className="mb-3">
-              <label htmlFor="inputBeschreibung" className="form-label">
-                Beschreibung hinzufürgen
-              </label>
-              <textarea
-                className="form-control"
-                name="inputBeschreibung"
-                rows="3"
-              ></textarea>
-            </div>
-            {/* Sende Button */}
-            <button type="submit" className="btn btn-primary">
-              Senden
-            </button>
-          </form>
-        ) : (
-          <form onSubmit={handleLogIn}>
-            <input
-              type="password"
-              placeholder="Bitte Passwort eingeben."
-            ></input>
-            <button type="submit">Anmelden</button>
-          </form>
-        )}
-      </div>
-    </div>
+                  type="password"
+                  placeholder="Bitte Passwort eingeben."
+                ></input>
+                <button type="submit">Anmelden</button>
+              </form>
+            )}
+          </div>
+        </div>
+      )}
+    </>
   );
 };
 
