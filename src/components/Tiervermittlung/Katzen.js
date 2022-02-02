@@ -13,10 +13,6 @@ const Katzen = () => {
       .catch((err) => console.log(err));
   }, []);
   console.log(cats);
-  function ImgError(source) {
-    source.onError =
-      "https://hundzugast.de/wp-content/themes/petsitter/images/job-placeholder.gif";
-  }
   return (
     <div>
       <Link to={"/"} className="btn btn-secondary">

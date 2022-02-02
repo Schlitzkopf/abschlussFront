@@ -1,5 +1,4 @@
 import React from "react";
-import Home from "./Home";
 import { Link } from "react-router-dom";
 
 const Navigation = () => {
@@ -8,6 +7,7 @@ const Navigation = () => {
       <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <div className="container">
           <img
+            alt="Logo"
             className="img-responsive"
             src={require("./Logo/logo_text_small.png")}
           />
@@ -29,6 +29,7 @@ const Navigation = () => {
                   className="nav-link dropdown-toggle"
                   id="navbarDropdown"
                   role="button"
+                  href="blank"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
@@ -67,6 +68,7 @@ const Navigation = () => {
                   className="nav-link dropdown-toggle "
                   id="navbarDropdown"
                   role="button"
+                  href="blank"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
@@ -105,6 +107,7 @@ const Navigation = () => {
                   className="nav-link dropdown-toggle"
                   id="navbarDropdown"
                   role="button"
+                  href="blank"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
@@ -153,6 +156,7 @@ const Navigation = () => {
                   className="nav-link dropdown-toggle"
                   id="navbarDropdown"
                   role="button"
+                  href="blank"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >

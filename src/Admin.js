@@ -1,10 +1,14 @@
+
 import React, { useState } from "react";
 // import { Link } from "react-router-dom";
 
 const Admin = () => {
   const [loggedIn, setLoggedIn] = useState();
+  // const [create, setCreate] = useState();
+  // const [update, setUpdate] = useState();
+  // const [del, setDel] = useState();
   const [status, setStatus] = useState();
-  const [error, setError] = useState();
+  const [setError] = useState();
 
   const handleLogIn = (e) => {
     //Value des InputFeld mit meinem Passwort vergleichen. Wenn Passwort gleich => loggedIn: True
@@ -16,6 +20,20 @@ const Admin = () => {
       alert("Falsches Passwort");
     }
   };
+
+  // const handleChoose = (e) => {
+  //   e.preventDefault();
+  //   const check = e.target.firstChild.value;
+  //   if (check === "1") {
+  //     setCreate(true);
+  //   } else if (check === "2") {
+  //     setUpdate(true);
+  //   } else {
+  //     (check === "3")
+  //     setDel(true);
+  //   }
+  // };
+
   const newAnimal = async (e) => {
     e.preventDefault();
     const {
@@ -380,7 +398,7 @@ const Admin = () => {
                     Tierart:
                   </label>
                   <select name="inputTier" className="form-select">
-                    <option value="hund" value>
+                    <option value="hund">
                       Hund
                     </option>
                     <option value="katze">Katze</option>

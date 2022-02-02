@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams, Link, useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const TiereID = () => {
@@ -7,12 +7,12 @@ const TiereID = () => {
   const navigate = useNavigate();
   const [species, setSpecies] = useState();
 
-  useEffect(async () => {
-    await axios
+  useEffect( () => {
+     axios
       .get(`https://saveitnow.herokuapp.com/Animal/${id}`)
       .then((res) => setSpecies(res.data))
       .catch((err) => console.log(err));
-  }, []);
+  }, [id]);
 
   const handleClick = () => {
     navigate(-1);
