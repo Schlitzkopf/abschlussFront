@@ -9,7 +9,7 @@ const Navigation = () => {
           <img
             alt="Logo"
             className="img-responsive"
-            src={require("./Logo/go.png")}
+            src={require("./Logo/Farbe.png")}
           />
           <button
             className="navbar-toggler"
