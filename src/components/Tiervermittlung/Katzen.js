@@ -14,7 +14,7 @@ const Katzen = () => {
   }, []);
   console.log(cats);
   return (
-    <div>
+    <div className="tierBack">
       <Link to={"/"} className="btn btn-secondary">
         Zurück
       </Link>

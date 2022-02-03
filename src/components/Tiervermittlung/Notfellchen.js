@@ -14,7 +14,7 @@ const Notfellchen = () => {
   }, []);
 
   return (
-    <div>
+    <div className="tierBack">
       <Link to={"/"} className="btn btn-primary">
         Back
       </Link>

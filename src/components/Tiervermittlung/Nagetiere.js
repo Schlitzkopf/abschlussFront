@@ -13,7 +13,7 @@ const Nagetiere = () => {
       .catch((err) => console.log(err));
   }, []);
   return (
-    <div>
+    <div className="tierBack">
       <Link to={"/"} className="btn btn-secondary">
         Zurück
       </Link>

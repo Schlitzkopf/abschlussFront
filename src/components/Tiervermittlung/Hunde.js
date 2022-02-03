@@ -14,7 +14,7 @@ const Hunde = () => {
   }, []);
   console.log(dogs);
   return (
-    <div>
+    <div className="tierBack">
       <Link to={"/"} className="btn btn-secondary">
         Zurück
       </Link>

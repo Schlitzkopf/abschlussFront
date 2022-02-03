@@ -17,12 +17,12 @@ const Glückskinder = (animal) => {
       "https://hundzugast.de/wp-content/themes/petsitter/images/job-placeholder.gif";
   }
   return (
-    <div>
+    <div className="tierBack">
       <Link to={"/"} className="btn btn-primary">
         Back
       </Link>
       {lucky ? (
-        <div>
+        <div  className="container">
           {lucky.animal.map((animal, index) => (
             <div className="contain" key={index}>
               <div className="card text-center">
