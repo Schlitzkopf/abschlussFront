@@ -11,8 +11,8 @@ const Footer = () => {
             Schlitzkopf/GitHub.com
           </a>
           <br></br>
-          <Link to={"/ups"}>Datenschutz</Link> <Link to={"/ups"}>Impressum</Link>{" "}
-          <Link to={"/ups"}>Newsletter</Link>
+          <Link to={"/ups"}>Datenschutz</Link>{" "}
+          <Link to={"/ups"}>Impressum</Link> <Link to={"/ups"}>Newsletter</Link>
         </div>
       </footer>
     </>

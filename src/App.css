@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-
 }
 
 /* Home.js */
@@ -50,7 +49,7 @@
 }
 
 .navText:hover {
-  color:rgba(93, 130, 250, 0.692)
+  color: rgba(93, 130, 250, 0.692);
 }
 
 /* Footer */

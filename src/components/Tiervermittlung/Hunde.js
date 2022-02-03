@@ -12,7 +12,7 @@ const Hunde = () => {
       .then((res) => setDogs(res.data))
       .catch((err) => console.log(err));
   }, []);
-console.log(dogs)
+  console.log(dogs);
   return (
     <div>
       <Link to={"/"} className="btn btn-secondary">
@@ -35,7 +35,9 @@ console.log(dogs)
                   />
                   <div className="card-body">
                     <h5 className="card-title">{animal.inputName}</h5>
-                    <p className="card-text">Geboren: {animal.inputGeburtstag}</p>
+                    <p className="card-text">
+                      Geboren: {animal.inputGeburtstag}
+                    </p>
                     <p className="card-text">Rasse: {animal.inputRasse}</p>
                     <p className="card-text">Ich wohne in {animal.inputOrt}</p>
                     <Link

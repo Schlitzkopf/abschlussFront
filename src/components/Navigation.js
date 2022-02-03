@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 const Navigation = () => {
   return (
     <>
-    
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container sticky-top">
           <img
@@ -36,7 +35,10 @@ const Navigation = () => {
                 >
                   Tiervermittlung
                 </a>
-                <ul className="dropdown-menu navBack" aria-labelledby="navbarDropdown">
+                <ul
+                  className="dropdown-menu navBack"
+                  aria-labelledby="navbarDropdown"
+                >
                   <li>
                     <Link className="dropdown-item navText" to={"hunde"}>
                       Hunde
@@ -58,7 +60,10 @@ const Navigation = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item navText" to={"glueckskinder"}>
+                    <Link
+                      className="dropdown-item navText"
+                      to={"glueckskinder"}
+                    >
                       Glückskinder
                     </Link>
                   </li>
@@ -75,9 +80,15 @@ const Navigation = () => {
                 >
                   Spenden & Helfen
                 </a>
-                <ul className="dropdown-menu navBack" aria-labelledby="navbarDropdown">
+                <ul
+                  className="dropdown-menu navBack"
+                  aria-labelledby="navbarDropdown"
+                >
                   <li>
-                    <Link className="dropdown-item navText" to={"pflegestellen"}>
+                    <Link
+                      className="dropdown-item navText"
+                      to={"pflegestellen"}
+                    >
                       Pflegestellen
                     </Link>
                   </li>
@@ -92,12 +103,18 @@ const Navigation = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item navText" to={"tierschutzhelfer"}>
+                    <Link
+                      className="dropdown-item navText"
+                      to={"tierschutzhelfer"}
+                    >
                       Tierschutzhelfer
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item navText" to={"suchmeldungen"}>
+                    <Link
+                      className="dropdown-item navText"
+                      to={"suchmeldungen"}
+                    >
                       Suchmeldungen
                     </Link>
                   </li>
@@ -114,7 +131,10 @@ const Navigation = () => {
                 >
                   Service
                 </a>
-                <ul className="dropdown-menu navBack" aria-labelledby="navbarDropdown">
+                <ul
+                  className="dropdown-menu navBack"
+                  aria-labelledby="navbarDropdown"
+                >
                   <li>
                     <Link className="dropdown-item navText" to={"RSS"}>
                       RSS-Feed
@@ -163,7 +183,10 @@ const Navigation = () => {
                 >
                   Ratgeber
                 </a>
-                <ul className="dropdown-menu navBack" aria-labelledby="navbarDropdown">
+                <ul
+                  className="dropdown-menu navBack"
+                  aria-labelledby="navbarDropdown"
+                >
                   <li>
                     <Link className="dropdown-item navText" to={"buecher"}>
                       Bücher
@@ -175,7 +198,10 @@ const Navigation = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item navText" to={"rechtsanwaelte"}>
+                    <Link
+                      className="dropdown-item navText"
+                      to={"rechtsanwaelte"}
+                    >
                       Rechtsanwälte
                     </Link>
                   </li>
@@ -193,8 +219,8 @@ const Navigation = () => {
             </ul>
           </div>
         </div>
-        </nav>
-      </>
+      </nav>
+    </>
   );
 };
 

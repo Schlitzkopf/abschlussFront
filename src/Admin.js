@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 // import { Link } from "react-router-dom";
 
@@ -101,8 +100,9 @@ const Admin = () => {
     <>
       {status ? (
         <>
-          <p className="text-center navbar-dark bg-dark">Wurde erfolgreich hochgeladen.</p>
-
+          <p className="text-center navbar-dark bg-dark">
+            Wurde erfolgreich hochgeladen.
+          </p>
         </>
       ) : (
         <div className="adminText navbar-dark bg-dark">
@@ -398,9 +398,7 @@ const Admin = () => {
                     Tierart:
                   </label>
                   <select name="inputTier" className="form-select">
-                    <option value="hund">
-                      Hund
-                    </option>
+                    <option value="hund">Hund</option>
                     <option value="katze">Katze</option>
                     <option value="nagetier">Nagetier</option>
                     <option value="notfall">Notfall</option>

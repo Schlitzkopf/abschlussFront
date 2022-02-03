@@ -13,7 +13,7 @@ const Nagetiere = () => {
       .catch((err) => console.log(err));
   }, []);
   return (
-<div>
+    <div>
       <Link to={"/"} className="btn btn-secondary">
         Zurück
       </Link>
@@ -34,7 +34,9 @@ const Nagetiere = () => {
                   />
                   <div className="card-body">
                     <h5 className="card-title">{animal.inputName}</h5>
-                    <p className="card-text">Geboren: {animal.inputGeburtstag}</p>
+                    <p className="card-text">
+                      Geboren: {animal.inputGeburtstag}
+                    </p>
                     <p className="card-text">Rasse: {animal.inputRasse}</p>
                     <p className="card-text">Ich wohne in {animal.inputOrt}</p>
                     <Link

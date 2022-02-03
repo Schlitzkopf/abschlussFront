@@ -7,8 +7,8 @@ const TiereID = () => {
   const navigate = useNavigate();
   const [species, setSpecies] = useState();
 
-  useEffect( () => {
-     axios
+  useEffect(() => {
+    axios
       .get(`https://saveitnow.herokuapp.com/Animal/${id}`)
       .then((res) => setSpecies(res.data))
       .catch((err) => console.log(err));
@@ -40,11 +40,13 @@ const TiereID = () => {
             <div className="card-body">
               <h5 className="card-title">{species.inputName}</h5>
               <p className="card-text">
-                Hallo ich bin {species.inputName}. {species.inputBeschreibung} Ich bin{" "}
-                {species.inputGeburtstag} geboren.
+                Hallo ich bin {species.inputName}. {species.inputBeschreibung}{" "}
+                Ich bin {species.inputGeburtstag} geboren.
               </p>
               <p className="card-text">Meine Rasse: {species.inputRasse}</p>
-              <p className="card-text">Ich wohne momentan in {species.inputOrt}</p>
+              <p className="card-text">
+                Ich wohne momentan in {species.inputOrt}
+              </p>
               <p className="card-text">Gechipt: {species.inputGechipt}</p>
               <p className="card-text">Geimpft: {species.inputGeimpft}</p>
               <p className="card-text">Ich bin {species.inputGeschlecht}</p>
