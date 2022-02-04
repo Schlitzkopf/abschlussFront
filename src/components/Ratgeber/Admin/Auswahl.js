@@ -7,6 +7,7 @@ const Auswahl = () => {
   const { id } = useParams();
   const [beadel, setBeadel] = useState();
   const [update, setUpdate] = useState();
+  const [del, setDel] = useState();
   const [error, setError] = useState();
   const navigate = useNavigate();
 
@@ -39,7 +40,7 @@ const Auswahl = () => {
         },
       },
     } = e;
-    await fetch("https://saveitnow.herokuapp.com/beadel/${id}", {
+    await fetch("https://saveitnow.herokuapp.com/animal/${id}", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -65,6 +66,17 @@ const Auswahl = () => {
       .then((data) => setUpdate(data))
       .catch((err) => setError(err.message));
     e.target[0].value = "";
+  };
+
+  const löschen = async (e) => {
+    e.preventDefault();
+
+    await fetch("https://saveitnow.herokuapp.com/animal/${id}", {
+      method: "DELETE",
+    })
+      .then((res) => res.json())
+      .then((data) => setDel(data))
+      .catch((err) => setError(err.message));
   };
 
   const handleClick = () => {
@@ -143,6 +155,15 @@ const Auswahl = () => {
               </div>
             </div>
           </form>
+          {del ? (
+            <div className="text-light adminPadding">
+                <h2>Tier wurder erfolgreich Gelöscht!</h2>
+            </div>
+          ) : (
+            <form onSubmit={löschen} className="text-center downPadding">
+              <button className="btn btn-danger">Tier Löschen</button>
+            </form>
+          )}
         </div>
       ) : (
         <div>
