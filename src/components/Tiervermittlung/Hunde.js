@@ -33,7 +33,7 @@ const Hunde = () => {
                     }
                     alt=""
                   />
-                  <div className="card-body">
+                  <div className="card-body cardTextBack">
                     <h5 className="card-title">{animal.inputName}</h5>
                     <p className="card-text">
                       Geboren: {animal.inputGeburtstag}

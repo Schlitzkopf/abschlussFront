@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 const Admin = () => {
   const [loggedIn, setLoggedIn] = useState();
@@ -8,6 +8,7 @@ const Admin = () => {
   // const [del, setDel] = useState();
   const [status, setStatus] = useState();
   const [setError] = useState();
+  const navigate = useNavigate();
 
   const handleLogIn = (e) => {
     //Value des InputFeld mit meinem Passwort vergleichen. Wenn Passwort gleich => loggedIn: True
@@ -96,19 +97,31 @@ const Admin = () => {
     e.target[13].value = "";
   };
 
+  const handleClick = () => {
+    navigate(-1);
+  };
+
   return (
     <>
       {status ? (
-        <>
-          <p className="text-center navbar-dark bg-dark">
+        <div className="adminText navbar-dark bg-dark">
+          <div className="container ">
+        <button onClick={handleClick} className="btn btn-secondary">
+          Zurück
+        </button>
+          <h1 className="text-center text-dark">
             Wurde erfolgreich hochgeladen.
-          </p>
-        </>
+          </h1>
+          </div>
+        </div>
       ) : (
         <div className="adminText navbar-dark bg-dark">
           <div className="container adminPadding">
             {loggedIn ? (
-              <form onSubmit={newAnimal} className="needs-validation">
+                <form onSubmit={newAnimal} className="needs-validation">
+                          <button onClick={handleClick} className="btn btn-secondary">
+          Zurück
+        </button>
                 {/* Name */}
                 <div className="row mb-3 col-md-6">
                   <label
@@ -422,12 +435,15 @@ const Admin = () => {
                 </button>
               </form>
             ) : (
-              <form onSubmit={handleLogIn}>
+                  <form className="justify-content-md-end" onSubmit={handleLogIn}>
                 <input
                   type="password"
                   placeholder="Bitte Passwort eingeben."
                 ></input>
-                <button type="submit">Anmelden</button>
+                <button type="submit" className="btn btn-secondary">Anmelden</button>
+                    <Link to={"/"} className="btn btn-secondary">
+                      Zurück
+                    </Link>
               </form>
             )}
           </div>

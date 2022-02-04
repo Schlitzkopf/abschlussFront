@@ -32,7 +32,7 @@ const Notfellchen = () => {
                   }
                   alt=""
                 />
-                <div className="card-body">
+                <div className="card-body cardTextBack">
                   <h5 className="card-title">{animal.inputName}</h5>
                   <p className="card-text">Geboren: {animal.inputGeburtstag}</p>
                   <p className="card-text">Rasse: {animal.inputRasse}</p>

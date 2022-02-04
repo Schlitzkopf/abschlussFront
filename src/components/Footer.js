@@ -5,9 +5,9 @@ const Footer = () => {
   return (
     <>
       <footer className="text-center text-white footBack">
-        <div id="footer" className="text-center text-dark p-3">
+        <div id="footer" className="text-center text-light p-3">
           © 2020 Copyrigh
-          <a className="text-dark" href="https://github.com/Schlitzkopf">
+          <a className="text-light" href="https://github.com/Schlitzkopf">
             Schlitzkopf/GitHub.com
           </a>
           <br></br>

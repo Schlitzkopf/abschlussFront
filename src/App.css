@@ -13,7 +13,7 @@
 /* Tiervermittlung */
 
 .tierBack {
-  background: rgba(115, 147, 252, 0.616);
+  background-image: url("https://www.wallpapertip.com/wmimgs/82-823767_classy-dark-plain-background.jpg");
 }
 
 .card {
@@ -27,6 +27,10 @@
   width: 100%;
   height: 30vh;
   object-fit: cover;
+}
+
+.cardTextBack {
+  background-color: rgba(54, 60, 78, 0.616);
 }
 
 /* Admin.js */
