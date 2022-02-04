@@ -104,18 +104,18 @@ const Admin = () => {
   return (
     <>
       {status ? (
-        <div className="adminText navbar-dark bg-dark">
+        <div className="adminText">
           <div className="container ">
-        <button onClick={handleClick} className="btn btn-secondary">
+        <button onClick={handleClick} className="btn btn-secondary pull-right">
           Zurück
         </button>
-          <h1 className="text-center text-dark">
+          <h1 className="text-center adminText adminPadding">
             Wurde erfolgreich hochgeladen.
           </h1>
           </div>
         </div>
       ) : (
-        <div className="adminText navbar-dark bg-dark">
+        <div className="adminText adminPadding">
           <div className="container adminPadding">
             {loggedIn ? (
                 <form onSubmit={newAnimal} className="needs-validation">

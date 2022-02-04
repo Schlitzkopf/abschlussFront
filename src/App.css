@@ -2,6 +2,12 @@
   text-align: center;
 }
 
+#root {
+  background-image: url("https://www.wallpapertip.com/wmimgs/82-823767_classy-dark-plain-background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 /* Home.js */
 
 .carousel-inner {
@@ -10,11 +16,6 @@
   background-size: auto;
 }
 
-/* Tiervermittlung */
-
-.tierBack {
-  background-image: url("https://www.wallpapertip.com/wmimgs/82-823767_classy-dark-plain-background.jpg");
-}
 
 .card {
   width: 18rem;
@@ -36,11 +37,17 @@
 /* Admin.js */
 
 .adminText {
-  color: azure;
+  color: rgb(201, 236, 236);
 }
 .adminPadding {
   padding-top: 2vh;
 }
+
+.adminPadding {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
 
 /*Navbar*/
 
@@ -63,5 +70,5 @@
 /* Footer */
 
 .footBack {
-  background-color: rgba(19, 22, 31, 0.616);
+  background-color: rgb(39, 43, 54) !important;
 }

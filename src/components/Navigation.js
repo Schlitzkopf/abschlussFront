@@ -85,6 +85,11 @@ const Navigation = () => {
                   aria-labelledby="navbarDropdown"
                 >
                   <li>
+                    <Link className="dropdown-item navText" to={"flugpaten"}>
+                      Flugpaten
+                    </Link>
+                  </li>
+                  <li>
                     <Link
                       className="dropdown-item navText"
                       to={"pflegestellen"}
@@ -93,13 +98,11 @@ const Navigation = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item navText" to={"flugpaten"}>
-                      Flugpaten
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item navText" to={"tiersitter"}>
-                      Tiersitter
+                    <Link
+                      className="dropdown-item navText"
+                      to={"suchmeldungen"}
+                    >
+                      Suchmeldungen
                     </Link>
                   </li>
                   <li>
@@ -111,11 +114,8 @@ const Navigation = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link
-                      className="dropdown-item navText"
-                      to={"suchmeldungen"}
-                    >
-                      Suchmeldungen
+                    <Link className="dropdown-item navText" to={"tiersitter"}>
+                      Tiersitter
                     </Link>
                   </li>
                 </ul>
@@ -136,23 +136,8 @@ const Navigation = () => {
                   aria-labelledby="navbarDropdown"
                 >
                   <li>
-                    <Link className="dropdown-item navText" to={"RSS"}>
-                      RSS-Feed
-                    </Link>
-                  </li>
-                  <li>
                     <Link className="dropdown-item navText" to={"datenschutz"}>
                       Datenschutz
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item navText" to={"content"}>
-                      Content
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item navText" to={"werbung"}>
-                      Werbung
                     </Link>
                   </li>
                   <li>
@@ -166,8 +151,8 @@ const Navigation = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item navText" to={"cookies"}>
-                      Cookies
+                    <Link className="dropdown-item navText" to={"werbung"}>
+                      Werbung
                     </Link>
                   </li>
                 </ul>
@@ -188,21 +173,8 @@ const Navigation = () => {
                   aria-labelledby="navbarDropdown"
                 >
                   <li>
-                    <Link className="dropdown-item navText" to={"buecher"}>
-                      Bücher
-                    </Link>
-                  </li>
-                  <li>
                     <Link className="dropdown-item navText" to={"hundesteuer"}>
                       Hundesteuer
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className="dropdown-item navText"
-                      to={"rechtsanwaelte"}
-                    >
-                      Rechtsanwälte
                     </Link>
                   </li>
                 </ul>
