@@ -89,6 +89,15 @@ const Auswahl = () => {
           <button onClick={handleClick} className="btn btn-secondary">
             Zurück
           </button>
+          {del ? (
+            <div className="text-light adminPadding">
+              <h2>Tier wurder erfolgreich Gelöscht!</h2>
+            </div>
+          ) : (
+            <form onSubmit={löschen} className="text-center downPadding">
+              <button className="btn btn-danger">Tier Löschen</button>
+            </form>
+          )}
           <form onSubmit={bearbeiten} className="needs-validation">
             <div className="container">
               <div className="row">
@@ -154,15 +163,6 @@ const Auswahl = () => {
               </div>
             </div>
           </form>
-          {del ? (
-            <div className="text-light adminPadding">
-              <h2>Tier wurder erfolgreich Gelöscht!</h2>
-            </div>
-          ) : (
-            <form onSubmit={löschen} className="text-center downPadding">
-              <button className="btn btn-danger">Tier Löschen</button>
-            </form>
-          )}
         </div>
       ) : (
         <div>
