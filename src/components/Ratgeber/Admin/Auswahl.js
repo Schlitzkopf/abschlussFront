@@ -6,15 +6,66 @@ import Footer from "../../Footer";
 const Auswahl = () => {
   const { id } = useParams();
   const [beadel, setBeadel] = useState();
+  const [update, setUpdate] = useState();
   const [error, setError] = useState();
   const navigate = useNavigate();
 
   useEffect(() => {
     axios
-      .get(`https://saveitnow.herokuapp.com/beadel/${id}`)
+      .get(`https://saveitnow.herokuapp.com/animal/${id}`)
       .then((res) => setBeadel(res.data))
       .catch((err) => setError(err));
   }, []);
+
+  const bearbeiten = async (e) => {
+    e.preventDefault();
+    const {
+      target: {
+        elements: {
+          inputName: { value: inputName },
+          inputRasse: { value: inputRasse },
+          inputGewicht: { value: inputGewicht },
+          inputGeschlecht: { value: inputGeschlecht },
+          inputGechipt: { value: inputGechipt },
+          inputGeimpft: { value: inputGeimpft },
+          inputKastriert: { value: inputKastriert },
+          inputKinderfreundlich: { value: inputKinderfreundlich },
+          inputVerträglich: { value: inputVerträglich },
+          inputGeburtstag: { value: inputGeburtstag },
+          inputOrt: { value: inputOrt },
+          inputBildUrl: { value: inputBildUrl },
+          inputTier: { value: inputTier },
+          inputBeschreibung: { value: inputBeschreibung },
+        },
+      },
+    } = e;
+    await fetch("https://saveitnow.herokuapp.com/beadel/${id}", {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        inputName,
+        inputRasse,
+        inputGewicht,
+        inputGeschlecht,
+        inputGechipt,
+        inputGeimpft,
+        inputKastriert,
+        inputKinderfreundlich,
+        inputVerträglich,
+        inputGeburtstag,
+        inputOrt,
+        inputBildUrl,
+        inputTier,
+        inputBeschreibung,
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => setUpdate(data))
+      .catch((err) => setError(err.message));
+    e.target[0].value = "";
+  };
 
   const handleClick = () => {
     navigate(-1);
@@ -22,16 +73,12 @@ const Auswahl = () => {
 
   return (
     <>
-      {error ? (
-        <>
-          <p>{error}</p>
-        </>
-      ) : (
+      {beadel ? (
         <div className="tierBack">
           <button onClick={handleClick} className="btn btn-secondary">
             Zurück
           </button>
-          {beadel ? (
+          <form onSubmit={bearbeiten} className="needs-validation">
             <div className="container">
               <div className="row">
                 <div className="col-sm-4 mb-2">
@@ -47,6 +94,13 @@ const Auswahl = () => {
                     />
                     <div className="card-body cardTextBack">
                       <p className="card-text">Name: {beadel.inputName}</p>
+                      <input
+                        type="text"
+                        className="form-control"
+                        placeholder={beadel.inputName}
+                        name="inputName"
+                        required
+                      />
                       <p className="card-text">Rasse: {beadel.inputRasse}</p>
                       <p className="card-text">
                         Gewicht: {beadel.inputGewicht}
@@ -83,28 +137,25 @@ const Auswahl = () => {
                       <p className="card-text">
                         VideoUrl: {beadel.inputVideoUrl}
                       </p>
-                      <Link to={""} className="btn btn-primary">
-                        Mehr Info
-                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          ) : (
-            <div>
-              <div className="text-center">
-                <h2>Daten werden verarbeitet...</h2>
-                <img
-                  src="https://media3.giphy.com/media/Oc8lIQHZsXqDu/200w.gif"
-                  alt=""
-                />
-              </div>
-            </div>
-          )}
-          <Footer />
+          </form>
+        </div>
+      ) : (
+        <div>
+          <div className="text-center">
+            <h2>Daten werden verarbeitet...</h2>
+            <img
+              src="https://media3.giphy.com/media/Oc8lIQHZsXqDu/200w.gif"
+              alt=""
+            />
+          </div>
         </div>
       )}
+      <Footer />
     </>
   );
 };

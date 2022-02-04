@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Erstellen = () => {
-  const [loggedIn, setLoggedIn] = useState();
-
   const [status, setStatus] = useState();
   const [error, setError] = useState();
   const navigate = useNavigate();
@@ -70,8 +68,8 @@ const Erstellen = () => {
             <button onClick={handleClick} className="btn btn-secondary">
               Zurück
             </button>
-            <h1 className="text-center adminText adminPadding">
-              Wurde erfolgreich hochgeladen.
+            <h1 className="text-center text-light adminPadding">
+              Dein Tier wurde erfolgreich hochgeladen.
             </h1>
           </div>
         </div>

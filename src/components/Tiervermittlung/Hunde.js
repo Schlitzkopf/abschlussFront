@@ -54,7 +54,7 @@ const Hunde = () => {
         </div>
       ) : (
         <div>
-          <div className="text-center">
+          <div className="text-center text-light">
             <h2>Daten werden verarbeitet...</h2>
             <img
               src="https://media3.giphy.com/media/Oc8lIQHZsXqDu/200w.gif"

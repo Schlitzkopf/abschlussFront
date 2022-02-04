@@ -5,8 +5,8 @@ import Footer from "../../Footer";
 
 const Bearbeiten_Löschen = () => {
   const [all, setAll] = useState();
+
   const navigate = useNavigate();
-  // const [create, setCreate] = useState();
   // const [update, setUpdate] = useState();
   // const [del, setDel] = useState();
 
@@ -26,6 +26,9 @@ const Bearbeiten_Löschen = () => {
       <button onClick={handleClick} className="btn btn-secondary">
         Zurück
       </button>
+      <div className="text-center text-light bearbeitenPadding">
+        <h2>Welches Tier möchtetst du berabeiten?</h2>
+      </div>
       {all ? (
         <div className="container">
           <div className="row">

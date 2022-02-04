@@ -22,7 +22,7 @@ const Glückskinder = (animal) => {
         Back
       </Link>
       {lucky ? (
-        <div  className="container">
+        <div className="container">
           {lucky.animal.map((animal, index) => (
             <div className="contain" key={index}>
               <div className="card text-center">
@@ -47,7 +47,7 @@ const Glückskinder = (animal) => {
         </div>
       ) : (
         <div>
-          <div className="text-center">
+          <div className="text-center text-light">
             <h2>Daten werden verarbeitet...</h2>
             <img
               src="https://media3.giphy.com/media/Oc8lIQHZsXqDu/200w.gif"
