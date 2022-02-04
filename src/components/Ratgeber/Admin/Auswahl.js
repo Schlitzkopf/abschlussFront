@@ -40,7 +40,7 @@ const Auswahl = () => {
         },
       },
     } = e;
-    await fetch("https://saveitnow.herokuapp.com/animal/${id}", {
+    await fetch(`https://saveitnow.herokuapp.com/animal/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -70,8 +70,7 @@ const Auswahl = () => {
 
   const löschen = async (e) => {
     e.preventDefault();
-
-    await fetch("https://saveitnow.herokuapp.com/animal/${id}", {
+    await fetch(`https://saveitnow.herokuapp.com/animal/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
@@ -157,7 +156,7 @@ const Auswahl = () => {
           </form>
           {del ? (
             <div className="text-light adminPadding">
-                <h2>Tier wurder erfolgreich Gelöscht!</h2>
+              <h2>Tier wurder erfolgreich Gelöscht!</h2>
             </div>
           ) : (
             <form onSubmit={löschen} className="text-center downPadding">
