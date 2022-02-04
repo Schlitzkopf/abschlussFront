@@ -20,9 +20,9 @@ import Impressum from "./components/Service/Impressum";
 import Kontakt from "./components/Service/Kontakt";
 import Hundesteuer from "./components/Ratgeber/Hundesteuer";
 import Admin from "./Admin";
-import Bearbeiten_Löschen from "./components/Ratgeber/Admin/Bearbeiten_Löschen";
-import Erstellen from "./components/Ratgeber/Admin/Erstellen";
-import Auswahl from "./components/Ratgeber/Admin/Auswahl";
+import Bearbeiten from "./components/Admin/Bearbeiten_Löschen";
+import Erstellen from "./components/Admin/Erstellen";
+import Auswahl from "./components/Admin/Auswahl";
 
 function App(props) {
   return (
@@ -46,7 +46,7 @@ function App(props) {
         <Route path="/kontakt" element={<Kontakt />} />
         <Route path="/hundesteuer" element={<Hundesteuer />} />
         <Route path="/admin" element={<Admin />} />
-        <Route path="/beadel" element={<Bearbeiten_Löschen />} />
+        <Route path="/bearbeiten" element={<Bearbeiten />} />
         <Route path="/erstellen" element={<Erstellen />} />
         <Route path="/auswahl/:id" element={<Auswahl />} />
         <Route path="/ups" element={<Ups />} />

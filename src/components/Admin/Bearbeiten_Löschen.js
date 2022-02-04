@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-import Footer from "../../Footer";
+import Footer from "../Footer";
 
-const Bearbeiten_Löschen = () => {
+const Bearbeiten = () => {
   const [all, setAll] = useState();
 
   const navigate = useNavigate();
@@ -79,4 +79,4 @@ const Bearbeiten_Löschen = () => {
   );
 };
 
-export default Bearbeiten_Löschen;
+export default Bearbeiten;
