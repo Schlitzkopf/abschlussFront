@@ -1,27 +1,35 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-import Footer from "../Footer";
+import Footer from "../../Footer";
 
-const Hunde = () => {
-  const [dogs, setDogs] = useState();
+const Bearbeiten_Löschen = () => {
+  const [all, setAll] = useState();
+  const navigate = useNavigate();
+  // const [create, setCreate] = useState();
+  // const [update, setUpdate] = useState();
+  // const [del, setDel] = useState();
 
   useEffect(() => {
     axios
-      .get("https://saveitnow.herokuapp.com/Animal/dogs")
-      .then((res) => setDogs(res.data))
+      .get("https://saveitnow.herokuapp.com/Animal")
+      .then((res) => setAll(res.data))
       .catch((err) => console.log(err));
   }, []);
 
+  const handleClick = () => {
+    navigate(-1);
+  };
+
   return (
     <div className="tierBack">
-      <Link to={"/"} className="btn btn-secondary">
+      <button onClick={handleClick} className="btn btn-secondary">
         Zurück
-      </Link>
-      {dogs ? (
+      </button>
+      {all ? (
         <div className="container">
           <div className="row">
-            {dogs.animal.map((animal, index) => (
+            {all.animal.map((animal, index) => (
               <div key={index} className="col-sm-4 mb-2">
                 <div className="card text-center h-100">
                   <img
@@ -34,17 +42,17 @@ const Hunde = () => {
                     alt=""
                   />
                   <div className="card-body cardTextBack">
-                    <h5 className="card-title">{animal.inputName}</h5>
-                    <p className="card-text">
-                      Geboren: {animal.inputGeburtstag}
-                    </p>
+                    <h5 className="card-text">{animal.inputName}</h5>
                     <p className="card-text">Rasse: {animal.inputRasse}</p>
-                    <p className="card-text">Ich wohne in {animal.inputOrt}</p>
+                    <p className="card-text">Gewicht: {animal.inputGewicht}</p>
+                    <p className="card-text">
+                      Geschlecht: {animal.inputGeschlecht}
+                    </p>
                     <Link
-                      to={`/tiere/${animal._id}`}
+                      to={`/auswahl/${animal._id}`}
                       className="btn btn-primary"
                     >
-                      Mehr Info
+                      Auswählen
                     </Link>
                   </div>
                 </div>
@@ -68,4 +76,4 @@ const Hunde = () => {
   );
 };
 
-export default Hunde;
+export default Bearbeiten_Löschen;
