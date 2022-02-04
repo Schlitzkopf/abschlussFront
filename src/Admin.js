@@ -14,18 +14,19 @@ const Admin = () => {
     }
   };
 
-
   return (
     <>
       {loggedIn ? (
         <div className="adminPadding container">
-          <div className="btn-group">
-          <div>
-            <Link to={"/erstellen"} type="button" className="btn btn-primary">Neues Tier erstellen?</Link>
+          <div className="">
+            <Link to={"/erstellen"} type="button" className="btn btn-primary">
+              Neues Tier erstellen?
+            </Link>
           </div>
-          <div>
-            <Link to={"/beadel"} type="button" className="btn btn-primary">Tier bearbeiten oder löschen</Link>
-          </div>
+          <div className="adminPadding">
+            <Link to={"/beadel"} type="button" className="btn btn-primary">
+              Tier bearbeiten oder löschen
+            </Link>
           </div>
         </div>
       ) : (
