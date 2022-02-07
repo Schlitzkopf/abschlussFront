@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Erstellen = () => {
   const [status, setStatus] = useState();
@@ -55,14 +55,15 @@ const Erstellen = () => {
       .catch((err) => setError(err.message));
     e.target[0].value = "";
   };
-console.log(status)
+  console.log(status);
+
   const handleClick = () => {
     navigate(-1);
   };
 
   return (
     <>
-      {status ? (
+      {status === "Success" ? (
         <div className="adminText">
           <div className="container ">
             <button onClick={handleClick} className="btn btn-secondary">
@@ -169,6 +170,7 @@ console.log(status)
                       type="radio"
                       name="inputGechipt"
                       value="Ja"
+                      required
                     />
                     <label className="form-check-label" htmlFor="gridRadios1">
                       Ja
