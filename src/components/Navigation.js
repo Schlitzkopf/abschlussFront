@@ -129,43 +129,6 @@ const Navigation = () => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Service
-                </a>
-                <ul
-                  className="dropdown-menu navBack"
-                  aria-labelledby="navbarDropdown"
-                >
-                  <li>
-                    <Link className="dropdown-item navText" to={"datenschutz"}>
-                      Datenschutz
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item navText" to={"impressum"}>
-                      Impressum
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item navText" to={"kontakt"}>
-                      Kontakt
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item navText" to={"werbung"}>
-                      Werbung
-                    </Link>
-                  </li>
-                </ul>
-              </li>
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  id="navbarDropdown"
-                  role="button"
-                  href="blank"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
                   Ratgeber
                 </a>
                 <ul

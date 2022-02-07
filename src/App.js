@@ -12,12 +12,8 @@ import Glückskinder from "./components/Tiervermittlung/Glückskinder";
 import Pflegestellen from "./components/SpendenUhelfen/Pflegestellen";
 import Tiersitter from "./components/SpendenUhelfen/Tiersitter";
 import Flugpaten from "./components/SpendenUhelfen/Flugpaten";
-import Datenschutz from "./components/Service/Datenschutz";
 import Tierschutzhelfer from "./components/SpendenUhelfen/Tierschutzhelfer";
 import Suchmeldungen from "./components/SpendenUhelfen/Suchmeldungen";
-import Werbung from "./components/Service/werbung";
-import Impressum from "./components/Service/Impressum";
-import Kontakt from "./components/Service/Kontakt";
 import Hundesteuer from "./components/Ratgeber/Hundesteuer";
 import Admin from "./Admin";
 import Bearbeiten from "./components/Admin/Bearbeiten_Löschen";
@@ -40,10 +36,6 @@ function App(props) {
         <Route path="/tiersitter" element={<Tiersitter />} />
         <Route path="/tierschutzhelfer" element={<Tierschutzhelfer />} />
         <Route path="/suchmeldungen" element={<Suchmeldungen />} />
-        <Route path="/datenschutz" element={<Datenschutz />} />
-        <Route path="/werbung" element={<Werbung />} />
-        <Route path="/impressum" element={<Impressum />} />
-        <Route path="/kontakt" element={<Kontakt />} />
         <Route path="/hundesteuer" element={<Hundesteuer />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="/bearbeiten" element={<Bearbeiten />} />
