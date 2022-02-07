@@ -75,8 +75,21 @@
   color: rgba(93, 130, 250, 0.692);
 }
 
+.passendNav {
+  width: 14vh;
+  max-height: 10vh;
+  border-radius: 50%;
+}
+
 /* Footer */
 
 .footBack {
   background-color: rgb(39, 43, 54) !important;
+}
+
+.passendFoot {
+  width: 35vh;
+  max-height: 20vh;
+  border-radius: 50%;
+  margin-bottom: 2vh;
 }

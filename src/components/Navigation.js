@@ -8,8 +8,8 @@ const Navigation = () => {
         <div className="container sticky-top">
           <img
             alt="Logo"
-            className="img-responsive"
-            src={require("./Logo/Now.png")}
+            className="img-responsive passendNav"
+            src={require("./Logo/groß.png")}
           />
           <button
             className="navbar-toggler"

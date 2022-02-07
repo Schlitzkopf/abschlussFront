@@ -16,7 +16,11 @@ const Footer = () => {
       <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
 
 
-        <h5 class="font-weight-bold text-uppercase mb-4">Logo</h5>
+      <img
+            alt="Logo"
+            className="img-responsive passendFoot"
+            src={require("./Logo/groß.png")}
+          />
         <p>© 2022 Copyright</p>
 
       </div>
