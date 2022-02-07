@@ -55,7 +55,7 @@ const Erstellen = () => {
       .catch((err) => setError(err.message));
     e.target[0].value = "";
   };
-
+console.log(status)
   const handleClick = () => {
     navigate(-1);
   };
@@ -106,6 +106,7 @@ const Erstellen = () => {
                     className="form-control"
                     placeholder="Bitte Rasse angeben."
                     name="inputRasse"
+                    required
                   />
                 </div>
               </div>
@@ -316,10 +317,11 @@ const Erstellen = () => {
                 </label>
                 <div className="col-sm-10">
                   <input
-                    type="text"
+                    type="attribute"
                     className="form-control"
                     placeholder="Bitte Geburtstag angeben."
                     name="inputGeburtstag"
+                    required
                   />
                 </div>
               </div>
@@ -334,6 +336,7 @@ const Erstellen = () => {
                     className="form-control"
                     placeholder="Bitte einen Wohnort angeben."
                     name="inputOrt"
+                    required
                   />
                 </div>
               </div>

@@ -93,6 +93,7 @@ const Auswahl = () => {
           {del ? (
             <div className="text-light adminPadding">
               <h2>Tier wurder erfolgreich Gelöscht!</h2>
+              <p>{error}</p>
             </div>
           ) : (
             <form onSubmit={löschen} className="text-center downPadding">
