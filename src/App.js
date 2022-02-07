@@ -7,11 +7,7 @@ import Hunde from "./components/Tiervermittlung/Hunde.js";
 import SpeciesID from "./components/Tiervermittlung/SpeciesID";
 import Katzen from "./components/Tiervermittlung/Katzen";
 import Nagetiere from "./components/Tiervermittlung/Nagetiere";
-import Notfellchen from "./components/Tiervermittlung/Notfellchen";
 import Glückskinder from "./components/Tiervermittlung/Glückskinder";
-import Pflegestellen from "./components/SpendenUhelfen/Pflegestellen";
-import Tiersitter from "./components/SpendenUhelfen/Tiersitter";
-import Flugpaten from "./components/SpendenUhelfen/Flugpaten";
 import Tierschutzhelfer from "./components/SpendenUhelfen/Tierschutzhelfer";
 import Suchmeldungen from "./components/SpendenUhelfen/Suchmeldungen";
 import Hundesteuer from "./components/Ratgeber/Hundesteuer";
@@ -29,11 +25,7 @@ function App(props) {
         <Route path="/tiere/:id" element={<SpeciesID />} />
         <Route path="/katzen" element={<Katzen />} />
         <Route path="/nagetiere" element={<Nagetiere />} />
-        <Route path="/notfellchen" element={<Notfellchen />} />
         <Route path="/glueckskinder" element={<Glückskinder />} />
-        <Route path="/pflegestellen" element={<Pflegestellen />} />
-        <Route path="/flugpaten" element={<Flugpaten />} />
-        <Route path="/tiersitter" element={<Tiersitter />} />
         <Route path="/tierschutzhelfer" element={<Tierschutzhelfer />} />
         <Route path="/suchmeldungen" element={<Suchmeldungen />} />
         <Route path="/hundesteuer" element={<Hundesteuer />} />

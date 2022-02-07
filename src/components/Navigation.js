@@ -55,11 +55,6 @@ const Navigation = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item navText" to={"notfellchen"}>
-                      Notfellchen
-                    </Link>
-                  </li>
-                  <li>
                     <Link
                       className="dropdown-item navText"
                       to={"glueckskinder"}
@@ -85,19 +80,6 @@ const Navigation = () => {
                   aria-labelledby="navbarDropdown"
                 >
                   <li>
-                    <Link className="dropdown-item navText" to={"flugpaten"}>
-                      Flugpaten
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className="dropdown-item navText"
-                      to={"pflegestellen"}
-                    >
-                      Pflegestellen
-                    </Link>
-                  </li>
-                  <li>
                     <Link
                       className="dropdown-item navText"
                       to={"suchmeldungen"}
@@ -113,11 +95,7 @@ const Navigation = () => {
                       Tierschutzhelfer
                     </Link>
                   </li>
-                  <li>
-                    <Link className="dropdown-item navText" to={"tiersitter"}>
-                      Tiersitter
-                    </Link>
-                  </li>
+
                 </ul>
               </li>
               <li className="nav-item dropdown">
