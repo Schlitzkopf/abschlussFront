@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
-import Footer from "../../Footer";
+import Footer from "../Footer";
 
 const Auswahl = () => {
   const { id } = useParams();
@@ -16,8 +16,9 @@ const Auswahl = () => {
       .get(`https://saveitnow.herokuapp.com/animal/${id}`)
       .then((res) => setBeadel(res.data))
       .catch((err) => setError(err));
-  }, []);
-
+  }, [id]);
+    console.log(update)
+    console.log(error)
   const bearbeiten = async (e) => {
     e.preventDefault();
     const {
@@ -166,7 +167,7 @@ const Auswahl = () => {
         </div>
       ) : (
         <div>
-          <div className="text-center">
+          <div className="text-center text-light">
             <h2>Daten werden verarbeitet...</h2>
             <img
               src="https://media3.giphy.com/media/Oc8lIQHZsXqDu/200w.gif"

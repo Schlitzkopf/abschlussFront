@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 const Erstellen = () => {
   const [status, setStatus] = useState();
-  const [error, setError] = useState();
+  const [setError] = useState();
   const navigate = useNavigate();
 
   const newAnimal = async (e) => {
