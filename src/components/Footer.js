@@ -6,8 +6,8 @@ const Footer = () => {
     <>
       <footer className="text-center text-white footBack">
         <div id="footer" className="text-center text-light p-3">
-          © 2020 Copyrigh
-          <a className="text-light" href="https://github.com/Schlitzkopf">
+          © 2022 Copyright
+          <a className="text-light" href="https://github.com/Schlitzkopf"> 
             Schlitzkopf/GitHub.com
           </a>
           <br></br>
