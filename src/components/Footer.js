@@ -33,7 +33,7 @@ const Footer = () => {
         <ul class="list-unstyled">
           <li>
             <p>
-              <i class="fas fa-home mr-3"></i> Ismaning 85737 Deutschland</p>
+              <i class="fas fa-home mr-3"></i> Ismaning 85737, Deutschland</p>
           </li>
           <li>
             <p>
@@ -45,7 +45,7 @@ const Footer = () => {
           </li>
           <li>
             <p>
-              <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+            <a href="https://github.com/Schlitzkopf?tab=repositories"> Schlitzkopf/Github</a></p>
           </li>
         </ul>
 
@@ -71,10 +71,7 @@ const Footer = () => {
 
 
 
-  <div class="footer-copyright text-center py-3 text-light">© 2022 Copyright:
-    <a href="https://github.com/Schlitzkopf?tab=repositories"> Schlitzkopf/Github</a>
-  </div>
-
+  <div class="footer-copyright text-center py-3 text-light">
                 <Link
                   className="nav-link active text-center"
                   aria-current="page"
@@ -82,6 +79,8 @@ const Footer = () => {
                 >
                   Admin
                 </Link>
+  </div>
+
 
         </footer>
         </div>
