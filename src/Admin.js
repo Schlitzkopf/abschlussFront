@@ -24,7 +24,7 @@ const Admin = () => {
             </Link>
           </div>
           <div className="adminPadding">
-            <Link to={"/beadel"} type="button" className="btn btn-primary">
+            <Link to={"/bearbeiten"} type="button" className="btn btn-primary">
               Tier bearbeiten oder löschen
             </Link>
           </div>
