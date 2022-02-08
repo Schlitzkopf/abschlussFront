@@ -56,7 +56,7 @@ const TiereID = () => {
                 Kann ich mit anderen Tieren gehalten werden ={">"}{" "}
                 {species.inputVertraeglichkeit}
               </p>
-              <p>{console.log(species)}</p>
+              <button>Diesem button sollst du die Email-funktion verpaßen.</button>
             </div>
           </div>
         </div>
