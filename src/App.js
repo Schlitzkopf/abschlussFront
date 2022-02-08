@@ -37,7 +37,7 @@ function App(props) {
         <Route path="/bearbeiten" element={<Bearbeiten />} />
         <Route path="/erstellen" element={<Erstellen />} />
         <Route path="/auswahl/:id" element={<Auswahl />} />
-        <Route path="/glück/:id" element={<GlückID />} />
+        <Route path="/glueck/:id" element={<GlückID />} />
         <Route path="/ups" element={<Ups />} />
       </Routes>
       <Footer />

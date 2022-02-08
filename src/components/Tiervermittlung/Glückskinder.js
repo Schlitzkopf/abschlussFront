@@ -37,7 +37,7 @@ const Glückskinder = (animal) => {
                   <p className="card-text">Rasse: {animal.inputRasse}</p>
                   <p className="card-text">Ich wohne in {animal.inputOrt}</p>
                   <Link
-                    to={`/tiere/${animal._id}`}
+                    to={`/glueck/${animal._id}`}
                     className="btn btn-primary"
                   >
                     Mehr Info
