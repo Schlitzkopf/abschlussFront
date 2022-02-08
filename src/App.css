@@ -67,6 +67,12 @@ body {
   background-size: auto;
 }
 
+.carousel-Text{
+  color: rgb(3, 12, 15);
+  font-family: 'Brush Script MT', cursive;
+  font-size: 2rem;
+}
+
 
 /* Footer */
 

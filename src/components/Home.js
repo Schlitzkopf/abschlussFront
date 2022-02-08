@@ -40,6 +40,9 @@ const Home = () => {
                 alt="First slide"
                 style={{ objectFit: "cover" }}
               />{" "}
+              <div class="card-img-overlay text-center">
+                <h5 class="carousel-Text">Finde deinen Freund fürs Leben</h5>
+              </div>
             </Link>
           </div>
           <div className="carousel-item" style={{ height: "100%" }}>
@@ -50,6 +53,9 @@ const Home = () => {
                 alt="Second slide"
                 style={{ objectFit: "cover" }}
               />{" "}
+              <div class="card-img-overlay text-center">
+                <h5 class="carousel-Text">Jedes Tier hat ein Zuhause verdient</h5>
+              </div>
             </Link>
           </div>
           <div className="carousel-item" style={{ height: "100%" }}>
@@ -60,6 +66,9 @@ const Home = () => {
                 alt="Third slide"
                 style={{ objectFit: "cover" }}
               />{" "}
+              <div class="card-img-overlay text-center">
+                <h5 class="carousel-Text">Die Liebe eines Tieres ist die ehrlichste</h5>
+              </div>
             </Link>
           </div>
         </div>
