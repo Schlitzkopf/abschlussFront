@@ -25,7 +25,7 @@ const Glückskinder = (animal) => {
         <div className="container">
           {lucky.animal.map((animal, index) => (
             <div className="contain" key={index}>
-              <div className="card text-center">
+              <div className="cardAll card text-center">
                 <img
                   className="card-img-top"
                   src={animal.inputBildUrl}

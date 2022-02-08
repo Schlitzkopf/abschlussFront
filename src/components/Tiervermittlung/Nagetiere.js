@@ -22,7 +22,7 @@ const Nagetiere = () => {
           <div className="row">
             {rodents.animal.map((animal, index) => (
               <div key={index} className="col-sm-4 mb-2">
-                <div className="card text-center h-100">
+                <div className="cardAll card text-center h-100">
                   <img
                     className="card-img-top"
                     src={animal.inputBildUrl}
