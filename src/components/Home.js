@@ -38,7 +38,7 @@ const Home = () => {
           <div className="carousel-item active">
             <Link to={"hunde"}>
               <img
-                className="d-block w-100 "
+                className="d-block w-100 homeHight"
                 src="https://cdn.wamiz.fr/article/images/WAMIZ%20DE/Hunde%20im%20Park%20breit.jpg"
                 alt="First slide"
               />{" "}
@@ -47,7 +47,7 @@ const Home = () => {
           <div className="carousel-item">
             <Link to={"katzen"}>
               <img
-                className="d-block w-100"
+                className="d-block w-100 homeHight"
                 src="https://vetmed.tamu.edu/news/wp-content/uploads/sites/9/2019/10/CatGrassPetTalk.png"
                 alt="Second slide"
               />{" "}
@@ -56,7 +56,7 @@ const Home = () => {
           <div className="carousel-item">
             <Link to={"nagetiere"}>
               <img
-                className="d-block w-100"
+                className="d-block w-100 homeHight"
                 src="https://images.koelle-zoo.de/media/image/79/00/ba/Sind_Hamster_Einzelg-anger_Teaser.jpg"
                 alt="Third slide"
               />{" "}

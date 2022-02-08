@@ -56,7 +56,7 @@ const TiereID = () => {
                 Kann ich mit anderen Tieren gehalten werden ={">"}{" "}
                 {species.inputVertraeglichkeit}
               </p>
-              <button>Diesem button sollst du die Email-funktion verpaßen.</button>
+              <a className="btn btn-primary" href="mailto:holdenriederferdinand@gmail.com">Kontakt</a>
             </div>
           </div>
         </div>
