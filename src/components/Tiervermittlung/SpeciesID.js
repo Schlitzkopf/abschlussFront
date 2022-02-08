@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import Footer from "../Footer";
+import Mailer from "./Mailer";
 
 const TiereID = () => {
   const { id } = useParams();
@@ -56,7 +57,8 @@ const TiereID = () => {
                 Kann ich mit anderen Tieren gehalten werden ={">"}{" "}
                 {species.inputVertraeglichkeit}
               </p>
-              <button>Diesem button sollst du die Email-funktion verpaßen.</button>
+              <Mailer/>
+            
             </div>
           </div>
         </div>
