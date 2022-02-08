@@ -375,7 +375,6 @@ const Erstellen = () => {
                   <option value="hund">Hund</option>
                   <option value="katze">Katze</option>
                   <option value="nagetier">Nagetier</option>
-                  <option value="notfall">Notfall</option>
                   <option value="glücklich">Vergeben</option>
                 </select>
               </div>
