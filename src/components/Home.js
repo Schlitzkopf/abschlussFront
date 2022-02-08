@@ -35,17 +35,12 @@ const Home = () => {
           <div className="carousel-item active" style={{ height: "100%" }}>
             <Link to={"hunde"}>
               <img
-                className="d-block w-100 h-100 homeHight card-image"
+                className="d-block w-100 h-100 homeHight"
                 src="https://www.mera-petfood.com/files/_processed_/a/4/csm_iStock-521697453_7570f7a9b6.jpg"
                 alt="First slide"
                 style={{ objectFit: "cover" }}
               />{" "}
             </Link>
-            <div class="card-img-overlay text-center">
-              <h5 class="card-title text-light">
-                Finde dein neuen Freund fürs Leben.
-              </h5>
-            </div>
           </div>
           <div className="carousel-item" style={{ height: "100%" }}>
             <Link to={"katzen"}>
