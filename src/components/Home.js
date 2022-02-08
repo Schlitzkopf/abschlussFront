@@ -67,7 +67,7 @@ const Home = () => {
                 style={{ objectFit: "cover" }}
               />{" "}
               <div class="card-img-overlay text-center">
-                <h5 class="carousel-Text">Die Liebe eines Tieres ist die ehrlichste</h5>
+                <h5 class="carousel-Text">Die Liebe eines Tieres ist die Ehrlichste</h5>
               </div>
             </Link>
           </div>
