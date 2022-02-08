@@ -11,32 +11,35 @@ const Glückskinder = (animal) => {
       .then((res) => setLucky(res.data))
       .catch((err) => console.log(err));
   }, []);
-  function ImgError(source) {
-    source.onError =
-      "https://hundzugast.de/wp-content/themes/petsitter/images/job-placeholder.gif";
-  }
+
   return (
-    <div className="tierBack">
-      <Link to={"/"} className="btn btn-primary">
-        Back
-      </Link>
-      {lucky ? (
-        <div className="container">
+    <>
+    {lucky ? (
+      <div className="container">
+        <div className="row">
           {lucky.animal.map((animal, index) => (
-            <div className="contain" key={index}>
-              <div className="cardAll card text-center">
+            <div key={index} className="col-sm-4 mb-2">
+              <div className="cardAll card text-center h-100">
                 <img
                   className="card-img-top"
                   src={animal.inputBildUrl}
-                  onError={ImgError}
+                  onError={(img) =>
+                    (img.src =
+                      "https://hundzugast.de/wp-content/themes/petsitter/images/job-placeholder.gif")
+                  }
                   alt=""
                 />
-                <div className="card-body  cardTextBack">
+                <div className="card-body cardTextBack">
                   <h5 className="card-title">{animal.inputName}</h5>
-                  <p className="card-text">Geboren: {animal.inputGeburtstag}</p>
+                  <p className="card-text">
+                    Geboren: {animal.inputGeburtstag}
+                  </p>
                   <p className="card-text">Rasse: {animal.inputRasse}</p>
                   <p className="card-text">Ich wohne in {animal.inputOrt}</p>
-                  <Link to={`/tiere/${animal._id}`} className="btn btn-primary">
+                  <Link
+                    to={`/tiere/${animal._id}`}
+                    className="btn btn-primary"
+                  >
                     Mehr Info
                   </Link>
                 </div>
@@ -44,19 +47,21 @@ const Glückskinder = (animal) => {
             </div>
           ))}
         </div>
-      ) : (
-        <div>
-          <div className="text-center text-light">
-            <h2>Daten werden verarbeitet...</h2>
-            <img
-              src="https://media3.giphy.com/media/Oc8lIQHZsXqDu/200w.gif"
-              alt=""
-            />
-          </div>
+      </div>
+    ) : (
+      <div>
+        <div className="text-center text-light">
+          <h2>Daten werden verarbeitet...</h2>
+          <img
+            src="https://media3.giphy.com/media/Oc8lIQHZsXqDu/200w.gif"
+            alt=""
+          />
         </div>
-      )}
-    </div>
-  );
+      </div>
+    )}
+  </>
+);
 };
+
 
 export default Glückskinder;
