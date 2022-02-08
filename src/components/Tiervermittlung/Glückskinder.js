@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import Footer from "../Footer";
 
 const Glückskinder = (animal) => {
   const [lucky, setLucky] = useState();

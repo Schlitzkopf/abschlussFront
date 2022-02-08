@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Footer from "../Footer";
 
 const Erstellen = () => {
   const [status, setStatus] = useState();

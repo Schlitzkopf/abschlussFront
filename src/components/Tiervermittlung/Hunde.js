@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import Footer from "../Footer";
-import Navigation from "../Navigation";
 
 const Hunde = () => {
   const [dogs, setDogs] = useState();
