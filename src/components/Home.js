@@ -36,7 +36,7 @@ const Home = () => {
             <Link to={"hunde"}>
               <img
                 className="d-block w-100 h-100 homeHight card-image"
-                src="https://cdn.wamiz.fr/article/images/WAMIZ%20DE/Hunde%20im%20Park%20breit.jpg"
+                src="https://www.mera-petfood.com/files/_processed_/a/4/csm_iStock-521697453_7570f7a9b6.jpg"
                 alt="First slide"
                 style={{ objectFit: "cover" }}
               />{" "}
