@@ -16,8 +16,7 @@ const Auswahl = () => {
       .then((res) => setBeadel(res.data))
       .catch((err) => setError(err));
   }, [id]);
-    console.log(update)
-    console.log(error)
+
   const bearbeiten = async (e) => {
     e.preventDefault();
     const {

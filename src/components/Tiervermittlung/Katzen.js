@@ -11,7 +11,7 @@ const Katzen = () => {
       .then((res) => setCats(res.data))
       .catch((err) => console.log(err));
   }, []);
-  console.log(cats);
+  
   return (
     <>
       {cats ? (

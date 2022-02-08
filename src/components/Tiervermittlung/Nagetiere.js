@@ -11,6 +11,7 @@ const Nagetiere = () => {
       .then((res) => setRodents(res.data))
       .catch((err) => console.log(err));
   }, []);
+  
   return (
     <>
       {rodents ? (

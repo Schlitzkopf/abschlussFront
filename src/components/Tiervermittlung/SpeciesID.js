@@ -13,7 +13,7 @@ const TiereID = () => {
       .then((res) => setSpecies(res.data))
       .catch((err) => console.log(err));
   }, [id]);
-console.log(species)
+
   const handleClick = () => {
     navigate(-1);
   };

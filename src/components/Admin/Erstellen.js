@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 
 const Erstellen = () => {
   const [status, setStatus] = useState();
-  const [setError] = useState();
   const navigate = useNavigate();
 
   const newAnimal = async (e) => {
@@ -52,10 +51,10 @@ const Erstellen = () => {
     })
       .then((res) => res.json())
       .then((data) => setStatus(data))
-      .catch((err) => setError(err.message));
+      .catch((err) => console.log(err.message));
     e.target[0].value = "";
   };
-  console.log(status);
+
 
   const handleClick = () => {
     navigate(-1);

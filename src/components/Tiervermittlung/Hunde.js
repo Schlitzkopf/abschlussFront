@@ -11,7 +11,7 @@ const Hunde = () => {
       .then((res) => setDogs(res.data))
       .catch((err) => console.log(err));
   }, []);
-
+  
   return (
     <>
       {dogs ? (
