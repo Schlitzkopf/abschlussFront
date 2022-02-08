@@ -6,6 +6,15 @@ const Footer = () => {
     <>
       <div className="footBack">
         <footer className="page-footer font-small mdb-color lighten-3 pt-4 text-light">
+              <div className="footer-copyright text-center py-3 text-light">
+                <Link
+                  className="nav-link active text-center"
+                  aria-current="page"
+                  to={"admin"}
+                >
+                  Admin
+                </Link>
+              </div>
           <div className="container text-center text-md-left">
             <div className="row">
               <div className="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
@@ -58,15 +67,6 @@ const Footer = () => {
                   Wir sind eine kleine Gruppe die zusammen etwas in der
                   Tiervermittlungswelt verändern möchte.
                 </p>
-              </div>
-              <div className="footer-copyright text-center py-3 text-light">
-                <Link
-                  className="nav-link active text-center"
-                  aria-current="page"
-                  to={"admin"}
-                >
-                  Admin
-                </Link>
               </div>
             </div>
           </div>
