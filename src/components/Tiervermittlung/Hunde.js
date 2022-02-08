@@ -13,12 +13,7 @@ const Hunde = () => {
   }, []);
 
   return (
-    <div>
-
-    <div className="tierBack container">
-      <Link to={"/"} className="btn btn-secondary">
-        Zurück
-      </Link>
+    <>
       {dogs ? (
         <div className="container">
           <div className="row">
@@ -64,8 +59,7 @@ const Hunde = () => {
           </div>
         </div>
       )}
-    </div>
-    </div>
+    </>
   );
 };
 

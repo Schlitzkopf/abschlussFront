@@ -12,10 +12,7 @@ const Nagetiere = () => {
       .catch((err) => console.log(err));
   }, []);
   return (
-    <div className="tierBack">
-      <Link to={"/"} className="btn btn-secondary">
-        Zurück
-      </Link>
+    <>
       {rodents ? (
         <div className="container">
           <div className="row">
@@ -61,7 +58,7 @@ const Nagetiere = () => {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 };
 

@@ -17,6 +17,11 @@ body {
   padding-top: 2vh;
 }
 
+.anmeldenPaddingBack {
+  padding: 10rem;
+  background-color:  rgba(39, 43, 54, 0.691);
+}
+
 .adminPadding {
   padding-top: 10vh;
   padding-bottom: 10vh;
@@ -93,4 +98,10 @@ body {
 
 .cardTextBack {
   background-color: rgba(54, 60, 78, 0.616);
+}
+
+/* Button */
+
+.marginButton {
+  margin: 2rem;
 }

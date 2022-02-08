@@ -20,11 +20,7 @@ const TiereID = () => {
 
   return (
     <>
-      <div className="container">
-        <button onClick={handleClick} className="btn btn-secondary">
-          Zurück
-        </button>
-      </div>
+      <div className="container"></div>
       {species ? (
         <div className="container">
           <div className="card  mb-3">
@@ -38,7 +34,7 @@ const TiereID = () => {
                       "https://hundzugast.de/wp-content/themes/petsitter/images/job-placeholder.gif")
                   }
                   alt="Bild des Tieres"
-                  style={{width: "100%", height: "100%", objectFit: "cover"}}
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 />
               </div>
               <div className="col-md-8">
@@ -64,6 +60,9 @@ const TiereID = () => {
                   <p className="card-text">
                     Kann ich gut mit Kindern? {species.inputKinderfreundlich}!
                   </p>
+                  <button onClick={handleClick} className="btn btn-secondary marginButton">
+                    Zurück
+                  </button>
                   <a
                     className="btn btn-primary"
                     href="mailto:holdenriederferdinand@gmail.com"

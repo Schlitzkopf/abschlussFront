@@ -13,10 +13,7 @@ const Katzen = () => {
   }, []);
   console.log(cats);
   return (
-    <div className="tierBack">
-      <Link to={"/"} className="btn btn-secondary">
-        Zurück
-      </Link>
+    <>
       {cats ? (
         <div className="container">
           <div className="row">
@@ -62,7 +59,7 @@ const Katzen = () => {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 };
 

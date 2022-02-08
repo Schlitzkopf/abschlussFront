@@ -30,7 +30,7 @@ const Admin = () => {
           </div>
         </div>
       ) : (
-        <div className="adminPadding container">
+        <div className="anmeldenPaddingBack container">
           <form className="justify-content-md-end" onSubmit={handleLogIn}>
             <input
               type="password"
