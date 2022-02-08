@@ -126,6 +126,7 @@ const Erstellen = () => {
                     className="form-control"
                     placeholder="Bitte Gewicht angeben."
                     name="inputGewicht"
+                    required
                   />
                 </div>
               </div>
@@ -141,6 +142,7 @@ const Erstellen = () => {
                       type="radio"
                       name="inputGeschlecht"
                       value="Männlich"
+                      required
                     />
                     <label className="form-check-label" htmlFor="gridRadios1">
                       Männlich
@@ -202,6 +204,7 @@ const Erstellen = () => {
                       type="radio"
                       name="inputGeimpft"
                       value="Ja"
+                      required
                     />
                     <label className="form-check-label" htmlFor="gridRadios1">
                       Ja
@@ -232,6 +235,7 @@ const Erstellen = () => {
                       type="radio"
                       name="inputKastriert"
                       value="Ja"
+                      required
                     />
                     <label className="form-check-label" htmlFor="gridRadios1">
                       Ja
@@ -262,6 +266,7 @@ const Erstellen = () => {
                       type="radio"
                       name="inputKinderfreundlich"
                       value="Ja"
+                      required
                     />
                     <label className="form-check-label" htmlFor="gridRadios1">
                       Ja
@@ -292,6 +297,7 @@ const Erstellen = () => {
                       type="radio"
                       name="inputVerträglich"
                       value="Ja"
+                      required
                     />
                     <label className="form-check-label" htmlFor="gridRadios1">
                       Ja
@@ -366,7 +372,7 @@ const Erstellen = () => {
                 <label htmlFor="inputTier" className="col-sm-2 col-form-label">
                   Tierart:
                 </label>
-                <select name="inputTier" className="form-select">
+                <select name="inputTier" className="form-select" required>
                   <option value="hund">Hund</option>
                   <option value="katze">Katze</option>
                   <option value="nagetier">Nagetier</option>
@@ -383,6 +389,7 @@ const Erstellen = () => {
                   className="form-control"
                   name="inputBeschreibung"
                   rows="3"
+                  required
                 ></textarea>
               </div>
               {/* Sende Button */}
