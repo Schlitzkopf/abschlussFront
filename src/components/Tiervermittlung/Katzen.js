@@ -63,7 +63,6 @@ const Katzen = () => {
           </div>
         </div>
       )}
-      <Footer />
     </div>
   );
 };

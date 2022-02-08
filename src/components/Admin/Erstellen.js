@@ -400,7 +400,6 @@ const Erstellen = () => {
           </div>
         </div>
       )}
-      <Footer />
     </>
   );
 };

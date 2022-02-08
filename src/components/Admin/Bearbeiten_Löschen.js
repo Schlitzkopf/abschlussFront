@@ -47,7 +47,9 @@ const Bearbeiten = () => {
                   <div className="card-body cardTextBack">
                     <h5 className="card-text">{animal.inputName}</h5>
                     <p className="card-text">Rasse: {animal.inputRasse}</p>
-                    <p className="card-text">Gewicht: {animal.inputGewicht} Kg</p>
+                    <p className="card-text">
+                      Gewicht: {animal.inputGewicht} Kg
+                    </p>
                     <p className="card-text">
                       Geschlecht: {animal.inputGeschlecht}
                     </p>
@@ -74,7 +76,6 @@ const Bearbeiten = () => {
           </div>
         </div>
       )}
-      <Footer />
     </div>
   );
 };

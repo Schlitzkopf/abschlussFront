@@ -6,7 +6,6 @@ import Footer from "./Footer";
 const Home = () => {
   return (
     <>
-      <Navigation />
       <div
         id="carouselExampleIndicators"
         className="carousel slide"
@@ -35,30 +34,38 @@ const Home = () => {
           ></button>
         </div>
         <div className="carousel-inner">
-          <div className="carousel-item active">
+          <div className="carousel-item active" style={{ height: "100%" }}>
             <Link to={"hunde"}>
               <img
-                className="d-block w-100 homeHight"
+                className="d-block w-100 h-100 homeHight card-image"
                 src="https://cdn.wamiz.fr/article/images/WAMIZ%20DE/Hunde%20im%20Park%20breit.jpg"
                 alt="First slide"
+                style={{ objectFit: "cover" }}
               />{" "}
             </Link>
+            <div class="card-img-overlay text-center">
+              <h5 class="card-title text-light">
+                Finde dein neuen Freund fürs Leben.
+              </h5>
+            </div>
           </div>
-          <div className="carousel-item">
+          <div className="carousel-item" style={{ height: "100%" }}>
             <Link to={"katzen"}>
               <img
-                className="d-block w-100 homeHight"
+                className="d-block  w-100 h-100 homeHight card-image"
                 src="https://vetmed.tamu.edu/news/wp-content/uploads/sites/9/2019/10/CatGrassPetTalk.png"
                 alt="Second slide"
+                style={{ objectFit: "cover" }}
               />{" "}
             </Link>
           </div>
-          <div className="carousel-item">
+          <div className="carousel-item" style={{ height: "100%" }}>
             <Link to={"nagetiere"}>
               <img
-                className="d-block w-100 homeHight"
+                className="d-block  w-100 h-100 homeHight card-image"
                 src="https://images.koelle-zoo.de/media/image/79/00/ba/Sind_Hamster_Einzelg-anger_Teaser.jpg"
                 alt="Third slide"
+                style={{ objectFit: "cover" }}
               />{" "}
             </Link>
           </div>

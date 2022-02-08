@@ -177,7 +177,6 @@ const Auswahl = () => {
           </div>
         </div>
       )}
-      <Footer />
     </>
   );
 };

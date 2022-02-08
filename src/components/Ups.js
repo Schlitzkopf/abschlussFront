@@ -14,7 +14,6 @@ const Ups = () => {
         src="https://acegif.com/wp-content/uploads/cat-typing-16.gif"
         alt=""
       />
-      <Footer />
     </div>
   );
 };

@@ -6,11 +6,11 @@ const Navigation = () => {
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container sticky-top">
-          <img
+          <Link to="/"><img
             alt="Logo"
             className="img-responsive passendNav"
             src={require("./Logo/groß.png")}
-          />
+          /></Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -40,17 +40,17 @@ const Navigation = () => {
                   aria-labelledby="navbarDropdown"
                 >
                   <li>
-                    <Link className="dropdown-item navText" to={"hunde"}>
+                    <Link className="dropdown-item navText" to="hunde">
                       Hunde
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item navText" to={"katzen"}>
+                    <Link className="dropdown-item navText" to="katzen">
                       Katzen
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item navText" to={"nagetiere"}>
+                    <Link className="dropdown-item navText" to="nagetiere">
                       Nagetiere
                     </Link>
                   </li>

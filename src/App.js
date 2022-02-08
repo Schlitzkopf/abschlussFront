@@ -15,10 +15,13 @@ import Admin from "./Admin";
 import Bearbeiten from "./components/Admin/Bearbeiten_Löschen";
 import Erstellen from "./components/Admin/Erstellen";
 import Auswahl from "./components/Admin/Auswahl";
+import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
 
 function App(props) {
   return (
     <>
+    <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/hunde" element={<Hunde />} />
@@ -35,6 +38,7 @@ function App(props) {
         <Route path="/auswahl/:id" element={<Auswahl />} />
         <Route path="/ups" element={<Ups />} />
       </Routes>
+      <Footer />
     </>
   );
 }

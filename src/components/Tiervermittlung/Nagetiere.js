@@ -62,7 +62,6 @@ const Nagetiere = () => {
           </div>
         </div>
       )}
-      <Footer />
     </div>
   );
 };

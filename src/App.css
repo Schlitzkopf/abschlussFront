@@ -2,35 +2,10 @@
   text-align: center;
 }
 
-#root {
-  background-image: url("https://www.wallpapertip.com/wmimgs/82-823767_classy-dark-plain-background.jpg");
+body {
+  background-image: url("https://www.allianz.de/gesundheit/hundekrankenversicherung/_jcr_content/root/stage/stageimage.img.60.3360.jpeg/1637922722599/hund-stock-wasser.jpeg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-
-/* Home.js */
-
-.carousel-inner {
-  width: 100%;
-  height: 27vh;
-  background-size: auto;
-}
-
-.cardAll {
-  width: 18rem;
-  margin: 0 auto; /* Added */
-  float: none; /* Added */
-  margin-bottom: 10px; /* Added */
-}
-
-.card-img-top {
-  width: 100%;
-  height: 30vh;
-  object-fit: cover;
-}
-
-.cardTextBack {
-  background-color: rgba(54, 60, 78, 0.616);
 }
 
 /* Admin.js */
@@ -79,6 +54,15 @@
   border-radius: 50%;
 }
 
+/* Home.js */
+
+.carousel-inner {
+  width: 100%;
+  height: 100vh;
+  background-size: auto;
+}
+
+
 /* Footer */
 
 .footBack {
@@ -92,3 +76,21 @@
   margin-bottom: 2vh;
 }
 
+/* Tiervermittlung */
+
+.cardAll {
+  width: 18rem;
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+}
+
+.card-img-top {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+}
+
+.cardTextBack {
+  background-color: rgba(54, 60, 78, 0.616);
+}

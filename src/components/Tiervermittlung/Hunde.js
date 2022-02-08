@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import Footer from "../Footer";
+import Navigation from "../Navigation";
 
 const Hunde = () => {
   const [dogs, setDogs] = useState();
@@ -14,7 +15,9 @@ const Hunde = () => {
   }, []);
 
   return (
-    <div className="tierBack">
+    <div>
+
+    <div className="tierBack container">
       <Link to={"/"} className="btn btn-secondary">
         Zurück
       </Link>
@@ -63,7 +66,7 @@ const Hunde = () => {
           </div>
         </div>
       )}
-      <Footer />
+    </div>
     </div>
   );
 };

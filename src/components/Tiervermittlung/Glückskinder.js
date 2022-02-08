@@ -56,7 +56,6 @@ const Glückskinder = (animal) => {
           </div>
         </div>
       )}
-      <Footer />
     </div>
   );
 };
