@@ -33,12 +33,12 @@ const Nagetiere = () => {
                     alt=""
                   />
                   <div className="card-body cardTextBack">
-                    <h5 className="card-title">{animal.inputName}</h5>
-                    <p className="card-text">
+                    <h5 className="card-title text-own">{animal.inputName}</h5>
+                    <p className="card-text text-own">
                       Geboren: {animal.inputGeburtstag}
                     </p>
-                    <p className="card-text">Rasse: {animal.inputRasse}</p>
-                    <p className="card-text">Ich wohne in {animal.inputOrt}</p>
+                    <p className="card-text text-own">Rasse: {animal.inputRasse}</p>
+                    <p className="card-text text-own">Ich wohne in {animal.inputOrt}</p>
                     <Link
                       to={`/tiere/${animal._id}`}
                       className="btn btn-light"

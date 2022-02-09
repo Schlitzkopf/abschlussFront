@@ -7,7 +7,7 @@ const Admin = () => {
   const handleLogIn = (e) => {
     e.preventDefault();
     const enterPasswort = e.target.firstChild.value;
-    if (enterPasswort === "1234") {
+    if (enterPasswort === "1766") {
       setLoggedIn(true);
     } else {
       alert("Falsches Passwort");

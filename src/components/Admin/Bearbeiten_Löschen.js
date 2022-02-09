@@ -41,12 +41,12 @@ const Bearbeiten = () => {
                     alt=""
                   />
                   <div className="card-body cardTextBack">
-                    <h5 className="card-text">{animal.inputName}</h5>
-                    <p className="card-text">Rasse: {animal.inputRasse}</p>
-                    <p className="card-text">
+                    <h5 className="card-text text-own">{animal.inputName}</h5>
+                    <p className="card-text text-own">Rasse: {animal.inputRasse}</p>
+                    <p className="card-text text-own">
                       Gewicht: {animal.inputGewicht} Kg
                     </p>
-                    <p className="card-text">
+                    <p className="card-text text-own">
                       Geschlecht: {animal.inputGeschlecht}
                     </p>
                     <Link

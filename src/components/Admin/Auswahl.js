@@ -61,7 +61,7 @@ const Auswahl = () => {
                     alt=""
                   />
                   <div className="card-body cardTextBack">
-                    <p className="card-text">Name: {all.inputName}</p>
+                    <p className="card-text text-own">Name: {all.inputName}</p>
                     <input
                       type="text"
                       className="form-control"
@@ -69,24 +69,24 @@ const Auswahl = () => {
                       name="inputName"
                       required
                     />
-                    <p className="card-text">Rasse: {all.inputRasse}</p>
-                    <p className="card-text">Gewicht: {all.inputGewicht}</p>
-                    <p className="card-text">
+                    <p className="card-text text-own">Rasse: {all.inputRasse}</p>
+                    <p className="card-text text-own">Gewicht: {all.inputGewicht}</p>
+                    <p className="card-text text-own">
                       Geschlecht: {all.inputGeschlecht}
                     </p>
-                    <p className="card-text">Gechipt: {all.inputGechipt}</p>
-                    <p className="card-text">Geimpft: {all.inputGeimpft}</p>
-                    <p className="card-text">Kastriert: {all.inputKastriert}</p>
-                    <p className="card-text">
+                    <p className="card-text text-own">Gechipt: {all.inputGechipt}</p>
+                    <p className="card-text text-own">Geimpft: {all.inputGeimpft}</p>
+                    <p className="card-text text-own">Kastriert: {all.inputKastriert}</p>
+                    <p className="card-text text-own">
                       Kinderfreundlich: {all.inputKinderfreundlich}
                     </p>
-                    <p className="card-text">Geboren: {all.inputGeburtstag}</p>
-                    <p className="card-text">Ort: {all.inputOrt}</p>
-                    <p className="card-text">BildUrl: {all.inputBildUrl}</p>
-                    <p className="card-text">Tierart: {all.inputTier}</p>
-                    <p className="card-text">Ort: {all.inputBeschreibung}</p>
-                    <p className="card-text">Verhalten: {all.inputVerhalten}</p>
-                    <p className="card-text">VideoUrl: {all.inputVideoUrl}</p>
+                    <p className="card-text text-own">Geboren: {all.inputGeburtstag}</p>
+                    <p className="card-text text-own">Ort: {all.inputOrt}</p>
+                    <p className="card-text text-own">BildUrl: {all.inputBildUrl}</p>
+                    <p className="card-text text-own">Tierart: {all.inputTier}</p>
+                    <p className="card-text text-own">Ort: {all.inputBeschreibung}</p>
+                    <p className="card-text text-own">Verhalten: {all.inputVerhalten}</p>
+                    <p className="card-text text-own">VideoUrl: {all.inputVideoUrl}</p>
                   </div>
                 </div>
               </div>

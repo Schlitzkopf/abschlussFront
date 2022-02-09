@@ -39,25 +39,25 @@ const TiereID = () => {
               </div>
               <div className="col-md-8">
                 <div className="card-body cardTextBack">
-                  <h5 className="card-title">{species.inputName}</h5>
-                  <p className="card-text">
+                  <h5 className="card-title text-own">{species.inputName}</h5>
+                  <p className="card-text text-own">
                     Hallo ich bin {species.inputName}. Ich bin{" "}
                     {species.inputGeburtstag} geboren.
                   </p>
-                  <p className="card-text">
+                  <p className="card-text text-own">
                     Meine Beschreibung: {species.inputBeschreibung}
                   </p>
-                  <p className="card-text">Meine Rasse: {species.inputRasse}</p>
-                  <p className="card-text">
+                  <p className="card-text text-own">Meine Rasse: {species.inputRasse}</p>
+                  <p className="card-text text-own">
                     Ich wohne momentan in {species.inputOrt}
                   </p>
-                  <p className="card-text">Gechipt: {species.inputGechipt}</p>
-                  <p className="card-text">Geimpft: {species.inputGeimpft}</p>
-                  <p className="card-text">Ich bin {species.inputGeschlecht}</p>
-                  <p className="card-text">
+                  <p className="card-text text-own">Gechipt: {species.inputGechipt}</p>
+                  <p className="card-text text-own">Geimpft: {species.inputGeimpft}</p>
+                  <p className="card-text text-own">Ich bin {species.inputGeschlecht}</p>
+                  <p className="card-text text-own">
                     Ich wiege {species.inputGewicht} Kg
                   </p>
-                  <p className="card-text">
+                  <p className="card-text text-own">
                     Kann ich gut mit Kindern? {species.inputKinderfreundlich}!
                   </p>
                   <button onClick={handleClick} className="btn btn-secondary marginButton">

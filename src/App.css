@@ -50,8 +50,12 @@ padding-bottom: 13rem;
   border-radius: 10vh, 10vh, 10vh, 10vh;
 }
 
+.navColor {
+
+  background-color: rgb(54, 39, 48);
+}
 .navBack {
-  background: rgba(115, 147, 252, 0.616);
+  background: rgba(182, 141, 108, 0.616);
 }
 
 .navText {
@@ -59,7 +63,7 @@ padding-bottom: 13rem;
 }
 
 .navText:hover {
-  color: rgba(93, 130, 250, 0.692);
+  color: rgba(250, 190, 93, 0.692);
 }
 
 .passendNav {
@@ -127,7 +131,11 @@ padding-bottom: 13rem;
 }
 
 .cardTextBack {
-  background-color: rgba(91, 93, 97, 0.438);
+  background-color: rgb(54, 39, 48);
+}
+
+.text-own {
+  color: rgb(219, 204, 192);
 }
 
 /* Button */
