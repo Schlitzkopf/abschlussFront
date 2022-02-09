@@ -7,7 +7,7 @@ const Ups = () => {
       <Link to={"/"} className="btn btn-secondary">
         Zurück
       </Link>
-      <h2 className="text-light">Sry wir arbeiten gerade an diesem Link.</h2>
+      <h2 className="text-dark">Sry wir arbeiten gerade an diesem Link.</h2>
       <img
         className="img-fluid"
         src="https://acegif.com/wp-content/uploads/cat-typing-16.gif"

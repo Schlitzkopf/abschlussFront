@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: url("https://i.pinimg.com/originals/cc/01/98/cc019822a37bd6158546638b5141f2b3.jpg");
+  background-image: url(./components/Maus/back.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
 }

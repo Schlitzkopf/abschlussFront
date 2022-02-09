@@ -17,7 +17,7 @@ const Glückskinder = (animal) => {
     {lucky ? (
       <div className="container">
         <div className="row">
-          <h1 className="text-center text-light">Ich wurde schon Adoptiert.</h1>
+          <h1 className="text-center text-dark">Ich wurde schon Adoptiert.</h1>
           {lucky.animal.map((animal, index) => (
             <div key={index} className="col-sm-4 mb-2">
               <div className="cardAll card text-center h-100">
