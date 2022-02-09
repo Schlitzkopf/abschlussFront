@@ -4,8 +4,7 @@ import axios from "axios";
 
 const Auswahl = () => {
   const { id } = useParams();
-  const [beadel, setBeadel] = useState();
-  const [setUpdate] = useState();
+  const [all, getAll] = useState();
   const [del, setDel] = useState();
   const [error, setError] = useState();
   const navigate = useNavigate();
@@ -13,59 +12,11 @@ const Auswahl = () => {
   useEffect(() => {
     axios
       .get(`https://saveitnow.herokuapp.com/animal/${id}`)
-      .then((res) => setBeadel(res.data))
+      .then((res) => getAll(res.data))
       .catch((err) => setError(err));
   }, [id]);
 
-  const bearbeiten = async (e) => {
-    e.preventDefault();
-    const {
-      target: {
-        elements: {
-          inputName: { value: inputName },
-          inputRasse: { value: inputRasse },
-          inputGewicht: { value: inputGewicht },
-          inputGeschlecht: { value: inputGeschlecht },
-          inputGechipt: { value: inputGechipt },
-          inputGeimpft: { value: inputGeimpft },
-          inputKastriert: { value: inputKastriert },
-          inputKinderfreundlich: { value: inputKinderfreundlich },
-          inputVerträglich: { value: inputVerträglich },
-          inputGeburtstag: { value: inputGeburtstag },
-          inputOrt: { value: inputOrt },
-          inputBildUrl: { value: inputBildUrl },
-          inputTier: { value: inputTier },
-          inputBeschreibung: { value: inputBeschreibung },
-        },
-      },
-    } = e;
-    await fetch(`https://saveitnow.herokuapp.com/animal/${id}`, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        inputName,
-        inputRasse,
-        inputGewicht,
-        inputGeschlecht,
-        inputGechipt,
-        inputGeimpft,
-        inputKastriert,
-        inputKinderfreundlich,
-        inputVerträglich,
-        inputGeburtstag,
-        inputOrt,
-        inputBildUrl,
-        inputTier,
-        inputBeschreibung,
-      }),
-    })
-      .then((res) => res.json())
-      .then((data) => setUpdate(data))
-      .catch((err) => setError(err.message));
-    e.target[0].value = "";
-  };
+  
 
   const löschen = async (e) => {
     e.preventDefault();
@@ -82,9 +33,9 @@ const Auswahl = () => {
   };
 
   return (
-    <>
-      {beadel ? (
-        <div className="tierBack">
+    <div className="container mb-5 mt-5">
+      {all ? (
+        <div className="container mb-5 mt-5">
           <button onClick={handleClick} className="btn btn-secondary">
             Zurück
           </button>
@@ -98,14 +49,13 @@ const Auswahl = () => {
               <button className="btn btn-danger">Tier Löschen</button>
             </form>
           )}
-          <form onSubmit={bearbeiten} className="needs-validation">
             <div className="container">
               <div className="row">
                 <div className="col-sm-4 mb-2">
                   <div className="card text-center h-100">
                     <img
                       className="card-img-top"
-                      src={beadel.inputBildUrl}
+                      src={all.inputBildUrl}
                       onError={(img) =>
                         (img.src =
                           "https://hundzugast.de/wp-content/themes/petsitter/images/job-placeholder.gif")
@@ -113,56 +63,55 @@ const Auswahl = () => {
                       alt=""
                     />
                     <div className="card-body cardTextBack">
-                      <p className="card-text">Name: {beadel.inputName}</p>
+                      <p className="card-text">Name: {all.inputName}</p>
                       <input
                         type="text"
                         className="form-control"
-                        placeholder={beadel.inputName}
+                        placeholder={all.inputName}
                         name="inputName"
                         required
                       />
-                      <p className="card-text">Rasse: {beadel.inputRasse}</p>
+                      <p className="card-text">Rasse: {all.inputRasse}</p>
                       <p className="card-text">
-                        Gewicht: {beadel.inputGewicht}
+                        Gewicht: {all.inputGewicht}
                       </p>
                       <p className="card-text">
-                        Geschlecht: {beadel.inputGeschlecht}
+                        Geschlecht: {all.inputGeschlecht}
                       </p>
                       <p className="card-text">
-                        Gechipt: {beadel.inputGechipt}
+                        Gechipt: {all.inputGechipt}
                       </p>
                       <p className="card-text">
-                        Geimpft: {beadel.inputGeimpft}
+                        Geimpft: {all.inputGeimpft}
                       </p>
                       <p className="card-text">
-                        Kastriert: {beadel.inputKastriert}
+                        Kastriert: {all.inputKastriert}
                       </p>
                       <p className="card-text">
-                        Kinderfreundlich: {beadel.inputKinderfreundlich}
+                        Kinderfreundlich: {all.inputKinderfreundlich}
                       </p>
                       <p className="card-text">
-                        Geboren: {beadel.inputGeburtstag}
+                        Geboren: {all.inputGeburtstag}
                       </p>
-                      <p className="card-text">Ort: {beadel.inputOrt}</p>
+                      <p className="card-text">Ort: {all.inputOrt}</p>
                       <p className="card-text">
-                        BildUrl: {beadel.inputBildUrl}
+                        BildUrl: {all.inputBildUrl}
                       </p>
-                      <p className="card-text">Tierart: {beadel.inputTier}</p>
+                      <p className="card-text">Tierart: {all.inputTier}</p>
                       <p className="card-text">
-                        Ort: {beadel.inputBeschreibung}
-                      </p>
-                      <p className="card-text">
-                        Verhalten: {beadel.inputVerhalten}
+                        Ort: {all.inputBeschreibung}
                       </p>
                       <p className="card-text">
-                        VideoUrl: {beadel.inputVideoUrl}
+                        Verhalten: {all.inputVerhalten}
+                      </p>
+                      <p className="card-text">
+                        VideoUrl: {all.inputVideoUrl}
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </form>
         </div>
       ) : (
         <div>
@@ -175,7 +124,7 @@ const Auswahl = () => {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 
