@@ -3,13 +3,14 @@ import React from "react";
 const Suchmeldungen = () => {
   return (
     <div className="container mb-5">
-       <h1 className="text-center text-dark mt-5 mb-5 ueberschriften">
-              TIER ENTLAUFEN | TIER ZUGELAUFEN |TIER GEFUNDEN
-            </h1>
+      <h1 className="text-center text-dark mt-5 mb-5 ueberschriften">
+        TIER ENTLAUFEN | TIER ZUGELAUFEN |TIER GEFUNDEN
+      </h1>
       <div className="list-group d-grid gap-3 ">
         <a
           href="https://www.tasso.net/"
           className="list-group-item list-group-item-action backgroundSchutz"
+          rel="noreferrer"
           target="_blank"
         >
           <div className="d-flex w-100 justify-content-between">
@@ -25,6 +26,7 @@ const Suchmeldungen = () => {
         <a
           href="https://www.lippewelle.de/index.html"
           className="list-group-item list-group-item-action"
+          rel="noreferrer"
           target="_blank"
         >
           <div className="d-flex w-100 justify-content-between">
@@ -38,6 +40,7 @@ const Suchmeldungen = () => {
         <a
           href="http://www.fellsuche.eu/index.php"
           className="list-group-item list-group-item-action"
+          rel="noreferrer"
           target="_blank"
         >
           <div className="d-flex w-100 justify-content-between">
@@ -55,7 +58,6 @@ const Suchmeldungen = () => {
             dass Sie jetzt "andere Dinge im Kopf" haben.
           </p>
         </a>
-        
       </div>
     </div>
   );

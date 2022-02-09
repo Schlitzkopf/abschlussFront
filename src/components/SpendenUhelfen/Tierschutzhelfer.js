@@ -10,6 +10,7 @@ const Tierschutzhelfer = () => {
         <a
           href="https://schnueffelfreunde.de/"
           className="list-group-item list-group-item-action backgroundSchutz"
+          rel="noreferrer"
           target="_blank"
         >
           <div className="d-flex w-100 justify-content-between">
@@ -27,6 +28,7 @@ const Tierschutzhelfer = () => {
         <a
           href="https://www.tierheimleben-in-not.de/"
           className="list-group-item list-group-item-action"
+          rel="noreferrer"
           target="_blank"
         >
           <div className="d-flex w-100 justify-content-between">
@@ -43,6 +45,7 @@ const Tierschutzhelfer = () => {
         <a
           href="https://www.streunerhilfe-ni-no.de/"
           className="list-group-item list-group-item-action"
+          rel="noreferrer"
           target="_blank"
         >
           <div className="d-flex w-100 justify-content-between">
@@ -60,6 +63,7 @@ const Tierschutzhelfer = () => {
         <a
           href="https://www.susyutzinger.ch/"
           className="list-group-item list-group-item-action"
+          rel="noreferrer"
           target="_blank"
         >
           <div className="d-flex w-100 justify-content-between">
@@ -81,6 +85,7 @@ const Tierschutzhelfer = () => {
         <a
           href="https://www.natucate.com/"
           className="list-group-item list-group-item-action"
+          rel="noreferrer"
           target="_blank"
         >
           <div className="d-flex w-100 justify-content-between">
