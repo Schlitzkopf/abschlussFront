@@ -18,7 +18,7 @@ const Admin = () => {
     <>
       {loggedIn ? (
         <div className="anmeldePadding container">
-          <div className="margin">
+          <div className="btn-group">
             <Link to={"/erstellen"} type="button" className="btn btn-primary margin">
               Neues Tier erstellen?
             </Link>
@@ -28,7 +28,7 @@ const Admin = () => {
           </div>
         </div>
       ) : (
-        <div className="anmeldenPaddingBack container">
+        <div className="anmeldenPaddingBack container btn-group">
           <form className="justify-content-md-end" onSubmit={handleLogIn}>
             <input
               type="password"
