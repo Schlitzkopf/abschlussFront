@@ -9,7 +9,7 @@ const Navigation = () => {
           <Link to="/"><img
             alt="Logo"
             className="img-responsive passendNav"
-            src={require("./Logo/groß.png")}
+            src={require("./Logo/small.png")}
           /></Link>
           <button
             className="navbar-toggler"

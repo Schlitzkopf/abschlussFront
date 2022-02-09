@@ -63,8 +63,8 @@ padding-bottom: 13rem;
 }
 
 .passendNav {
-  width: 14vh;
-  max-height: 10vh;
+  width: 9vh;
+  max-height: 6vh;
   border-radius: 50%;
 }
 
@@ -77,12 +77,15 @@ padding-bottom: 13rem;
 }
 
 .carousel-Text{
-  color: rgb(23, 8, 185);
+  color: rgb(30, 136, 236);
   font-family: 'Brush Script MT', cursive;
   font-weight: bold;
   font-size: 2rem;
 }
 
+.homeTextBack {
+  background-color: rgba(44, 45, 46, 0.883);
+}
 
 /* Footer */
 
