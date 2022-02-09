@@ -17,6 +17,9 @@ const Katzen = () => {
       {cats ? (
         <div className="container">
           <div className="row">
+          <h1 className="text-center text-light">
+              Hier kommt die Überschrift hin.
+            </h1>
             {cats.animal.map((animal, index) => (
               <div key={index} className="col-sm-4 mb-2">
                 <div className="cardAll card text-center h-100">
