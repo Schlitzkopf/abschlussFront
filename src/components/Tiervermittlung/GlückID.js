@@ -70,7 +70,7 @@ const GlückID = () => {
         </div>
       ) : (
         <div>
-          <div className="text-center text-light">
+          <div className="text-center text-dark">
             <h2>Daten werden verarbeitet...</h2>
             <img
               src="https://media3.giphy.com/media/Oc8lIQHZsXqDu/200w.gif"
