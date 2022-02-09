@@ -54,7 +54,7 @@ const Erstellen = () => {
       .catch((err) => console.log(err.message));
     e.target[0].value = "";
   };
-
+  console.log(status);
 
   const handleClick = () => {
     navigate(-1);
@@ -62,14 +62,13 @@ const Erstellen = () => {
 
   return (
     <div className="container">
-     <button onClick={handleClick} className="btn btn-secondary mt-4 ">
-              Zurück
-            </button>
+      <button onClick={handleClick} className="btn btn-secondary mt-4 ">
+        Zurück
+      </button>
       {status === "Success" ? (
         <div className="adminText">
-          <div className=" mb-5 mt-5">
-           
-            <h1 className="text-center text-dark mb-5 mt-5 ">
+          <div className=" mb-5 mt-5 pb-5 pt-5">
+            <h1 className="text-center text-dark mb-5 mt-5 pb-5 pt-5">
               Dein Tier wurde erfolgreich hochgeladen.
             </h1>
           </div>
@@ -78,7 +77,6 @@ const Erstellen = () => {
         <div className="text-dark mb-5 mt-5">
           <div className=" ">
             <form onSubmit={newAnimal} className="needs-validation">
-             
               {/* Name */}
               <div className="row mb-3 col-md-6">
                 <label htmlFor="inputName" className="col-sm-2 col-form-label">

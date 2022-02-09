@@ -4,10 +4,7 @@ import axios from "axios";
 
 const Bearbeiten = () => {
   const [all, setAll] = useState();
-
   const navigate = useNavigate();
-  // const [update, setUpdate] = useState();
-  // const [del, setDel] = useState();
 
   useEffect(() => {
     axios

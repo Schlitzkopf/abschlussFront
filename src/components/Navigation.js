@@ -6,11 +6,13 @@ const Navigation = () => {
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container sticky-top">
-          <Link to="/"><img
-            alt="Logo"
-            className="img-responsive passendNav"
-            src={require("./Logo/small.png")}
-          /></Link>
+          <Link to="/">
+            <img
+              alt="Logo"
+              className="img-responsive passendNav"
+              src={require("./Logo/small.png")}
+            />
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -95,7 +97,6 @@ const Navigation = () => {
                       Tierschutzhelfer
                     </Link>
                   </li>
-
                 </ul>
               </li>
               <li className="nav-item dropdown">
@@ -125,7 +126,6 @@ const Navigation = () => {
                   </li>
                 </ul>
               </li>
-
             </ul>
           </div>
         </div>

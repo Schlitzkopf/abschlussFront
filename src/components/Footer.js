@@ -56,23 +56,22 @@ const Footer = () => {
                 </h5>
                 <p className="list-unstyled">
                   Wir sind eine kleine Gruppe die zusammen etwas in der
-                  Tiervermittlungswelt verändern möchte. 
-                  Wir sind ein Tierschutznetzwerk im europäischen Raum.
-                  Finde genau das Tier, welches zu Dir passt!
+                  Tiervermittlungswelt verändern möchte. Wir sind ein
+                  Tierschutznetzwerk im europäischen Raum. Finde genau das Tier,
+                  welches zu Dir passt!
                 </p>
               </div>
             </div>
             <div className="footer-copyright text-center  text-light ">
-                <Link
-                  className="nav-link active text-center ml-3"
-                  aria-current="page"
-                  to={"admin"}
-                >
-                  Admin
-                </Link>
-              </div>
+              <Link
+                className="nav-link active text-center ml-3"
+                aria-current="page"
+                to={"admin"}
+              >
+                Admin
+              </Link>
+            </div>
           </div>
-              
         </footer>
       </div>
     </>
