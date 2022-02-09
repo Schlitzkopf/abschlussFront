@@ -19,7 +19,7 @@ const Hunde = () => {
           <div className="row">
             {" "}
             <h1 className="text-center text-dark">
-              Hier kommt die Überschrift hin.
+              HUNDE SUCHEN EIN ZUHAUSE
             </h1>
             {dogs.animal.map((animal, index) => (
               <div key={index} className="col-sm-4 mb-2">

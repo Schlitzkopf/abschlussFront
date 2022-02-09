@@ -18,7 +18,7 @@ const Nagetiere = () => {
         <div className="container">
           <div className="row">
           <h1 className="text-center text-dark">
-              Hier kommt die Überschrift hin.
+              NAGER SUCHEN EIN ZUHAUSE
             </h1>
             {rodents.animal.map((animal, index) => (
               <div key={index} className="col-sm-4 mb-2">

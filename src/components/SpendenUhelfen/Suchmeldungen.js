@@ -4,7 +4,7 @@ const Suchmeldungen = () => {
   return (
     <div className="container">
        <h1 className="text-center text-dark">
-              Hier kommt die Überschrift hin.
+              TIER ENTLAUFEN | TIER ZUGELAUFEN |TIER GEFUNDEN
             </h1>
       <div className="list-group d-grid gap-3 ">
         <a
