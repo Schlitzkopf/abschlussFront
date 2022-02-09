@@ -5,7 +5,7 @@ import axios from "axios";
 const Auswahl = () => {
   const { id } = useParams();
   const [beadel, setBeadel] = useState();
-  const [update, setUpdate] = useState();
+  const [setUpdate] = useState();
   const [del, setDel] = useState();
   const [error, setError] = useState();
   const navigate = useNavigate();
