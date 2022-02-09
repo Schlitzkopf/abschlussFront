@@ -49,6 +49,15 @@ const Suchmeldungen = () => {
             dass Sie jetzt "andere Dinge im Kopf" haben.
           </p>
         </a>
+        <a
+          href="http://www.fellsuche.eu/index.php"
+          className="list-group-item list-group-item-action"
+        >
+          <div className="d-flex w-100 justify-content-between">
+            <h5 className="mb-1">Du machen neuen Link</h5>
+          </div>
+          <p className="mb-1">hier kommt das über uns rein</p>
+        </a>
       </div>
     </div>
   );
