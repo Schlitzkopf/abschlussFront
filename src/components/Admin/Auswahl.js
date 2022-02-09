@@ -38,7 +38,7 @@ const Auswahl = () => {
             Zurück
           </button>
           {del ? (
-            <div className="text-light mb-5 mt-5 pb-5 pt-5">
+            <div className="text-dark mb-5 mt-5 pb-5 pt-5">
               <h2>Tier wurder erfolgreich Gelöscht!</h2>
               <p>{error}</p>
             </div>
@@ -95,7 +95,7 @@ const Auswahl = () => {
         </div>
       ) : (
         <div>
-          <div className="text-center text-light">
+          <div className="text-center text-dark">
             <h2>Daten werden verarbeitet...</h2>
             <img
               src="https://media3.giphy.com/media/Oc8lIQHZsXqDu/200w.gif"
