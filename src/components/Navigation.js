@@ -114,8 +114,13 @@ const Navigation = () => {
                   aria-labelledby="navbarDropdown"
                 >
                   <li>
-                    <Link className="dropdown-item navText" to={"hundesteuer"}>
+                    <Link className="dropdown-item navText" to={"ups"}>
                       Hundesteuer
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item navText" to={"verarbeiten"}>
+                      Datenverarbeitung
                     </Link>
                   </li>
                 </ul>

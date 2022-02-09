@@ -18,6 +18,7 @@ import Auswahl from "./components/Admin/Auswahl";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import GlückID from "./components/Tiervermittlung/GlückID";
+import Verarbeiten from "./components/Ratgeber/Verarbeiten";
 
 function App(props) {
   return (
@@ -39,6 +40,7 @@ function App(props) {
         <Route path="/auswahl/:id" element={<Auswahl />} />
         <Route path="/glueck/:id" element={<GlückID />} />
         <Route path="/ups" element={<Ups />} />
+        <Route path="/verarbeiten" element={<Verarbeiten />} />
       </Routes>
       <Footer />
     </>
