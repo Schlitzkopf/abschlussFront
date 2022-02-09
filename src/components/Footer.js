@@ -19,7 +19,7 @@ const Footer = () => {
               <hr className="clearfix w-100 d-md-none"></hr>
               <div className="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
                 <h5 className="font-weight-bold text-uppercase mb-4">
-                  Addresse
+                  Adresse
                 </h5>
                 <ul className="list-unstyled">
                   <li>
@@ -55,7 +55,7 @@ const Footer = () => {
                   Über uns
                 </h5>
                 <p className="list-unstyled">
-                  Wir sind eine kleine Gruppe die zusammen etwas in der
+                  Wir sind eine kleine Gruppe, die zusammen etwas in der
                   Tiervermittlungswelt verändern möchte. Wir sind ein
                   Tierschutznetzwerk im europäischen Raum. Finde genau das Tier,
                   welches zu Dir passt!
