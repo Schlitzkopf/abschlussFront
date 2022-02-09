@@ -17,14 +17,12 @@ const Admin = () => {
   return (
     <>
       {loggedIn ? (
-        <div className="adminPadding container">
-          <div className="">
-            <Link to={"/erstellen"} type="button" className="btn btn-primary">
+        <div className="anmeldePadding container">
+          <div className="margin">
+            <Link to={"/erstellen"} type="button" className="btn btn-primary margin">
               Neues Tier erstellen?
             </Link>
-          </div>
-          <div className="adminPadding">
-            <Link to={"/bearbeiten"} type="button" className="btn btn-primary">
+            <Link to={"/bearbeiten"} type="button" className="btn btn-primary margin">
               Tier bearbeiten oder löschen
             </Link>
           </div>
@@ -36,13 +34,13 @@ const Admin = () => {
               type="password"
               placeholder="Bitte Passwort eingeben."
             ></input>
-            <button type="submit" className="btn btn-secondary">
+            <button type="submit" className="btn btn-primary margin">
               Anmelden
             </button>
-          </form>
-          <Link to={"/"} className="btn btn-secondary">
+          <Link to={"/"} className="btn btn-primary">
             Zurück
           </Link>
+          </form>
         </div>
       )}
     </>
