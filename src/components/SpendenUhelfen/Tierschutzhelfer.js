@@ -8,8 +8,8 @@ const Tierschutzhelfer = () => {
             </h1>
       <div className="list-group d-grid gap-3 ">
         <a
-          href="https://schnueffelfreunde.de/"
-          className="list-group-item list-group-item-action backgroundSchutz"
+          href="https://schnueffelfreunde.de/" 
+          className="list-group-item list-group-item-action backgroundSchutz" target="_blank"
         >
           <div className="d-flex w-100 justify-content-between">
             <h5 className="mb-1">Schnüffelfreunde</h5>
@@ -25,7 +25,7 @@ const Tierschutzhelfer = () => {
         </a>
         <a
           href="https://www.tierheimleben-in-not.de/"
-          className="list-group-item list-group-item-action"
+          className="list-group-item list-group-item-action" target="_blank"
         >
           <div className="d-flex w-100 justify-content-between">
             <h5 className="mb-1">Tierheimleben in Not e.V.</h5>
@@ -40,7 +40,7 @@ const Tierschutzhelfer = () => {
         </a>
         <a
           href="https://www.streunerhilfe-ni-no.de/"
-          className="list-group-item list-group-item-action"
+          className="list-group-item list-group-item-action" target="_blank"
         >
           <div className="d-flex w-100 justify-content-between">
             <h5 className="mb-1">Streuenerhilfe Ni-No e.V.</h5>
@@ -56,7 +56,7 @@ const Tierschutzhelfer = () => {
         </a>
         <a
           href="https://www.susyutzinger.ch/"
-          className="list-group-item list-group-item-action"
+          className="list-group-item list-group-item-action" target="_blank"
         >
           <div className="d-flex w-100 justify-content-between">
             <h5 className="mb-1">Susy utzinger</h5>
@@ -76,7 +76,7 @@ const Tierschutzhelfer = () => {
         </a>
         <a
           href="https://www.natucate.com/"
-          className="list-group-item list-group-item-action"
+          className="list-group-item list-group-item-action" target="_blank"
         >
           <div className="d-flex w-100 justify-content-between">
             <h5 className="mb-1">NATUCATE</h5>

@@ -8,8 +8,8 @@ const Suchmeldungen = () => {
             </h1>
       <div className="list-group d-grid gap-3 ">
         <a
-          href="https://www.tasso.net/"
-          className="list-group-item list-group-item-action backgroundSchutz"
+          href="https://www.tasso.net/" target="_blank"
+          className="list-group-item list-group-item-action backgroundSchutz" 
         >
           <div className="d-flex w-100 justify-content-between">
             <h5 className="mb-1">TASSO</h5>
@@ -23,7 +23,7 @@ const Suchmeldungen = () => {
         </a>
         <a
           href="https://www.lippewelle.de/index.html"
-          className="list-group-item list-group-item-action"
+          className="list-group-item list-group-item-action" target="_blank"
         >
           <div className="d-flex w-100 justify-content-between">
             <h5 className="mb-1">Lippewelle</h5>
@@ -35,7 +35,7 @@ const Suchmeldungen = () => {
         </a>
         <a
           href="http://www.fellsuche.eu/index.php"
-          className="list-group-item list-group-item-action"
+          className="list-group-item list-group-item-action" target="_blank"
         >
           <div className="d-flex w-100 justify-content-between">
             <h5 className="mb-1">fellsuche.eu</h5>
@@ -54,7 +54,7 @@ const Suchmeldungen = () => {
         </a>
         <a
           href="http://www.fellsuche.eu/index.php"
-          className="list-group-item list-group-item-action"
+          className="list-group-item list-group-item-action" target="_blank"
         >
           <div className="d-flex w-100 justify-content-between">
             <h5 className="mb-1">Du machen neuen Link</h5>
