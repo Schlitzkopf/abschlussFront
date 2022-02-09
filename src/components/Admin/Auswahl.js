@@ -38,7 +38,7 @@ const Auswahl = () => {
             Zurück
           </button>
           {del ? (
-            <div className="text-light adminPadding">
+            <div className="text-light mb-5 mt-5 pb-5 pt-5">
               <h2>Tier wurder erfolgreich Gelöscht!</h2>
               <p>{error}</p>
             </div>
