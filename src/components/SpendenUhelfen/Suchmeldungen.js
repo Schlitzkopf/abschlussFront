@@ -2,8 +2,8 @@ import React from "react";
 
 const Suchmeldungen = () => {
   return (
-    <div className="container">
-       <h1 className="text-center text-dark">
+    <div className="container mb-5">
+       <h1 className="text-center text-dark mt-5 mb-5 ueberschriften">
               TIER ENTLAUFEN | TIER ZUGELAUFEN |TIER GEFUNDEN
             </h1>
       <div className="list-group d-grid gap-3 ">
@@ -55,16 +55,7 @@ const Suchmeldungen = () => {
             dass Sie jetzt "andere Dinge im Kopf" haben.
           </p>
         </a>
-        <a
-          href="http://www.fellsuche.eu/index.php"
-          className="list-group-item list-group-item-action"
-          target="_blank"
-        >
-          <div className="d-flex w-100 justify-content-between">
-            <h5 className="mb-1">Du machen neuen Link</h5>
-          </div>
-          <p className="mb-1">hier kommt das über uns rein</p>
-        </a>
+        
       </div>
     </div>
   );

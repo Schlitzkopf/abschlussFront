@@ -61,25 +61,24 @@ const Erstellen = () => {
   };
 
   return (
-    <>
-      {status === "Success" ? (
-        <div className="adminText">
-          <div className="container ">
-            <button onClick={handleClick} className="btn btn-secondary">
+    <div className="container">
+     <button onClick={handleClick} className="btn btn-secondary mt-4 ">
               Zurück
             </button>
-            <h1 className="text-center text-light adminPadding">
+      {status === "Success" ? (
+        <div className="adminText">
+          <div className=" mb-5 mt-5">
+           
+            <h1 className="text-center text-dark mb-5 mt-5 ">
               Dein Tier wurde erfolgreich hochgeladen.
             </h1>
           </div>
         </div>
       ) : (
-        <div className="adminText adminPadding">
-          <div className="container adminPadding">
+        <div className="text-dark mb-5 mt-5">
+          <div className=" ">
             <form onSubmit={newAnimal} className="needs-validation">
-              <button onClick={handleClick} className="btn btn-secondary">
-                Zurück
-              </button>
+             
               {/* Name */}
               <div className="row mb-3 col-md-6">
                 <label htmlFor="inputName" className="col-sm-2 col-form-label">
@@ -397,7 +396,7 @@ const Erstellen = () => {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 

@@ -17,9 +17,9 @@ const Admin = () => {
   return (
     <>
       {loggedIn ? (
-        <div className="container">
-          <h3 className="paddingUnten">Was möchtest du tun?</h3>
-          <div className="btn-group">
+        <div className="container  mt-5 mb-5 ueberschriften">
+          <h3 className="pl-5" >Was möchtest du tun?</h3>
+          <div className="btn-group mt-5 mb-5 p-5">
             <Link to={"/erstellen"} type="button" className="btn btn-primary margin">
               Neues Tier erstellen?
             </Link>

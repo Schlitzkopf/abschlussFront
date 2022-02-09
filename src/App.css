@@ -11,7 +11,7 @@ body {
 /* Admin.js */
 
 .adminText {
-  color: rgb(201, 236, 236);
+  color: rgb(22, 29, 29);
 }
 .adminPadding {
   padding-top: 2vh;
@@ -77,15 +77,26 @@ padding-bottom: 13rem;
 }
 
 .carousel-Text{
-  color: rgb(30, 136, 236);
-  font-family: 'Brush Script MT', cursive;
-  font-weight: bold;
+  color: rgb(224, 224, 211);
+  font-family: 'Roboto', cursive;
+  font-weight:lighter;
   font-size: 2rem;
+  text-shadow: 0.1em 0.1em 0.2em black
+
+}
+
+.ueberschriften {
+    text-shadow: 0.1em 0.1em 0.2em grey;
 }
 
 .homeTextBack {
-  background-color: rgba(44, 45, 46, 0.883);
-}
+
+  width:30%;
+  margin-top: 100px;
+  border-style: hidden;
+  border-radius: 10px;
+
+} 
 
 /* Footer */
 

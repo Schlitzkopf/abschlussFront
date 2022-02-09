@@ -21,15 +21,15 @@ const Bearbeiten = () => {
   };
 
   return (
-    <div className="tierBack">
-      <button onClick={handleClick} className="btn btn-secondary">
+    <div className="container">
+      <button onClick={handleClick} className="btn btn-secondary mt-4 ">
         Zurück
       </button>
-      <div className="text-center text-light bearbeitenPadding">
+      <div className="text-center text-dark mb-5 mt-5 ueberschriften">
         <h2>Welches Tier möchtetst du berabeiten?</h2>
       </div>
       {all ? (
-        <div className="container">
+        <div className="">
           <div className="row">
             {all.animal.map((animal, index) => (
               <div key={index} className="col-sm-4 mb-2">
@@ -56,7 +56,7 @@ const Bearbeiten = () => {
                       to={`/auswahl/${animal._id}`}
                       className="btn btn-primary"
                     >
-                      Auswählen
+                      Bearbeiten
                     </Link>
                   </div>
                 </div>

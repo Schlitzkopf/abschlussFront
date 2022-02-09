@@ -20,9 +20,9 @@ const TiereID = () => {
 
   return (
     <>
-      <div className="container"></div>
+      
       {species ? (
-        <div className="container">
+        <div className="container mt-5 mb-5">
           <div className="card  mb-3">
             <div className="row g-0">
               <div className="col-md-4">
@@ -64,7 +64,7 @@ const TiereID = () => {
                     Zurück
                   </button>
                   <a
-                    className="btn btn-primary"
+                    className="btn btn-light"
                     href="mailto:holdenriederferdinand@gmail.com"
                   >
                     Kontakt

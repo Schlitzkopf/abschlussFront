@@ -15,13 +15,13 @@ const Katzen = () => {
   return (
     <>
       {cats ? (
-        <div className="container">
+        <div className="container mb-5">
           <div className="row">
-          <h1 className="text-center text-dark">
+          <h1 className="text-center text-dark mt-5 mb-5 ueberschriften">
               KATZEN SUCHEN EIN ZUHAUSE
             </h1>
             {cats.animal.map((animal, index) => (
-              <div key={index} className="col-sm-4 mb-2">
+              <div key={index} className="col-sm-4 mb-2 mt-5">
                 <div className="cardAll card text-center h-100">
                   <img
                     className="card-img-top"
@@ -41,7 +41,7 @@ const Katzen = () => {
                     <p className="card-text">Ich wohne in {animal.inputOrt}</p>
                     <Link
                       to={`/tiere/${animal._id}`}
-                      className="btn btn-primary"
+                      className="btn btn-light"
                     >
                       Mehr Info
                     </Link>

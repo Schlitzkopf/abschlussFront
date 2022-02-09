@@ -17,12 +17,12 @@ const Glückskinder = (animal) => {
     {lucky ? (
       <div className="container">
         <div className="row">
-          <h1 className="text-center text-dark">GESCHAFFT - ZUHAUSE GEFUNDEN!</h1>
+          <h1 className="text-center text-dark mt-5 mb-5 ueberschriften">GESCHAFFT - ZUHAUSE GEFUNDEN!</h1>
           {lucky.animal.map((animal, index) => (
-            <div key={index} className="col-sm-4 mb-2">
+            <div key={index} className="col-sm-4 mb-5 mt-5">
               <div className="cardAll card text-center h-100">
                 <img
-                  className="card-img-top"
+                  className="card-img-top "
                   src={animal.inputBildUrl}
                   onError={(img) =>
                     (img.src =
@@ -39,7 +39,7 @@ const Glückskinder = (animal) => {
                   <p className="card-text">Ich wohne in {animal.inputOrt}</p>
                   <Link
                     to={`/glueck/${animal._id}`}
-                    className="btn btn-primary"
+                    className="btn btn-light"
                   >
                     Mehr Info
                   </Link>

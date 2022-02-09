@@ -2,8 +2,8 @@ import React from "react";
 
 const Tierschutzhelfer = () => {
   return (
-    <div className="container">
-       <h1 className="text-center text-dark">
+    <div className="container mb-5">
+       <h1 className="text-center text-dark mt-5 mb-5 ueberschriften">
             TIERSCHUTZORGANISATIONEN
             </h1>
       <div className="list-group d-grid gap-3 ">
