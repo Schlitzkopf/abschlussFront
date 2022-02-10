@@ -2,7 +2,7 @@ import React from "react";
 
 const Verarbeiten = () => {
   return (
-    <div>
+    <div className="pt-5 pb-5">
       <div className="text-center text-dark mt-5 mb-5 pb-5 ueberschriften">
         <h2>DATEN WERDEN VERARBEITET...</h2>
         <img
