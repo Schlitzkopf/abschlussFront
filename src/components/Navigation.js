@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Navigation = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav className="navbar navbar-expand-lg navbar-dark navColor">
         <div className="container sticky-top">
           <Link to="/">
             <img
@@ -28,7 +28,7 @@ const Navigation = () => {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item dropdown">
                 <a
-                  className="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle text-own"
                   id="navbarDropdown"
                   role="button"
                   href="blank"
@@ -68,7 +68,7 @@ const Navigation = () => {
               </li>
               <li className="nav-item dropdown">
                 <a
-                  className="nav-link dropdown-toggle "
+                  className="nav-link dropdown-toggle text-own "
                   id="navbarDropdown"
                   role="button"
                   href="blank"
@@ -101,7 +101,7 @@ const Navigation = () => {
               </li>
               <li className="nav-item dropdown">
                 <a
-                  className="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle text-own"
                   id="navbarDropdown"
                   role="button"
                   href="blank"
